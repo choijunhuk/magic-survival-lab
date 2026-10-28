@@ -3,13 +3,13 @@ import assert from 'node:assert/strict';
 
 const root = new URL('./', import.meta.url);
 const read = path => readFile(new URL(path, root), 'utf8');
-const [html, css, core, controls, game, catalogSource] = await Promise.all([
-  read('index.html'), read('style.css'), read('core.mjs'), read('controls.mjs'), read('game.js'), read('assets/catalog.json'),
+const [html, css, core, controls, records, game, catalogSource] = await Promise.all([
+  read('index.html'), read('style.css'), read('core.mjs'), read('controls.mjs'), read('records.mjs'), read('game.js'), read('assets/catalog.json'),
 ]);
 assert.match(game, /^import .*from '\.\/core\.mjs';/);
 assert.ok(html.includes('<link rel="stylesheet" href="style.css">'));
 assert.ok(html.includes('<script type="module" src="game.js"></script>'));
-const script = [core, controls].map(source => source.replace(/^export /gm, '')).join('\n') + '\n' + game.replace(/^import[^\n]+\n/gm, '');
+const script = [core, controls, records].map(source => source.replace(/^export /gm, '')).join('\n') + '\n' + game.replace(/^import[^\n]+\n/gm, '');
 assert.doesNotMatch(script, /^\s*(import|export) /m);
 let standalone = html
   .replace('<link rel="stylesheet" href="style.css">', () => `<style>\n${css}\n</style>`)

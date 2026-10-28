@@ -1,4 +1,8 @@
 export const DURATION = 300;
+export const MODES = {
+  quick: { id: 'quick', label: '퀵 모드', duration: DURATION },
+  expedition: { id: 'expedition', label: '균열 원정', duration: 600 },
+};
 export const SPELL_IDS = ['bolt', 'orbit', 'lightning', 'frost', 'fireball', 'vortex', 'meteor', 'pulse'];
 
 export const UPGRADES = [
@@ -38,14 +42,17 @@ export const ARTIFACTS = [
   { id: 'aegis', name: '이지스', description: '15초마다 피해 1회 방어', icon: 'assets/artifactImages/aegis.png', color: '#e8d6a5' },
 ];
 
-export function createGame(rng = Math.random) {
+export function createGame(rng = Math.random, mode = 'quick') {
+  const selected = MODES[mode] || MODES.quick;
   return {
-    phase: 'ready', time: 0, kills: 0, level: 1, xp: 0, xpNeeded: 6,
+    phase: 'ready', mode: selected.id, duration: selected.duration, endReason: null,
+    time: 0, kills: 0, level: 1, xp: 0, xpNeeded: 6,
     player: { x: 0, y: 0, hp: 6, maxHp: 6, speed: 220, radius: 15, invulnerable: 0, shield: 0 },
     spells: { bolt: 1, orbit: 0, lightning: 0, frost: 0, fireball: 0, vortex: 0, meteor: 0, pulse: 0 },
     stats: { power: 0, haste: 0, vitality: 0, magnet: 0 },
     fusions: [], artifacts: [], enemies: [], projectiles: [], gems: [], effects: [], choices: [],
-    chests: [], artifactChoices: [], zones: [], strikes: [],
+    chests: [], artifactChoices: [], zones: [], strikes: [], hazards: [],
+    bossId: null, bossSpawned: false, bossDefeated: false, bossAttackTimer: 0, nextHazardId: 1,
     cooldowns: { bolt: 0, lightning: 0, frost: 0, fireball: 0, vortex: 0, meteor: 0, pulse: 0 },
     spawnTimer: 0.8, eliteTimer: 30, nextEnemyId: 1, nextChestId: 1, shieldTimer: 0, rng,
   };
@@ -76,12 +83,14 @@ function effect(state, type, x, y, life, extra = {}) {
 }
 
 function hurtEnemy(state, enemy, damage) {
+  if (!state.enemies.includes(enemy)) return;
   enemy.hp -= damage;
   effect(state, 'hit', enemy.x, enemy.y, .18);
   if (enemy.hp > 0) return;
   state.enemies.splice(state.enemies.indexOf(enemy), 1);
+  if (enemy.kind === 'boss') state.bossDefeated = true;
   state.kills++;
-  state.gems.push({ x: enemy.x, y: enemy.y, value: enemy.kind === 'elite' ? 4 : 1, radius: 6 });
+  if (enemy.kind !== 'boss') state.gems.push({ x: enemy.x, y: enemy.y, value: enemy.kind === 'elite' ? 4 : 1, radius: 6 });
   if (enemy.kind === 'elite') state.chests.push({ id: state.nextChestId++, x: enemy.x, y: enemy.y });
   effect(state, 'death', enemy.x, enemy.y, .35);
 }
@@ -111,6 +120,50 @@ function spawnEnemy(state, elite = false) {
     speed: (elite ? 52 : swift ? 110 : 66) * (1 + state.time / 600),
     damage: elite ? 2 : 1, slow: 0, orbitHitUntil: 0,
   });
+}
+
+function spawnBoss(state) {
+  if (state.bossSpawned) return;
+  state.bossSpawned = true;
+  if (state.enemies.length >= 200) state.enemies.splice(state.enemies.findIndex(enemy => enemy.kind !== 'boss'), 1);
+  const boss = { id: state.nextEnemyId++, kind: 'boss', x: state.player.x + 300, y: state.player.y,
+    hp: 550, maxHp: 550, radius: 38, speed: 245, damage: 2, slow: 0, orbitHitUntil: 0 };
+  state.enemies.push(boss);
+  state.bossId = boss.id;
+  state.bossAttackTimer = 0;
+}
+
+function warnBossAttack(state, boss) {
+  if (state.hazards.length) return;
+  const warning = 1;
+  const active = .6;
+  const targets = [{ kind: 'circle', x: state.player.x, y: state.player.y, radius: 70 }];
+  for (let i = 0; i < 4; i++) {
+    const angle = i * Math.PI / 2;
+    targets.push({ kind: 'ray', x: boss.x + Math.cos(angle) * 130, y: boss.y + Math.sin(angle) * 130, radius: 52 });
+  }
+  for (const target of targets) state.hazards.push({ id: state.nextHazardId++, ...target, warning, active, hit: false });
+}
+
+function updateHazards(state, dt) {
+  const player = state.player;
+  for (const hazard of state.hazards) {
+    if (hazard.warning > 0) {
+      hazard.warning = Math.max(0, hazard.warning - dt);
+      continue;
+    }
+    hazard.active -= dt;
+    if (!hazard.hit && hazard.active > 0 && distance(hazard, player) < hazard.radius + player.radius) {
+      hazard.hit = true;
+      if (player.invulnerable <= 0) {
+        if (player.shield) { player.shield = 0; state.shieldTimer = 15; }
+        else player.hp = Math.max(0, player.hp - 1);
+        player.invulnerable = .65;
+        effect(state, 'hit', player.x, player.y, .3);
+      }
+    }
+  }
+  state.hazards = state.hazards.filter(hazard => hazard.warning > 0 || hazard.active > 0);
 }
 
 function offerUpgrade(state) {
@@ -202,7 +255,7 @@ function blast(state, x, y, radius, damage) {
 export function updateGame(state, dt, input = { x: 0, y: 0 }) {
   if (state.phase !== 'playing' || !Number.isFinite(dt) || dt <= 0) return;
   dt = Math.min(dt, .05);
-  state.time = Math.min(DURATION, state.time + dt);
+  state.time = Math.min(state.duration, state.time + dt);
   const player = state.player;
   const magnitude = Math.hypot(input.x || 0, input.y || 0);
   if (magnitude) {
@@ -228,9 +281,11 @@ export function updateGame(state, dt, input = { x: 0, y: 0 }) {
     }
   }
   state.effects = state.effects.filter(visual => visual.life > 0);
-  state.enemies = state.enemies.filter(enemy => distance(enemy, player) < 950);
+  state.enemies = state.enemies.filter(enemy => enemy.kind === 'boss' || distance(enemy, player) < 950);
   state.chests = state.chests.filter(chest => distance(chest, player) < 950);
   state.gems = state.gems.filter(gem => distance(gem, player) < 950);
+
+  if (state.mode === 'expedition' && state.time >= 510) spawnBoss(state);
 
   state.spawnTimer -= dt;
   if (state.spawnTimer <= 0) {
@@ -247,7 +302,8 @@ export function updateGame(state, dt, input = { x: 0, y: 0 }) {
   for (const enemy of state.enemies) {
     const d = distance(enemy, player);
     if (d > 0) {
-      const step = (enemy.speed || 0) * (enemy.slow > 0 ? .45 : 1) * dt;
+      const slowFactor = enemy.slow <= 0 ? 1 : enemy.kind === 'boss' ? .9 : .45;
+      const step = (enemy.speed || 0) * slowFactor * dt;
       enemy.x += (player.x - enemy.x) / d * Math.min(step, d);
       enemy.y += (player.y - enemy.y) / d * Math.min(step, d);
     }
@@ -260,6 +316,18 @@ export function updateGame(state, dt, input = { x: 0, y: 0 }) {
       player.invulnerable = .65;
       effect(state, 'hit', player.x, player.y, .3);
     }
+  }
+
+  if (state.mode === 'expedition') {
+    const boss = !state.bossDefeated && state.enemies.find(enemy => enemy.id === state.bossId);
+    if (boss) {
+      state.bossAttackTimer -= dt;
+      if (state.bossAttackTimer <= 0) {
+        warnBossAttack(state, boss);
+        state.bossAttackTimer = 3;
+      }
+    }
+    updateHazards(state, dt);
   }
 
   state.cooldowns.bolt -= dt;
@@ -413,8 +481,13 @@ export function updateGame(state, dt, input = { x: 0, y: 0 }) {
     }
   }
   state.gems = state.gems.filter(gem => !gem.collected);
-  if (player.hp <= 0) state.phase = 'lost';
-  else if (state.time >= DURATION) state.phase = 'won';
+  if (state.bossDefeated) state.hazards = [];
+  if (player.hp <= 0) { state.phase = 'lost'; state.endReason = 'death'; }
+  else if (state.time >= state.duration) {
+    state.phase = state.mode === 'quick' ? 'won' : 'lost';
+    state.endReason = state.mode === 'quick' ? 'survived' : 'timeout';
+  }
+  else if (state.bossDefeated) { state.phase = 'won'; state.endReason = 'boss-defeated'; }
   else {
     const chest = state.chests.find(item => distance(item, player) <= 50);
     if (chest) {

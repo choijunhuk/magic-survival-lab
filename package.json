@@ -6,6 +6,6 @@
     "start": "python3 -m http.server 4173 --bind 127.0.0.1",
     "build": "node build.mjs",
     "test": "node --test",
-    "check": "node --check game.js && node --check core.mjs && node --check controls.mjs && node --check build.mjs && node --check build-atlas.mjs"
+    "check": "node --check game.js && node --check core.mjs && node --check controls.mjs && node --check records.mjs && node --check build.mjs && node --check build-atlas.mjs"
   }
 }

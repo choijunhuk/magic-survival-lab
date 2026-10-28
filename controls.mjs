@@ -3,3 +3,7 @@ const physicalKeys = { KeyW: 'w', KeyA: 'a', KeyS: 's', KeyD: 'd', KeyP: 'p', Di
 export function controlKey(event) {
   return physicalKeys[event.code] ?? event.key.toLowerCase();
 }
+
+export function usesNativeKeys(target) {
+  return ['INPUT', 'SELECT', 'TEXTAREA'].includes(target?.tagName) || !!target?.isContentEditable;
+}

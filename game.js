@@ -1,5 +1,6 @@
-import { DURATION, SPELL_IDS, UPGRADES, FUSIONS, ARTIFACTS, createGame, startGame, updateGame, togglePause, chooseUpgrade, chooseArtifact, orbitPosition } from './core.mjs';
-import { controlKey } from './controls.mjs';
+import { MODES, SPELL_IDS, UPGRADES, FUSIONS, ARTIFACTS, createGame, startGame, updateGame, togglePause, chooseUpgrade, chooseArtifact, orbitPosition } from './core.mjs';
+import { controlKey, usesNativeKeys } from './controls.mjs';
+import { loadRecords, recordRun } from './records.mjs';
 
 const $ = (id) => document.getElementById(id);
 const canvas = $('game-canvas');
@@ -24,7 +25,9 @@ let audioContext;
 let soundEnabled = false;
 let previousKills = 0;
 let lastSound = 0;
-let best = readBest();
+const storage = { getItem: key => localStorage.getItem(key), setItem: (key, value) => localStorage.setItem(key, value) };
+let records = loadRecords(storage).records;
+let selectedMode = 'quick';
 let toastUntil = 0;
 let previousFusions = '';
 let resumeAfterRecipes = false;
@@ -32,19 +35,10 @@ const recipeDialog = $('recipe-dialog');
 const chestImage = new Image();
 chestImage.src = 'assets/artifactImages/holychest.png';
 
-function readBest() {
-  try {
-    const value = JSON.parse(localStorage.getItem('magic-survival-best'));
-    if (value && Number.isFinite(value.time) && value.time >= 0 && value.time <= DURATION && Number.isSafeInteger(value.kills) && value.kills >= 0) return value;
-  } catch { /* A blocked or corrupt local record must not prevent playing. */ }
-  return { time: 0, kills: 0 };
-}
-
 function saveBest() {
-  if (state.time > best.time || (state.time === best.time && state.kills > best.kills)) {
-    best = { time: state.time, kills: state.kills };
-    try { localStorage.setItem('magic-survival-best', JSON.stringify(best)); } catch { /* Playing also works with storage disabled. */ }
-  }
+  const result = recordRun(storage, records, state);
+  records = result.records;
+  $('record-status').textContent = !result.saved ? '기록을 기기에 저장하지 못했습니다.' : result.updated ? '새 최고 기록' : '최고 기록 유지';
   updateBest();
 }
 
@@ -54,8 +48,12 @@ function formatTime(seconds) {
 }
 
 function updateBest() {
-  $('best-time').textContent = formatTime(best.time);
-  $('best-kills').textContent = best.time ? `${best.kills.toLocaleString()} 처치` : '아직 탐사 기록이 없습니다';
+  const best = records[selectedMode];
+  const detail = best ? `${best.endReason === 'boss-defeated' ? '우두머리 처치 · ' : best.endReason === 'timeout' ? '시간 초과 · ' : best.endReason === 'death' ? '전사 · ' : ''}${best.kills.toLocaleString()} 처치` : '아직 탐사 기록이 없습니다';
+  $('best-heading').textContent = `${MODES[selectedMode].label} 최고 기록`;
+  $('best-time').textContent = formatTime(best?.time || 0);
+  $('best-kills').textContent = detail;
+  $('mode-record').textContent = best ? `최고 기록 · ${formatTime(best.time)} · ${detail}` : '최고 기록 · 아직 기록이 없습니다';
 }
 
 function resize() {
@@ -71,7 +69,7 @@ function resize() {
 
 function begin() {
   clearInput();
-  state = createGame();
+  state = createGame(Math.random, selectedMode);
   startGame(state);
   previousPhase = '';
   previousLoadout = '';
@@ -165,6 +163,8 @@ function updateUI() {
   $('health-bar').setAttribute('aria-valuemax', state.player.maxHp);
   $('health-bar').setAttribute('aria-valuenow', hp);
   $('time-text').textContent = formatTime(state.time);
+  $('duration-text').textContent = `/ ${formatTime(state.duration)}`;
+  $('run-caption').textContent = state.mode === 'quick' ? '5분간 살아남으세요' : '10분 안에 우두머리를 처치하세요';
   $('kills-text').textContent = state.kills.toLocaleString();
   $('level-text').textContent = state.level;
   $('xp-text').textContent = `${Math.floor(state.xp)} / ${state.xpNeeded}`;
@@ -176,6 +176,24 @@ function updateUI() {
   $('battle-hint').hidden = state.phase !== 'playing' || state.time > 14;
   $('fusion-toast').hidden = state.phase !== 'playing' || state.time >= toastUntil;
   stage.dataset.phase = state.phase;
+  const boss = state.enemies.find(enemy => enemy.id === state.bossId);
+  $('boss-hud').hidden = !boss || state.phase === 'ready';
+  $('boss-direction').hidden = true;
+  if (boss) {
+    const hp = Math.max(0, boss.hp / boss.maxHp * 100);
+    $('boss-health-text').textContent = `${Math.ceil(boss.hp)} / ${boss.maxHp}`;
+    $('boss-health-fill').style.width = `${hp}%`;
+    $('boss-health-bar').setAttribute('aria-valuenow', Math.ceil(hp));
+    const dx = (boss.x - state.player.x) * scale;
+    const dy = (boss.y - state.player.y) * scale;
+    if (Math.abs(dx) > width / 2 - boss.radius * scale || Math.abs(dy) > height / 2 - boss.radius * scale) {
+      $('boss-direction').textContent = `우두머리 ${Math.abs(dx) > Math.abs(dy) ? dx > 0 ? '→' : '←' : dy > 0 ? '↓' : '↑'}`;
+      $('boss-direction').hidden = false;
+    }
+  }
+  const hazardText = state.hazards?.some(hazard => hazard.warning > 0) ? '위험 예고 · 표시된 곳에서 벗어나세요' : state.hazards?.some(hazard => hazard.active > 0) ? '위험 지역 활성' : '';
+  if ($('hazard-status').textContent !== hazardText) $('hazard-status').textContent = hazardText;
+  $('hazard-status').hidden = !hazardText || state.phase !== 'playing';
 
   const loadout = [spellIds.map((id) => state.spells[id]).join(','), state.fusions.join(','), state.artifacts.join(',')].join('|');
   if (loadout !== previousLoadout) {
@@ -251,14 +269,19 @@ function updateUI() {
     $('resume-button').focus({ preventScroll: true });
   } else if (['won', 'lost'].includes(state.phase)) {
     saveBest();
-    const won = state.phase === 'won';
-    $('result-title').textContent = won ? '여명을 맞이하다' : '어둠에 잠기다';
-    $('result-label').textContent = won ? '5분의 생존, 그리고 새로운 시작' : '이번 탐사의 기록';
-    $('result-symbol').textContent = won ? '✦' : '◇';
+    const resultCopy = {
+      survived: ['여명을 맞이하다', '5분 생존 성공', '✦'],
+      'boss-defeated': ['균열을 닫다', '우두머리 처치 · 원정 성공', '✦'],
+      timeout: ['균열에 남다', '10분 종료 · 우두머리 미처치', '◇'],
+      death: ['어둠에 잠기다', '생명력이 다했습니다', '◇'],
+    }[state.endReason] || ['탐사 종료', '이번 탐사의 기록', '◇'];
+    $('result-title').textContent = resultCopy[0];
+    $('result-label').textContent = resultCopy[1];
+    $('result-symbol').textContent = resultCopy[2];
     $('result-time').textContent = formatTime(state.time);
     $('result-kills').textContent = state.kills.toLocaleString();
     $('result-level').textContent = state.level;
-    $('announcement').textContent = `${won ? '생존 성공' : '탐사 종료'}. ${formatTime(state.time)}, ${state.kills} 처치.`;
+    $('announcement').textContent = `${resultCopy[1]}. ${formatTime(state.time)}, ${state.kills} 처치.`;
     $('restart-button').focus({ preventScroll: true });
   }
 }
@@ -328,6 +351,17 @@ function drawPlayer(x, y, time, invulnerable = 0) {
 }
 
 function drawEnemy(enemy, time) {
+  if (enemy.kind === 'boss') {
+    ctx.save(); ctx.translate(enemy.x, enemy.y);
+    circle(0, enemy.radius * .6, enemy.radius * 1.25, '#03071185');
+    for (const [x, y, size] of [[-25, 2, 20], [23, 5, 22], [0, -12, 31]]) {
+      ctx.fillStyle = '#372d3a'; ctx.strokeStyle = '#c58b84'; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(x, y - size); ctx.lineTo(x + size * .8, y - size * .2); ctx.lineTo(x + size * .65, y + size); ctx.lineTo(x - size * .7, y + size * .8); ctx.lineTo(x - size, y - size * .15); ctx.closePath(); ctx.fill(); ctx.stroke();
+    }
+    circle(-9, -12, 3, '#f7c7a5'); circle(9, -12, 3, '#f7c7a5');
+    ctx.restore();
+    return;
+  }
   const elite = enemy.kind === 'elite';
   const swift = enemy.kind === 'swift';
   const radius = enemy.radius;
@@ -381,6 +415,17 @@ function render(now) {
       ctx.strokeStyle = '#a0cedb70'; ctx.lineWidth = 2;
       for (let i = 0; i < 5; i++) {
         ctx.rotate(Math.PI * 2 / 5); ctx.beginPath(); ctx.arc(0, 0, zone.radius * (.35 + i * .1), .1, Math.PI * 1.2); ctx.stroke();
+      }
+      ctx.restore();
+    }
+    for (const hazard of state.hazards) {
+      const warning = hazard.warning > 0;
+      circle(hazard.x, hazard.y, hazard.radius, warning ? '#c9a66b12' : '#c4655f4d', warning ? '#e0bc76' : '#f49a8d', warning ? 2 : 3);
+      ctx.save(); ctx.beginPath(); ctx.arc(hazard.x, hazard.y, hazard.radius, 0, Math.PI * 2); ctx.clip();
+      ctx.strokeStyle = warning ? '#e0bc7666' : '#ffd0bf88'; ctx.lineWidth = warning ? 1 : 2;
+      if (warning) ctx.setLineDash([6, 8]);
+      for (let offset = -hazard.radius * 2; offset < hazard.radius * 2; offset += 14) {
+        ctx.beginPath(); ctx.moveTo(hazard.x + offset, hazard.y - hazard.radius); ctx.lineTo(hazard.x + offset + hazard.radius * 2, hazard.y + hazard.radius); ctx.stroke();
       }
       ctx.restore();
     }
@@ -474,6 +519,13 @@ function frame(now) {
 
 $('start-button').addEventListener('click', begin);
 $('restart-button').addEventListener('click', begin);
+for (const option of document.querySelectorAll('input[name="mode"]')) option.addEventListener('change', () => {
+  if (!option.checked || state.phase !== 'ready') return;
+  selectedMode = option.value;
+  state = createGame(Math.random, selectedMode);
+  updateBest();
+  updateUI();
+});
 $('pause-button').addEventListener('click', pause);
 $('resume-button').addEventListener('click', pause);
 $('recipes-button').addEventListener('click', () => {
@@ -506,6 +558,7 @@ document.addEventListener('keydown', (event) => {
     if (key === 'escape') { event.preventDefault(); recipeDialog.close(); }
     return;
   }
+  if (usesNativeKeys(event.target)) return;
   const buttonSpace = key === ' ' && event.target instanceof HTMLButtonElement;
   if (['w', 'a', 's', 'd', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright', ' ', 'p', 'escape'].includes(key) && !buttonSpace) event.preventDefault();
   if ((key === 'p' || key === 'escape' || (key === ' ' && !buttonSpace)) && !event.repeat) pause();
