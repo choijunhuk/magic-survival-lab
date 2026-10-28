@@ -2,3 +2,5 @@
 artifacts/
 .omx/
 .omc/
+__pycache__/
+tmp/pdfs/
