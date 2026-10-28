@@ -1,0 +1,2141 @@
+{
+  "project": "매직 서바이벌 팬게임",
+  "repository": "https://github.com/TomkoSK/magic-survival-builder",
+  "commit": "d58d53117e6bead22ee08f0ecac7bff9658ae922",
+  "count": 266,
+  "counts": {
+    "image": 265,
+    "font": 1
+  },
+  "bytes": 19880901,
+  "files": [
+    {
+      "file": "assets/artifactImages/abyss.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/abyss.png",
+      "gitBlobSha": "1a481f40686e3ebee0fd06f5747744abb6032069",
+      "sha256": "2a4a19fb3aea3dced04be655367402555e6a9625cf76ffad80c74dbaec6c0526",
+      "bytes": 117419,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/accelerator.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/accelerator.png",
+      "gitBlobSha": "b10b80c0b5b6708a213a2e017848288c8176c894",
+      "sha256": "3c771734f7edc4df350d5f4d3ddd4e41c640dbe0261b3204e6c9a6172e26a036",
+      "bytes": 96657,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/aegis.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/aegis.png",
+      "gitBlobSha": "e33a5687c5d3c4ae17bcfaf4cac3a83905a6df72",
+      "sha256": "b2b22880b36f0fb26b0f3df322bfa5e9ea7648106f66db72f84d9914582b17b5",
+      "bytes": 116967,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/aimagic.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/aimagic.png",
+      "gitBlobSha": "1924095024fc27476dc75e32524a70a3be0ba1d5",
+      "sha256": "f028679e34e06e1a68617d9010b9d27669b8e2fd5a6ff5bb28d5b0cb6ec82fd4",
+      "bytes": 124905,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/akashicrecord.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/akashicrecord.png",
+      "gitBlobSha": "62b175b49546e16fdc1bbd0606ba0e58d83dafc1",
+      "sha256": "da560c7eb11966977004c3f77afe2d9c50152d0c1f99300e4b4251f48cd3956e",
+      "bytes": 103488,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/amplifier.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/amplifier.png",
+      "gitBlobSha": "d25ca7865498724968d18497f4c674a39637e699",
+      "sha256": "0faa34f8c0ddb87855a2ff4ecf819e8b22d2857ca3fdead94e0d07c8847fafee",
+      "bytes": 102991,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/ancienttreestaff.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/ancienttreestaff.png",
+      "gitBlobSha": "8cef9b101f96c723f836c39dc559158780de7537",
+      "sha256": "cc32433be8c24e219718f8f950877309b8cd2999645cbff03ab3b1fd4eb08bcc",
+      "bytes": 42232,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/assassination.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/assassination.png",
+      "gitBlobSha": "5673487977f89c81665306e3ad62bb11fc03cee7",
+      "sha256": "7c0f0ff942faccc8e22418aff7ac0484125608e5108337accda12053a4649e07",
+      "bytes": 96711,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/aurora.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/aurora.png",
+      "gitBlobSha": "89d414f7acce458896098791b0adcf7b93aa553c",
+      "sha256": "cdf4be3173447afe5c4cbc3dd6a3820f13d71c7f394cbe714a5854647c330492",
+      "bytes": 61313,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/ballista.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/ballista.png",
+      "gitBlobSha": "bf8e5014582bb0489ecac82a5d6f4a78462e43c2",
+      "sha256": "040e99e572648d308d8245806d22369f33dece1bc7d03aeeacbd5fe2e72108fb",
+      "bytes": 76601,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/basilisk.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/basilisk.png",
+      "gitBlobSha": "c6b18d0c496b03f568187fe81a435b144d319c9b",
+      "sha256": "11a1baa4d44036b26bce155c7f9b68625ebebf710a49c859a6e1f198266e998a",
+      "bytes": 91219,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/battery.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/battery.png",
+      "gitBlobSha": "cf7253e5cf8d166c0c87578f601c8eb6a42b37bd",
+      "sha256": "675b543f23f85669646e395dea7bf3ce7480d31ea8c095a7c4ce2c2858a472f3",
+      "bytes": 25071,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/blackcat.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/blackcat.png",
+      "gitBlobSha": "5e21235ed8b34a9fa6676799d8b8f7ad303d15b0",
+      "sha256": "38522eb5e2325bc5825bb7148f05e330dc0c63fc2892bd155bcb295edcf0522e",
+      "bytes": 37429,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/bloodpack.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/bloodpack.png",
+      "gitBlobSha": "0a955aad2d0f486a741c3b1eeb1897927c1d0498",
+      "sha256": "a941a46794b56be774a82b1ebc9974e2b7f35fc65e570e92698f7f379028c490",
+      "bytes": 60018,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/bomb.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/bomb.png",
+      "gitBlobSha": "8e08e587d4d2a9943710139880b817484e131eca",
+      "sha256": "3d2f10a4803b17442e6ab94355caab54caba30fb34858f66b11a410d8e94b564",
+      "bytes": 54130,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/brand.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/brand.png",
+      "gitBlobSha": "e4dff66ae7c7a751b6655654fd1377e634d6adfc",
+      "sha256": "71cc67776a194458bdae07570ac978aea0d058d62072e4c1d55b4f5628d56c59",
+      "bytes": 86948,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/breeze.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/breeze.png",
+      "gitBlobSha": "7d95b926599a6713132f793129c8018089dac195",
+      "sha256": "c43688ab56f5587b816db89e1b7bf5ee61597aab2baebc544769b44cd193bea0",
+      "bytes": 73978,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/broom.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/broom.png",
+      "gitBlobSha": "bae71390cb994cbc25b32d74628bfcd7b0024aa3",
+      "sha256": "22d0a6e0a2936e9e1f4d0635c350d90b916b60853300abbb22d7787732f97b47",
+      "bytes": 45951,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/candlestick.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/candlestick.png",
+      "gitBlobSha": "10c86d5520b74ffb781e306246e436ae3fd346f0",
+      "sha256": "c46b64a41047110bde05095fd0e33ee897b4216f8653de9baea022e58605ca57",
+      "bytes": 63737,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/cauldron.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/cauldron.png",
+      "gitBlobSha": "22e82bf81db99eaf2d5f0b670ce2a04552ba4217",
+      "sha256": "34568bf8a72787f93c63264386c4c89167bbd17a0deeab2811d235f12ac2992a",
+      "bytes": 67172,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/celestialcalendar.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/celestialcalendar.png",
+      "gitBlobSha": "45ec4006bd749865eafee6414b67ba5e9692cd48",
+      "sha256": "fefc4e4c1d91d9bcc8485f668510f688d0f0e4d737fc5b43dfd4f0d71d8c052e",
+      "bytes": 97185,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/circularsawblade.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/circularsawblade.png",
+      "gitBlobSha": "1326512902c2dbfe3e5f4adda08596dd59e27c0c",
+      "sha256": "a9c9b18ab384c426f6768fba9bddf15a3fbb1256fde1026c8fe0c04d95361e91",
+      "bytes": 34711,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/clairvoyance.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/clairvoyance.png",
+      "gitBlobSha": "c398940fec1712f573cee8ac413358f0d4a7fca7",
+      "sha256": "f26a963107aa77dd6e61f1bfaa8115e58e57881755afd4f3e1a6149a6028dde9",
+      "bytes": 129194,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/clockwork.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/clockwork.png",
+      "gitBlobSha": "919ea1296d7e949a4f95b596ef94acca76678cc9",
+      "sha256": "2d1554bfa9c2d1743914a829cea691ad36dfc6512314692269469b6b4eb3d0fb",
+      "bytes": 116238,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/cogwheel.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/cogwheel.png",
+      "gitBlobSha": "97ec9062b87d1f051e5d515e637a73be15ba96db",
+      "sha256": "28fbeee6298d87846e7c74212cf2a0e7ed298bd5793a68997a3e76d28c6d9443",
+      "bytes": 98774,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/coreenergy.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/coreenergy.png",
+      "gitBlobSha": "6fc6b5c0597c49a1b988bf2e168cf2ea88a91f1e",
+      "sha256": "071e62779346aaedaced65bbdea13db456857867b002cadff5c163b5578fc9ab",
+      "bytes": 111269,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/creation.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/creation.png",
+      "gitBlobSha": "ce9d62feb54199e6f2dc67656aeb0012ff564be5",
+      "sha256": "2818cd6e8b562aac463e9862ce60420f4d58aab8c36aa6f7117934300dc6f1db",
+      "bytes": 101782,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/crow.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/crow.png",
+      "gitBlobSha": "dabf1144b692603c6fa54d7a283cc5961abe895e",
+      "sha256": "81dfb726b7fd2ac2c9753e36186b65ccd5cea79acc2e66612dcad3494f57bdd8",
+      "bytes": 39067,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/crown.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/crown.png",
+      "gitBlobSha": "be777a4584b51318010737ae3a6112b8b1e58770",
+      "sha256": "b4faf3f99d1cd84c5437417939c676f950be13e59319fb08ea881fdfac1e3d1d",
+      "bytes": 97317,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/crucifix.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/crucifix.png",
+      "gitBlobSha": "94249d9b003ed9c52c973c96934e964ff1657efa",
+      "sha256": "c5444d31a771f65d78a0b4d8666af44a652025bf4a134b0ef0404cef785e7b01",
+      "bytes": 40501,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/crystalprism.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/crystalprism.png",
+      "gitBlobSha": "515c1bbd4db412248ebf53f96d6eedf9b7eda50f",
+      "sha256": "3ccbeb0b3df1e7f351aa6ccd7b0e9b85437ce019ffdddba8396eeec897a28ead",
+      "bytes": 73977,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/cube.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/cube.png",
+      "gitBlobSha": "e7bcc0dc55919fcb3119f4891093ec78df1785dc",
+      "sha256": "6aa6925077555e0a2385b5617f3fdfa2c54bddcaf84e32ced52e2b70418965dc",
+      "bytes": 87860,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/cyborg.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/cyborg.png",
+      "gitBlobSha": "7513432248a1007cf05071be41bdff2b7710228b",
+      "sha256": "cbd4c4590416a44398d440a53f277f9a440295031b58e3cadfe6c1960be651a1",
+      "bytes": 60659,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/deathbell.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/deathbell.png",
+      "gitBlobSha": "3f65c62dd7bcb02844128274a7d4cffb47461ac4",
+      "sha256": "47f371c500f875d22792d46dfd399336a9b485ca4c5976a5c9b35dd0402cb698",
+      "bytes": 68789,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/dimensionalgate.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/dimensionalgate.png",
+      "gitBlobSha": "5b1fa42dc6f69699fe840cd732e2989d66d0c77d",
+      "sha256": "b442aca0a17434204ad7fd7c6d413e679c6563ea6884402b517a538d6e99e052",
+      "bytes": 91368,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/dna.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/dna.png",
+      "gitBlobSha": "e410c358f47014c56f20e9b70e945dddc0ac14f8",
+      "sha256": "af2c4e6a8ab4431fa764e6a2a45c4a56102664678e0eb1f949d05d9defdc3592",
+      "bytes": 94525,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/domainofpower.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/domainofpower.png",
+      "gitBlobSha": "84955836840f9e00105f1c376335b56ffddbd2a6",
+      "sha256": "609da607c6b4fedb66738b2b38785488a2d8a29c6b12d390f094ad475833c948",
+      "bytes": 126203,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/dragonbreath.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/dragonbreath.png",
+      "gitBlobSha": "f2fe06136c52614b2c380905da52c483dc0d8e9d",
+      "sha256": "825cc3bb4ada75c1cfc07530ab111a2cc44817823e8da97ac589de948aef296f",
+      "bytes": 102329,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/dragonheart.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/dragonheart.png",
+      "gitBlobSha": "e2d56afa423fe3ac8bbc97a6f8ee146021598c0d",
+      "sha256": "63543bcb4dd8818b513edcc8ca73bb94cbe1deac4f8e686915b5fad3c55fc51a",
+      "bytes": 105379,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/dragonmagic.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/dragonmagic.png",
+      "gitBlobSha": "fd2ebb2554f4a7ec916e5f4e291730cb817378e1",
+      "sha256": "fb7b507a078df9ed01207754eb19f18527efbea508f5017c42383b48b5deae68",
+      "bytes": 148166,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/dragonscale.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/dragonscale.png",
+      "gitBlobSha": "e20bad7f4298b33bab5d079f81032321d0063cd8",
+      "sha256": "132a61d3492d4d899768372d59a6c129b45dc114d53e7b3bbe51e54425b4c00d",
+      "bytes": 118039,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/dragontongue.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/dragontongue.png",
+      "gitBlobSha": "d15b445a2a3f91cb859841732bd601044ce308a0",
+      "sha256": "cb72d85dbd75eaa19ad5cea852242f1235f988401d60042710034cebb0ab91c1",
+      "bytes": 106410,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/eclipse.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/eclipse.png",
+      "gitBlobSha": "fd252d15b9ee0e363c50dfc9b5076b8f2e559dc4",
+      "sha256": "71713f5b26935d90474dc4af6003e436f0c8eda48beb8547f1215a90340e8fe4",
+      "bytes": 149624,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/electriccable.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/electriccable.png",
+      "gitBlobSha": "34fef422392c3babc703ee7b3a0beb59d43ceb7f",
+      "sha256": "0ea5ef4884d68bc9e08bc59cb158bf78e1000dba4212c009f6e782bb7eb211ff",
+      "bytes": 65016,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/enchant.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/enchant.png",
+      "gitBlobSha": "a01b0a8e30641a4cc8df911fd6ff27d53ada2778",
+      "sha256": "de81699601b63f8f627641d400252d731779d6968829b54d3faf0bbb57737e0c",
+      "bytes": 78733,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/ether.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/ether.png",
+      "gitBlobSha": "3ab452a6b2cd12f572fbe205f9afc1f26226ee21",
+      "sha256": "79c1aab3c86bddbd9e2ffa0c853e5bcd3daf1e80ad7d84cd60d449e943b78d88",
+      "bytes": 89778,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/etherarrow.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/etherarrow.png",
+      "gitBlobSha": "95197c4a4eb394ae0ec2c4ebbf93609a38a793af",
+      "sha256": "1255f45e7df25e7a088163ddf3a4b5a3258138b222dcbba543398a5f742db1f2",
+      "bytes": 69592,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/excalibur.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/excalibur.png",
+      "gitBlobSha": "c1f1d8e11f49f7ab221eec2f2778dbc5e763d16d",
+      "sha256": "ccda4c38ef317a437a05b49a6154162440aec4d12cbaf7377e54256c9f5ae5b9",
+      "bytes": 54786,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/executionerax.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/executionerax.png",
+      "gitBlobSha": "7c4c4da5c0087bab9839e72a01f5478c96796a12",
+      "sha256": "4b83a3df76dd4d30db3425ab884bde5f4f896705bb783dba96886a264fd8f551",
+      "bytes": 72982,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/exorcism.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/exorcism.png",
+      "gitBlobSha": "96554dcf50aad449cf8c0ea26d1cfc41df26b043",
+      "sha256": "65721a22bfa45abef038dfd4598bb3f9357d7f56fbfb32e857bb36ae6c33a4d1",
+      "bytes": 97199,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/firefly.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/firefly.png",
+      "gitBlobSha": "cfae8a688af71198feba80d19ce03a9e6c1a751c",
+      "sha256": "c0ddaaa50e8b56089e9958427a68fbbc4180c63a11945f0919579489d3688395",
+      "bytes": 73122,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/forcefield.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/forcefield.png",
+      "gitBlobSha": "9ddb6034a91372b8c87459880321661bd79ef073",
+      "sha256": "6f45073b3ba348f0da88903df0f5600fedd2c25d8e64ee09185beaa6768f313b",
+      "bytes": 55424,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/fourleafclover.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/fourleafclover.png",
+      "gitBlobSha": "d9c6e5856a7d6e05cb1db79465f37764a45df4c3",
+      "sha256": "2262d03f016408b53d84e521cc319d7f03f5f1e158d70e5334feddbed7e7b916",
+      "bytes": 63178,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/gaebolg.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/gaebolg.png",
+      "gitBlobSha": "616deffd4a15d89c759a0dbbbbdc27737f464b0d",
+      "sha256": "fce34830bb8baaf1a4cfd9f9ecf0b5ff2d5cc475ad8f2441f9a52f5597164f6f",
+      "bytes": 57984,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/gaia.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/gaia.png",
+      "gitBlobSha": "758d2a7617f660f8cf3424efcbb32978481ee42d",
+      "sha256": "1e798fe6616a3e6e7f9ae376874d3131af08d59dbe50a73c0405661aff1fb4d7",
+      "bytes": 139615,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/genomemap.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/genomemap.png",
+      "gitBlobSha": "f57e50bd85cc69d9f4d428d4dfb42ccafe6bd743",
+      "sha256": "8bf397fa5310130499c781ea2c79a76119dd692a5340bb2ae03d0cc15fed5fa4",
+      "bytes": 142092,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/geometry.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/geometry.png",
+      "gitBlobSha": "3c4ada24ecd579432750ec59d23ee186219e12f1",
+      "sha256": "54c646834b0efaa34d45f2ca8509907f9b9e63f2a83f3b19f9e05962dc70178d",
+      "bytes": 43038,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/glassorb.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/glassorb.png",
+      "gitBlobSha": "411f6ce86457675b4544e0bbdf2c6c5f29bfcff4",
+      "sha256": "a1f854efbc98337d1728ca3299962787111f1ebbafecafdb9cdaac3469e5ff81",
+      "bytes": 64577,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/goldenroulette.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/goldenroulette.png",
+      "gitBlobSha": "4ede7ad69239e0697e43701bc8ed6a21a9b35321",
+      "sha256": "bd21d8834e902419e779b38e995647d1f87ed8b46438a07b35948ff961eff9f0",
+      "bytes": 135596,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/golemcore.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/golemcore.png",
+      "gitBlobSha": "d2846598d1c20ded34a1f6046b0f59255638a8e8",
+      "sha256": "c464348e1e1be6019ea7a686aa3b957e5527f7c7dce3e627e81c367fd7b401fa",
+      "bytes": 85356,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/gravityorb.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/gravityorb.png",
+      "gitBlobSha": "fcbb28eaa5fd8dc6e0e82a22d29f62ac4ead0739",
+      "sha256": "b7f30cdf2a76aa0834a6543a1e25405238f51e79ce5262d00ea68c139e8625ed",
+      "bytes": 90339,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/gunpowder.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/gunpowder.png",
+      "gitBlobSha": "af93dfddb602b3f0f711475b39a107d9fb6a52a8",
+      "sha256": "a69f30b59bfb00b6df7622b8cb78977b9e9858f04b32519f687682f234711472",
+      "bytes": 60250,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/halo.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/halo.png",
+      "gitBlobSha": "d6197678d2b3f4cf6086cafca2abe7863efd04ca",
+      "sha256": "b705186983ae3daa6113170b918372d72431cd97ad19c8c85ff906c2d55dc934",
+      "bytes": 90247,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/harmony.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/harmony.png",
+      "gitBlobSha": "ea2de64e5d76554e2ecba000473af3e138f7380a",
+      "sha256": "d238ab0c301c62a561eeac80d7a9fb9dd9842a7cbabca24f1133fbdc30174fa5",
+      "bytes": 101358,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/harp.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/harp.png",
+      "gitBlobSha": "13f00fa979e3b993d2149caf0785ba7982a4ea62",
+      "sha256": "f237cbbaa3866cafc28b67fe0c6019c04f35a92436eeda4da4d00c51456b8c9e",
+      "bytes": 92426,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/holychest.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/holychest.png",
+      "gitBlobSha": "61851f623e4e80ce4c863e0b2555ffb726d7a2e3",
+      "sha256": "914ecbd41220487b3939148bcf1d95e465bf1d5a5c4f0327fb03e44330937b23",
+      "bytes": 130442,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/holygrail.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/holygrail.png",
+      "gitBlobSha": "f2fc60a03da945ad5ebea514dc47ac0840de4b8c",
+      "sha256": "8bcc427916ebc955c644f81eeab7ec95cbf238aeba14b5dcb77b6a6c14e0372d",
+      "bytes": 67963,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/hourglass.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/hourglass.png",
+      "gitBlobSha": "5d57214f4664c17b4677574bb72a0d95fe050544",
+      "sha256": "056d24fa68efc12820dcbfeb5abd1cbd30758b56a9cdbeb7d66987f53eb24b18",
+      "bytes": 37334,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/hppotion.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/hppotion.png",
+      "gitBlobSha": "dcd0e51dd34f13dc51d6ce49e0f0d3ddc97393b7",
+      "sha256": "6bd3d43831d1614475c1dcbbcc4b8c5758ec6341110d835d8ec249e271a1489a",
+      "bytes": 53311,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/hunter.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/hunter.png",
+      "gitBlobSha": "2773ac10fbe3f96bb35c301b71dc778f24a2fa7b",
+      "sha256": "c454637077cea2c1ab3daab49a89720762e78f602002c7e47a66277828682a0c",
+      "bytes": 133844,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/hydra.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/hydra.png",
+      "gitBlobSha": "7ca3314742fd7a7d5396dd11d9a6398fd7bbe5f3",
+      "sha256": "8dcc5cd46926b8000b9446e54adb38d7e4eb6f1abd08a0d83839e8b1841ef562",
+      "bytes": 101788,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/ironmaiden.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/ironmaiden.png",
+      "gitBlobSha": "a5cfa92643c0a761f14a374ca02911298412ddd8",
+      "sha256": "1943d57718664e2d4f9e1fa67dc02af67b4e2a7d85bfcfdf948334193c851b6b",
+      "bytes": 51340,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/jetengine.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/jetengine.png",
+      "gitBlobSha": "50dad412ec2674595185353330ca0fc04622677c",
+      "sha256": "879c2e60da5deecae274b10c8220a5a8fcb9458c2cb0633d992ce5dd60097ec8",
+      "bytes": 118029,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/joker.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/joker.png",
+      "gitBlobSha": "ab19d65b3fb59b2b5743109073b43c950550faa6",
+      "sha256": "3ecec949c40cee5ddf8e5e46341047984755c510c182da47374d9be91be94518",
+      "bytes": 126030,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/keyring.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/keyring.png",
+      "gitBlobSha": "4098afd18826826c8e19b9be621419d94a06c5f7",
+      "sha256": "a0515313581eaa282243950bd22a05723db8d8a63fe0382775423de970f57e1e",
+      "bytes": 59989,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/lantern.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/lantern.png",
+      "gitBlobSha": "ee8a667fd19cb3cb13899f1ba9ca8d1e12070ab0",
+      "sha256": "0edf14682fa29f0575b99c969f928d37710067c4d7d1064b951c2d61ced6271c",
+      "bytes": 62820,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/lightning.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/lightning.png",
+      "gitBlobSha": "21180617f2bd8b4a4f2a06ded06f97a1e8b06797",
+      "sha256": "946e4647ff09b08d2b35b30d45a389f986fb6d73f90b3e02187d67d05126798d",
+      "bytes": 33941,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/lightningrod.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/lightningrod.png",
+      "gitBlobSha": "09f66ba7fab855e9384373404950aa6153950128",
+      "sha256": "ad46b19c274bad20e917aca4a693480a89dc4c9c16d254355e6d9a06eb0d1133",
+      "bytes": 26467,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/longinusspear.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/longinusspear.png",
+      "gitBlobSha": "f91445564784cf3bf53172a14dbb0e5448debc07",
+      "sha256": "42223ea327eb45b278cc8f24c49dced573342b701fd61cad99190db7416b9e27",
+      "bytes": 65134,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/machinearm.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/machinearm.png",
+      "gitBlobSha": "1579475681996ff031e9e465f9254ed3f6b5cc1c",
+      "sha256": "086e093af8fc926fe7d76b08e02a8e3ca274e8017d028b955c7a164699d4999d",
+      "bytes": 54128,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/magicbullet.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/magicbullet.png",
+      "gitBlobSha": "46215def7627fb726a0845c97d0a01dffd84997b",
+      "sha256": "6755fd74a9c4c04a37274312f51e67bf292912239136b47e16d5c11153270c5d",
+      "bytes": 43255,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/magicgrimoire.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/magicgrimoire.png",
+      "gitBlobSha": "b625f56cd0a6e1dbf7325ca055e3d8486efc9d95",
+      "sha256": "7296615cfd8da8a80a7882f36113003fec5b38e57a07b790d06139ce9d261492",
+      "bytes": 101277,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/magicscroll.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/magicscroll.png",
+      "gitBlobSha": "aad51c0812b25d84874bf6da9688f50df49636dd",
+      "sha256": "4190ef0335d520d18189f80efe3f5ffde9c1cc8709f89fcacd63c25191a8806e",
+      "bytes": 90131,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/magicseal.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/magicseal.png",
+      "gitBlobSha": "1a63df2913fe17d8bc04ad5788fc8b46ad017f88",
+      "sha256": "6473c68f777a68a18bb44c95fcab56b765a3568ceb4cf276ba077cd38c232a41",
+      "bytes": 50680,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/magicsword.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/magicsword.png",
+      "gitBlobSha": "93b0c5d04fbeb6d015f287b3d092b47e00002328",
+      "sha256": "775e53f63422410abfd21ae073913851eebd20dce153a0b2e02c38518dcdbdf8",
+      "bytes": 71519,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/magicwand.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/magicwand.png",
+      "gitBlobSha": "a620d3910ff3e4a4fd5d8d0f6182be61b061d250",
+      "sha256": "3db127fa069303c7a6aa50c7aa9686ebb690152d3d6ae098912336643849322c",
+      "bytes": 37404,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/magitechmodule.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/magitechmodule.png",
+      "gitBlobSha": "2dac30cc8a97254d9c115989d5d76b26f303a985",
+      "sha256": "12cd171f647a2a0da1c817a1d2e9e2ddd2829f7925b1df3666828a1f489b254c",
+      "bytes": 83697,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/manacircuit.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/manacircuit.png",
+      "gitBlobSha": "01acff5e295b6603832712a36a9e638057f6ef0b",
+      "sha256": "d097e438908db44cdc698564116c2cc4b46adbb091f426090998ebef11a7ebf4",
+      "bytes": 71737,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/manaore.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/manaore.png",
+      "gitBlobSha": "b8f79e433629538f94bd0cc8d5fb5aa325b8be57",
+      "sha256": "0e4dcd58c35e960f8935b8a5f38f3468cae047c650775c7f2312e9c96af2795a",
+      "bytes": 82320,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/manascepter.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/manascepter.png",
+      "gitBlobSha": "78a19487829683ad1aa1e8bbba63bbf42d8130b2",
+      "sha256": "dca189330a8be3707e64d9e6ccc1ae9847f3e28658d7e8de0ad9904bcbe800ea",
+      "bytes": 94422,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/manashield.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/manashield.png",
+      "gitBlobSha": "b39ffa995f40f7a0c678aca4be206553540c5e1d",
+      "sha256": "12621b77f23d3f28c7c75e622c93dfcc32a8c9bf226b0606333b1f505092c873",
+      "bytes": 119233,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/mandrake.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/mandrake.png",
+      "gitBlobSha": "185a5982c39f03852d860abeedf963f18e924ad9",
+      "sha256": "87c880a1f318981bfc1b55358bd6cb68d1a97014bdaca9038ef2af1aa6dd4170",
+      "bytes": 59407,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/maskedball.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/maskedball.png",
+      "gitBlobSha": "6de80658ff921fa4edb3dd0ec2f172006b20328f",
+      "sha256": "2c1350744e88aaa0fea3cdee1aea235e2f86e7c1f1e60e84ef094ae79b1f0d5b",
+      "bytes": 85028,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/merlincape.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/merlincape.png",
+      "gitBlobSha": "09e0fdfcaa50fd245a63191da9c87d2ab5cc4bce",
+      "sha256": "ec29e9de6b0c1ab0781c835d0db518d275d3c40bf44dcb0c0dbe5a2351a31a86",
+      "bytes": 77934,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/mimic.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/mimic.png",
+      "gitBlobSha": "314404f0fdd84a6346964502e6a8ee40d24508ce",
+      "sha256": "4bbadb56722ae7b06305428920f04475e95e1726db25d055dae02efc6271a860",
+      "bytes": 121150,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/mirror.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/mirror.png",
+      "gitBlobSha": "bc48b3e917a8f35c81dc2416638e61e21a44d819",
+      "sha256": "d2d84e2409d635e56e5c8ed78308999c48e1c8a81a014f252fa41251c8b9a0ac",
+      "bytes": 103297,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/mjolnir.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/mjolnir.png",
+      "gitBlobSha": "d4b07a00fd4f754e6fde98e23441572611425d3c",
+      "sha256": "ea1799bfaf64c81e696a8627da11cf8bab8eb1124e365dcb6ddde06f4260c832",
+      "bytes": 25167,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/mooncrystal.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/mooncrystal.png",
+      "gitBlobSha": "35a53dd7a55b00502e019e5f3a1bc8af74ff89db",
+      "sha256": "99f8ad215b2657c1b060de0b12c5a2e1a5afe35b7c545578f652b5ed9997eee8",
+      "bytes": 83649,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/mortarboard.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/mortarboard.png",
+      "gitBlobSha": "b4ca61d529b5c837209b141576cd1f1402cf0780",
+      "sha256": "87884424666f7bea3ba03941de93dd9123bed7e15afb013a8ab41ef3ed6c8304",
+      "bytes": 56596,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/mutagen.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/mutagen.png",
+      "gitBlobSha": "24881ad1711cc3fd4f3cd9c304b6174d16fb04d0",
+      "sha256": "8a7d63eb277267157cb0a835446473b91e0b4d1c46f384d1671a6ffe36808710",
+      "bytes": 86601,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/necronomicon.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/necronomicon.png",
+      "gitBlobSha": "10e5c2a4ec99ea6b5d9c58be2cacefe8c1147632",
+      "sha256": "b541f8a940092c8f1f849ef17e42b0fe509cde393f1eb737a16492aae27ea334",
+      "bytes": 95707,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/nexus.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/nexus.png",
+      "gitBlobSha": "af9a0a2532330a1be385f8105a3cdbecfe40e165",
+      "sha256": "6460608ea078d0ae4ec50b084c4019953914461c47afa9244bfa1be12f29866f",
+      "bytes": 99211,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/opulence.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/opulence.png",
+      "gitBlobSha": "29a3ef654af7e663f25532c764454b84b34d5b4c",
+      "sha256": "c1177fc42b84cbe34825194fbcd1f07c48fddc5322700c52af927e2ba0733e5c",
+      "bytes": 127658,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/organicshield.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/organicshield.png",
+      "gitBlobSha": "3b10c5d01549120db9ffa2502f541ed16ffec03d",
+      "sha256": "1a95e0e21c143ec900bc5745264acfe2eaf15b2c51df845191d193649730f5b6",
+      "bytes": 90506,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/otherworldlytentacle.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/otherworldlytentacle.png",
+      "gitBlobSha": "bba54defb587d5f034876a2e7b3e2db55643a25a",
+      "sha256": "0a6427d891aab7a9a9dca0c555bf8830403e1b34b62da6e0f498c6b6cc51f9bc",
+      "bytes": 81469,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/ouroboros.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/ouroboros.png",
+      "gitBlobSha": "684e9161e9552b68044216c5d7e356aedc19b263",
+      "sha256": "6e2b2ca913e2db508971a0ab1bc8aca7183129c3096eee8174f879b8aba23c57",
+      "bytes": 79807,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/overmind.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/overmind.png",
+      "gitBlobSha": "8fa4a299055466cb591a407fd7477d20ad868b49",
+      "sha256": "b690787e5a652962aefe643908a44424282b63d4c2f8bfe9657d4a6b1032ddc9",
+      "bytes": 80727,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/palmleaffan.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/palmleaffan.png",
+      "gitBlobSha": "786ade819242866db3e086086ea3b6eafea9012c",
+      "sha256": "4c24e1d6c1cb4bf3171dc8d9a67155994ed67809aef78bcabcae323e1f907429",
+      "bytes": 71351,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/pandorabox.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/pandorabox.png",
+      "gitBlobSha": "ac1839d2956a102c97c64c8c18b4f0f6c845f1cd",
+      "sha256": "6b39aff6ec1345069b59e0b1f1e476492f6edba28cacdfa05f3688eb076c7de6",
+      "bytes": 139457,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/peacetreaty.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/peacetreaty.png",
+      "gitBlobSha": "c2b488e8d9378f53a9d17b4fddcfef2496b43e2f",
+      "sha256": "2454eec57d83c70053549c5c660a071c27ebbd85d11f94d03c2e18e69c7907ab",
+      "bytes": 90808,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/philosopherstone.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/philosopherstone.png",
+      "gitBlobSha": "b07c92bdf1ec6fcc7cd3deb081579a0883d8256c",
+      "sha256": "95e8e884e9a6ca846fd2305b9adf8bf881cc26e9d512980f15860a8fa9cd5266",
+      "bytes": 66606,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/phoenixbow.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/phoenixbow.png",
+      "gitBlobSha": "3880a652a04a60a7e89d89bb6a0d5addb9c53a59",
+      "sha256": "ad2b0e8352f82bdf6cba35df43376880ca1ea0abd4e4c83f4d24f9ebf83cf1e7",
+      "bytes": 60659,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/pocketwatch.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/pocketwatch.png",
+      "gitBlobSha": "578f216dc5d4fb6e0edad82dfb0f030c672c4062",
+      "sha256": "255a828ce9a717aae02df6efe3000ac02fda84180814876eac10cd8173346100",
+      "bytes": 91399,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/pyramid.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/pyramid.png",
+      "gitBlobSha": "1fb37ad2993ca10fd042b0cacd7c3624514361da",
+      "sha256": "86aa0f9580b86f6cd56d04c12c17c0fdb14def68f91a9a1795d6e4c6729cc938",
+      "bytes": 91120,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/radar.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/radar.png",
+      "gitBlobSha": "d0fe0ceb0ea390f3ac48b95f6a768f0ae9eeb65d",
+      "sha256": "fcf661ad0cd3032f96d9b883ff9c834889f41f06624694a203b67de64bca7aa4",
+      "bytes": 97412,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/rainbow.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/rainbow.png",
+      "gitBlobSha": "5ded8303789b82cbee5fe12278735e5a267481bc",
+      "sha256": "a0c56263c9f194c0333af37ddaafdedfa4191fa9991c82221fe5c085f9ec6f5d",
+      "bytes": 84141,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/reaperscythe.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/reaperscythe.png",
+      "gitBlobSha": "679222c5c90023bedfaba3e04b95f8babeb45ff3",
+      "sha256": "553344fbce6b194c0392784d98e4eea16e56a9207b106122d6262dfaf46add81",
+      "bytes": 53968,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/rose.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/rose.png",
+      "gitBlobSha": "b26cfd82e1f0bd7e68d35e3f4d1e773f72059f63",
+      "sha256": "2bbc59f24f0b7ed0bbef69c02073557c35df9ae4d6b708f9935c77219ac43687",
+      "bytes": 56367,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/roster.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/roster.png",
+      "gitBlobSha": "0f0d16fbeb145a19dd43f9bd79620af7edeeb75a",
+      "sha256": "06491cf383db832138c55b1a7fe7e1327338b48a207105835e64937619cac784",
+      "bytes": 78396,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/ruby.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/ruby.png",
+      "gitBlobSha": "dc56f1777f56e8057728031edfe159245dea9312",
+      "sha256": "21ec73667b192bbb7a242385e12b864321f62c194f645ee0f4a032b0e82d05fd",
+      "bytes": 79541,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/sacrosanct.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/sacrosanct.png",
+      "gitBlobSha": "373f427c0154889ff211fb251e7fd2d41a8455b2",
+      "sha256": "6747824fa8ece75e2c30666d1df0e1c620648b0042dd365a20c52dd969ff9688",
+      "bytes": 77548,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/sample.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/sample.png",
+      "gitBlobSha": "7231d2a9f93331ea9c2765b61d5896a08c086ddd",
+      "sha256": "264b433fe1206c69a83f5295c3a173762ec18c168f84c0cb5b477ce199e77d7a",
+      "bytes": 71806,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/sapphire.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/sapphire.png",
+      "gitBlobSha": "5a01437da71017f952bc70941b6bca8659f7e228",
+      "sha256": "767eb0f5b9b6d37877295a646681e59d9f9ff803cec242067827269fc81027fb",
+      "bytes": 43557,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/secondheart.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/secondheart.png",
+      "gitBlobSha": "6437f324dd1ef8cec0c1702536e4221d4c736187",
+      "sha256": "8d34d03e55016db0d9d81500eeeecebe37adc8d0a7c90acdfbb805c920fc7f50",
+      "bytes": 138484,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/shadowcape.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/shadowcape.png",
+      "gitBlobSha": "77ca74a0e1de04ae2fdc4fd1848a4c7f475ac83d",
+      "sha256": "7ff3f04b35feee61041bb6ad5bd5ea8fc4b7c0f74929f97944275c02e68e2f67",
+      "bytes": 57556,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/siegehammer.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/siegehammer.png",
+      "gitBlobSha": "61b6646c030f697f8fed2c61e78f041cee9b89b3",
+      "sha256": "36a93e950898d06f9982e0b5c8994701ac95b856c528bc84f70e90af09f9cf53",
+      "bytes": 68895,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/singularity.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/singularity.png",
+      "gitBlobSha": "8dc32b0296d30c5834d512f8ab86a689f4c9b47d",
+      "sha256": "34b7aa0e80c817b7cf59ed633be7fb32b75013a402409391f254c2442abea10b",
+      "bytes": 91785,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/snowflakecrown.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/snowflakecrown.png",
+      "gitBlobSha": "7b03205219cd97d82fee0df8b0daad6eef9e7b5b",
+      "sha256": "a4c53a38d38a185b761a036aac9577dd6ff002549a11b451bb609f0d3d234d8e",
+      "bytes": 57634,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/snowman.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/snowman.png",
+      "gitBlobSha": "278695eb0309f09c63074f21875470f364aa6682",
+      "sha256": "83be0c0eb8753c113fb3fb45177aa79d1ce249cdd5cbd5f149864d41f9541e09",
+      "bytes": 54830,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/spacetimecircuit.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/spacetimecircuit.png",
+      "gitBlobSha": "a80f68012c530e65a53475cb9aaae21c2b1d1a26",
+      "sha256": "39604c0a91c15d97780364897e58c9cdca3ab58d7dac270ce888d3721552e4d1",
+      "bytes": 153995,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/spellbag.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/spellbag.png",
+      "gitBlobSha": "7a64ec1f6c8fad06101e5248deebeb29baf86622",
+      "sha256": "db681b1c68e8eda8d40e5f9aa0a38bde209cf47b3ebe5f3226c70ddc59bdcac5",
+      "bytes": 71988,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/spellcape.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/spellcape.png",
+      "gitBlobSha": "4237190d6e0410bae3b6f2244df794b96d09f569",
+      "sha256": "563a9d24e68ffb60595954e601f0e7557a44b5c552a1ad9c60269069993995b4",
+      "bytes": 95921,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/spiderweb.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/spiderweb.png",
+      "gitBlobSha": "4a1cf00df0290aaadc7bb31a98997573e8068851",
+      "sha256": "d7faa9da07ebf86813a11d2000a9e933ddaa35698982af3388f7478bbb9169df",
+      "bytes": 84005,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/stainedglass.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/stainedglass.png",
+      "gitBlobSha": "7aed3dc9dcf49d6557e01d3b61f42c3a34f79aa5",
+      "sha256": "e1e88a90e4d2a7872b6586d70bf01a7e1df7636031640432b16dfb2608116150",
+      "bytes": 110200,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/storybook.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/storybook.png",
+      "gitBlobSha": "8904b30bbe9cad85b019ed3215d6429aff613213",
+      "sha256": "c5a2db2560e46d1c8506ed1de4dea12b081db22d165f30b265017bca3be8d620",
+      "bytes": 114270,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/strangepotion.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/strangepotion.png",
+      "gitBlobSha": "ab9334578d7964cb6f227e5511aa707f2b29864c",
+      "sha256": "6eb5974db819b2e3d92433c377a407224380af01d2557da6a0d2881922e9236a",
+      "bytes": 55114,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/sulfur.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/sulfur.png",
+      "gitBlobSha": "fab7eb89c55d74455247d15f6efd1d4ec4baaf36",
+      "sha256": "5d06cfcefbadb10259cffd5d5e55f8c56f98f8039220f318749d2eeb85e743d9",
+      "bytes": 91312,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/target.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/target.png",
+      "gitBlobSha": "7b4bff33e089fad4b383013cdf65257f678ccc97",
+      "sha256": "34321b2eb568831b719ec1f8ee7a8134956bfb39633198a9b10a19e7c4dfe3a9",
+      "bytes": 89082,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/tarotcard.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/tarotcard.png",
+      "gitBlobSha": "52baccd1cfe8c88d99cb7adbd882db3ad4cd36f0",
+      "sha256": "a527247548a520316e01e199bc7b4db2ef7c61f6887af6bf01a7ff8f4ef0dcc7",
+      "bytes": 32149,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/titanpower.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/titanpower.png",
+      "gitBlobSha": "17e9960cef1621bf44dfc725b1113f06241db2ae",
+      "sha256": "d3294fa3393b08783ed184e235e6af8890e3880b4a3982b90c09cb2fb174f84f",
+      "bytes": 111160,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/torch.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/torch.png",
+      "gitBlobSha": "473b5f2dd20cb0d480fc5ab3923b9159dc172f2f",
+      "sha256": "937d6cf84c704785bb75a3eba65d2463b9b4c940810a7ca4a92e17cf716ac77a",
+      "bytes": 61684,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/totem.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/totem.png",
+      "gitBlobSha": "f625a9148b066fa4b0cf8dbfecf93d7bf58d5d4b",
+      "sha256": "0c82c430dc6e9049c9bc57fb3cfd52fbed2f60e604dd6cc6ffd76aa13abaf43a",
+      "bytes": 85328,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/toycastle.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/toycastle.png",
+      "gitBlobSha": "3ae1272027c375cb515e15518ce6b1c0f323c127",
+      "sha256": "2b29d37a9540354e3557a43eafbbb7b44b7b4943ff6ed0233ae0e64dcfd8c898",
+      "bytes": 112668,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/treasuremap.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/treasuremap.png",
+      "gitBlobSha": "3735497894f7c6979cacbf4f7f6b1c7f5cb4bf58",
+      "sha256": "9cd3f181e6932bb074d4c3eec6cc34e4e7347e19a16f64f46f2b66d3abb4ebbc",
+      "bytes": 106518,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/uranium.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/uranium.png",
+      "gitBlobSha": "9bb17f4c80a12caa39d32ef4a6304ce66199dc82",
+      "sha256": "69eac939bdb9119e64a6606a7f154d9ce49d72bbaf7aef36f36dd484062ed886",
+      "bytes": 42620,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/warflag.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/warflag.png",
+      "gitBlobSha": "d7788a4391a4cd6c29d00983e483976ddd898db9",
+      "sha256": "9239ca0b82da4ee8ce6b7a51f8543fcb94c5ebe9a52c647b0ead1f5492448e11",
+      "bytes": 95386,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/watchereye.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/watchereye.png",
+      "gitBlobSha": "1bfda124c12c5847c3631a73e075a59426d3eefc",
+      "sha256": "6eab5c74875bc6960bab767c57bc5948a596efe4dfbadb03c3414ad7af25c8df",
+      "bytes": 90876,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/wavecalmingflute.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/wavecalmingflute.png",
+      "gitBlobSha": "18ae2465f51cd7f9fcdcff01d636f30fc1246670",
+      "sha256": "f04d9266bcf4bd6b2415e81c779b5dd5478ee76468cddc311ac172231ca6c015",
+      "bytes": 66992,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/weathercontroller.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/weathercontroller.png",
+      "gitBlobSha": "62fd834be8c064d8c1f2ad2dfe56e5a3a7e27a78",
+      "sha256": "9de39198bd4b493dabe811cdc137dd5dc69c261c278c0228e55c11e899f0d961",
+      "bytes": 123381,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/werewolf.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/werewolf.png",
+      "gitBlobSha": "1db72df903fa24950a869da3fd86a9785cec9a1f",
+      "sha256": "36c93c9b70a4f2ece711f0c8df09939f23cff845f2468526a3338322fcfb8594",
+      "bytes": 75320,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/wizardhat.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/wizardhat.png",
+      "gitBlobSha": "a28b0f04020c4f0b8dfcea1ffd69a5cdf6079c4f",
+      "sha256": "8fe37c86e30076f351f6a15a7bda32aec99545278f1aa3ed2ffb5b6cedf12704",
+      "bytes": 64648,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/worldtreeleaf.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/worldtreeleaf.png",
+      "gitBlobSha": "8ad53d6e51b748a451d07b187e540dd1a60521af",
+      "sha256": "499db624907b7903ae69af48e98ebc91a158174ea8dd22de685b2d610ede866f",
+      "bytes": 115440,
+      "kind": "image"
+    },
+    {
+      "file": "assets/artifactImages/wraith.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/artifactImages/wraith.png",
+      "gitBlobSha": "9558b87854b9c29ebb56df4ef06a6dd28945c051",
+      "sha256": "f3579120f4dfa1bfb2d8f3a57c24f14e34c204e90b1130ec1e6f4b060db4851d",
+      "bytes": 79933,
+      "kind": "image"
+    },
+    {
+      "file": "assets/icon.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/icon.png",
+      "gitBlobSha": "b3b12207b474ced2e55a628ecd2671088e945983",
+      "sha256": "7adfd62a91d6b6b676206d0c0550545e79ff434895f30017191338cb44404670",
+      "bytes": 11753,
+      "kind": "image"
+    },
+    {
+      "file": "assets/icon.png~",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/icon.png~",
+      "gitBlobSha": "8bebf9c09bb8e429125da0222ee2e41155947592",
+      "sha256": "fb5b088395761f406734077fcc311ecaf1d703b94234ae34b0ac927ef1100303",
+      "bytes": 7913,
+      "kind": "image"
+    },
+    {
+      "file": "assets/leftarrow.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/leftarrow.png",
+      "gitBlobSha": "d140f474eaf662b9680f5c13fcd6c2f0cc730839",
+      "sha256": "48dd98a513cc12eb5f4644e82c229196e53e744be278c195c152f37c268d509b",
+      "bytes": 554,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/ageOfTheSun.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/ageOfTheSun.png",
+      "gitBlobSha": "2cc5b5f4877c6cbc02cd90973cd3ac83ceaef77b",
+      "sha256": "a7128d953ca79ccf2d465e8f8aa5d8ae3c15f73a1a5c2a36c9958d65308ef9e8",
+      "bytes": 110532,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/astrape.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/astrape.png",
+      "gitBlobSha": "1c923cb7de30dd01d27fe025db0210e6cfabe8c7",
+      "sha256": "8abecc51ccdb7a587b3995474975c6b16fca8b3c08157b7c34b712e67c1baf2a",
+      "bytes": 57668,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/avatar.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/avatar.png",
+      "gitBlobSha": "fc7a4b4d0bb89506a5c30c02cc7714da8bf69476",
+      "sha256": "a9bf3fbbadf4f0f052012fada7a8e1f9e6daf1ebecd55554827f87e09c14cf91",
+      "bytes": 78281,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/blackDeath.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/blackDeath.png",
+      "gitBlobSha": "0e66b08b59499d7e0368ebb74a50c98db73663f1",
+      "sha256": "2eb626fe0e30579ebcc113b84994582137e43740d3ab9eaabed440900790c1a8",
+      "bytes": 63575,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/blackHole.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/blackHole.png",
+      "gitBlobSha": "4c599e64df2fe8f4895b2784e0d5f097c1eaab0a",
+      "sha256": "ab332c1fb94c2da0018754113cdb824e510ab5dc63796a971061f5eac1175470",
+      "bytes": 60835,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/blaster.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/blaster.png",
+      "gitBlobSha": "736fd5fd98eb8069cad6cb82a0a8e5a2cd6f2291",
+      "sha256": "47e2b8826db7af0a2bd43820d80bdf981a3f49752e96f650f03f57dce37b8706",
+      "bytes": 54960,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/brandish.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/brandish.png",
+      "gitBlobSha": "0c497ef40a5ec92cfc75b0af71ce4b4d2f0ef35f",
+      "sha256": "1fcce0613024a0c3b427bdc122f568e348df9ecd24fb3d27059a7bc562ed95e9",
+      "bytes": 80485,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/breathOfFire.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/breathOfFire.png",
+      "gitBlobSha": "e407889ce40a2a7458742fb3a4cd1b7d47e1e4df",
+      "sha256": "c8fa44726676c9386410db02f26fed25c9578b0948402e7e5bda2efac20c1b7c",
+      "bytes": 102953,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/crazedSpray.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/crazedSpray.png",
+      "gitBlobSha": "e200d219c30f3648dbd8a980167dd1d774414b21",
+      "sha256": "2decc5dc05eaa01c42e13192e9f2e0025cab71f1d312ca794df45fa562196378",
+      "bytes": 87707,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/currentOverload.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/currentOverload.png",
+      "gitBlobSha": "4e79071a7c37e7f28a556383c41cfbf5e8e94e37",
+      "sha256": "3d4833e445ea8407b841c5c3f7607b3f413ceee2a3de9c7fcacf2fa76a8598c7",
+      "bytes": 53693,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/demonEquation.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/demonEquation.png",
+      "gitBlobSha": "1573e16061422e31ff221275c2c9d977bcf33282",
+      "sha256": "ddd69e9cf537be26dee2b412ab3b45c12b5ea2630b9f6168fdacfee9e4445641",
+      "bytes": 84751,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/destroyer.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/destroyer.png",
+      "gitBlobSha": "9a68baa86c5a7f498b832eac7b5e49b34a2236b1",
+      "sha256": "734fd44771e3699d5159099fbb0636e18c484c8a2408124e87dd17c30cc81eff",
+      "bytes": 58173,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/empyreanWrath.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/empyreanWrath.png",
+      "gitBlobSha": "1336c0d77c5c90fae823c5cb5310c38e8c03a2cf",
+      "sha256": "fe693e0a49e11371918ee6e92d13adf1a04b61c3ab04eec3bf29f9fdb6686150",
+      "bytes": 69366,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/energyBombardment.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/energyBombardment.png",
+      "gitBlobSha": "4647cc0dabb1bab915c9f07dcd764f24f4088132",
+      "sha256": "8e9748450eeb08e2ff637a6783f3da4ceaed9e605666e8c7df16b9a8de92d653",
+      "bytes": 104513,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/etherBlaze.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/etherBlaze.png",
+      "gitBlobSha": "82606cd005bc2d9c29ef1a3684ce5a420940a420",
+      "sha256": "caa5a430713abe17dc1bdd15871ba679792348f6b83c7f1e5439555d9df89b2e",
+      "bytes": 107694,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/flameStorm.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/flameStorm.png",
+      "gitBlobSha": "cee5f81c586a524e055aa4753d9e88dec9e85bca",
+      "sha256": "15db6cf765a9cc5ef625db05da10d906677f3efeb6b8cea07ee5a23dbd529652",
+      "bytes": 117232,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/frenzy.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/frenzy.png",
+      "gitBlobSha": "a41e5f2d22182f879ea31e5d09966f4902abf239",
+      "sha256": "17ab53a198c6f04b90028943834cd8f06b119858c779af470dda1b703d126f5c",
+      "bytes": 94271,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/frozenHeart.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/frozenHeart.png",
+      "gitBlobSha": "85274311198e386b3ad32368f2fa6518c0ef33a4",
+      "sha256": "f2189a26dbb4f6646e8f5fa41fe90f5b0a12bc3f039cd9b6432c4ab271a1dbcf",
+      "bytes": 53136,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/furnace.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/furnace.png",
+      "gitBlobSha": "7af88ac30f95d393fbd1ce562980d67a4a3c2c8f",
+      "sha256": "16b42a6d6832c6492c580a5892be543d8ea663d4cfbb01d107dd63f320d7166a",
+      "bytes": 129886,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/gate.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/gate.png",
+      "gitBlobSha": "e6a58676a15552e7768a2e0ecc72bdcb57161546",
+      "sha256": "d626236b64b43f1a9f0048a442acc6a593e10352d4c5bbbb45f18422a93d6d8b",
+      "bytes": 77266,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/gateOfCreation.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/gateOfCreation.png",
+      "gitBlobSha": "ea705efc0d0a6104459e6ccce84928a6d0ff7df8",
+      "sha256": "598b0cac69ed4ebb0b2784642a6d914066daea04a2f1806064460c6695096523",
+      "bytes": 96952,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/genesis.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/genesis.png",
+      "gitBlobSha": "ad45018015ec134c6d37c5b4a69a75398fd6e9ff",
+      "sha256": "a283d29460981c297769a4281d0ed1e7469eeb4b553b57c728ad66090776cda5",
+      "bytes": 71191,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/genocide.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/genocide.png",
+      "gitBlobSha": "4aef0c1a5b21f4e83b8e602849b786f3a96ad9e6",
+      "sha256": "65adb94c5454faf0bad146672de07ecbf42177650c6eae0321428a2a974e869f",
+      "bytes": 59886,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/ghastlyRampage.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/ghastlyRampage.png",
+      "gitBlobSha": "05b040dbfff696c3c0312a024352588cdd986545",
+      "sha256": "be282ec8ee063330ae1de91434eaf453348a1c1c39f3e12f876ea82f7ec8dac0",
+      "bytes": 82256,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/greatFlood.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/greatFlood.png",
+      "gitBlobSha": "b67856279c8b10220df090ff89f1b0df6d98a635",
+      "sha256": "397b1514b72e65e159d2c02e4902816f4a07440709b3825f025bf197867f06d1",
+      "bytes": 106206,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/greatImpact.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/greatImpact.png",
+      "gitBlobSha": "a935041ac5edce0ce0fb01abd159d00c9dfd1766",
+      "sha256": "9adcc9b0a8fddeec127e88690fb37aa6b1392deaa5c84f29540a63395a63dff9",
+      "bytes": 94340,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/greatRift.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/greatRift.png",
+      "gitBlobSha": "30b37dc8eeca474d47784d53aab910f3e4e8e38b",
+      "sha256": "e9c9d831624b09505072587e96adecc0c1edd042993045c84213771d77b340f9",
+      "bytes": 95349,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/heartOfLightning.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/heartOfLightning.png",
+      "gitBlobSha": "95caf200ad278c1dafeca88281e767b332da511d",
+      "sha256": "4a6f1642429b354aca9752ba7c509c76c245ff25283ff5fc5a3df00b54fc065b",
+      "bytes": 63782,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/hellfire.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/hellfire.png",
+      "gitBlobSha": "eff00f4b257070472921d8391168f3d2cc90dc2c",
+      "sha256": "5598b9cf46ac6f8d961c0b7eaf7f14f6b03a06f1c1ac13afb04a26edcba6585f",
+      "bytes": 105353,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/hyperion.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/hyperion.png",
+      "gitBlobSha": "77b065fc43963da80df509cbc9447b8c826b6c52",
+      "sha256": "33874f99e153ea58001cb32b5d156b8cce1986e5b110faf900e1d92a1cd97e74",
+      "bytes": 116981,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/inferno.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/inferno.png",
+      "gitBlobSha": "4805bec368165d447c367f20c23898632fc36182",
+      "sha256": "e43b8862a56211ec7149315b6133437fec31bde6309a8b86f2c4e80046cdfd33",
+      "bytes": 109477,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/lightningBolts.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/lightningBolts.png",
+      "gitBlobSha": "444b53509063f25b233c3471d61c20b71dfd9c88",
+      "sha256": "3ec01881328838a770ff8ce8bc5ca53cc3953b7a9dbb1fe0c433b9b79a9c6599",
+      "bytes": 82434,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/lightningBreath.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/lightningBreath.png",
+      "gitBlobSha": "c2d1b123e309078eddf5dfb62e9708455a501b04",
+      "sha256": "fa32eefdbb5e5a7dd8c18f847fe706bd6b62c35da5fa27e2ba445403d3fd5d9a",
+      "bytes": 51505,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/lightningCalibration.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/lightningCalibration.png",
+      "gitBlobSha": "e595929f98c0eb7b2e1a3c61e9b9161cbd660606",
+      "sha256": "1a7f4eca0c48a603f700490dc514678c12925ee91f255d96ba8234d6773641a3",
+      "bytes": 71303,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/magneticField.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/magneticField.png",
+      "gitBlobSha": "75b9ec8fce023c59150c8c23dc8b6b63e5c8b21c",
+      "sha256": "10130be54ce4a0e9a0f4257c736464b358b2a482ac542a7fbfc36ef35065550a",
+      "bytes": 48860,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/manaSpear.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/manaSpear.png",
+      "gitBlobSha": "85d9e44335ca02a47f042387cb66fa8aa7930543",
+      "sha256": "9d74d49be2c827125453e7c9710176c7ceeceae443d01eef53d4b286d4b457f5",
+      "bytes": 86359,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/meisnerEffect.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/meisnerEffect.png",
+      "gitBlobSha": "250acd8a7c9ac91bbb776edba84f9bbe8c601330",
+      "sha256": "53029cf84ecd9b0a87f489169516e41903aed8e389c838a3e45b97734f799338",
+      "bytes": 55033,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/neutronGeneration.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/neutronGeneration.png",
+      "gitBlobSha": "7381a1cf210e5219f723475466261c7f1136879f",
+      "sha256": "7f187c63305d20066f5beafe14b8166cdefc4b807c761761ac23a960118cdae3",
+      "bytes": 115947,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/orbitalStrike.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/orbitalStrike.png",
+      "gitBlobSha": "f4d397092d9bd2dfe62c064c1e9f5d5da3e22faf",
+      "sha256": "d37714e0b30576df87714d0b75055530dec7540b83d887f9c582c103fef720b5",
+      "bytes": 69960,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/originExplosion.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/originExplosion.png",
+      "gitBlobSha": "dada750184a565359d7a6862a3e72352274249e3",
+      "sha256": "42400feb68fab97524a70da501a13dde9fd9391625e282bc12a008a278f4188f",
+      "bytes": 106347,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/overmind.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/overmind.png",
+      "gitBlobSha": "5ca16b42fcb995fdfa5da9535ac8736a90661bcb",
+      "sha256": "feec8732b0eaf583936ee746c98fa76006e8762dc2d79538ed78a56c45158d08",
+      "bytes": 77257,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/perpetualEngine.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/perpetualEngine.png",
+      "gitBlobSha": "21125118a80e65ae28185c77083d6dedc1d279cd",
+      "sha256": "2c44b09ca297111d6ef57cdadff8a98caa9aea3b877da3e5727c420e7fda405d",
+      "bytes": 50164,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/phoenix.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/phoenix.png",
+      "gitBlobSha": "9f274e7d5a459565ad43a387a9470624997afb48",
+      "sha256": "543e0d3fd75851c8655baa68686c9640d30dc13cc73c846e1df5c8b488c4cd77",
+      "bytes": 112288,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/photonExplosion.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/photonExplosion.png",
+      "gitBlobSha": "be80f95444867c521d060ab203827ef1147bf0d9",
+      "sha256": "85377941b00a5d90d1fd71b01db26286ae8e0daae8d1baebcd43c5e781512d1e",
+      "bytes": 101127,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/plasmaRay.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/plasmaRay.png",
+      "gitBlobSha": "3afa54399fceefcb414f7bc1e542f35717c401da",
+      "sha256": "e1d0057b0661611a35e3cc911e1c1dd049b914424042ba8117940151ca6707fe",
+      "bytes": 72274,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/prismSpray.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/prismSpray.png",
+      "gitBlobSha": "64d04976888456178415f40424f188793955b1c8",
+      "sha256": "9aec38d2cf94ba4c3d2a587018cde5aee2abe83d7f01f750ce2f6996109ad30b",
+      "bytes": 88072,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/pyrotechnics.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/pyrotechnics.png",
+      "gitBlobSha": "c772bc4818d81835a6f6f3c44e9872e452429193",
+      "sha256": "7fd1268f2736725228fc52960b435a2a70214d4517a602c519ce2ee78f43f497",
+      "bytes": 82106,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/reaction.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/reaction.png",
+      "gitBlobSha": "dc0b4a69286dd1691e2fefefaed188bafada453a",
+      "sha256": "a3f210cd27a76ca2a4390a899ef1c724729f4580fb5191781f83eb376412aec3",
+      "bytes": 93125,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/rulerOfStorms.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/rulerOfStorms.png",
+      "gitBlobSha": "38581797a5286c7103b0b53372e3ebd74de3dae1",
+      "sha256": "5fbdc5679de0744a1ee1c5476a4b0e7539be80a876cd24527670d70eb83dc2c7",
+      "bytes": 89321,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/snowflakeBlossom.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/snowflakeBlossom.png",
+      "gitBlobSha": "996cbfc6c1c790106d3fb9dd42808524bd59fc47",
+      "sha256": "ab13d0336f05a0ceb65f779256e838ced9d71e939ee7cf8e85644848774a49d2",
+      "bytes": 83660,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/superCyclone.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/superCyclone.png",
+      "gitBlobSha": "0ae344d32d2d380352c0418af709666cabaf8d47",
+      "sha256": "244086fecf7334ca67e4cc2c0b3516036be0337406425266c800587c13143601",
+      "bytes": 102298,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/supernova.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/supernova.png",
+      "gitBlobSha": "913ab707963ea5c746a98eef8e70da7487e9e400",
+      "sha256": "68d621f212bc676d1c6a085018abf6c17c4685b63feb78ce8abef4e3e8a906d7",
+      "bytes": 42644,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/telekineticSword.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/telekineticSword.png",
+      "gitBlobSha": "2afbd82e0d142a6dc1471a4f8f097299d7a70187",
+      "sha256": "70cb1cd407a108096a97d591a24738ffd0fa690c7a11c96e630a493be9fd1d8e",
+      "bytes": 74506,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/teleport.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/teleport.png",
+      "gitBlobSha": "2719da730e62d687fea73e154b4a932a9c2fd620",
+      "sha256": "5a318392fc727e1872128996d0e136aaf8c56f3cc1d27f89bdecb65f1d012665",
+      "bytes": 92940,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/terraCurrent.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/terraCurrent.png",
+      "gitBlobSha": "cd9463b21b9077910a4da6856aa420523fed378b",
+      "sha256": "7a2ef08abc93b8043cc336f0f9adec4260e58526d1ce3920152f813fe2469772",
+      "bytes": 89809,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/vortex.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/vortex.png",
+      "gitBlobSha": "fcc9129755a8e86831a59d5af8c1cf6bf02c760f",
+      "sha256": "f312d26b2eacb977bf4ffd2515664493fc3b330cb9af156909d266fc37be1b2c",
+      "bytes": 66451,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/warClimate.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/warClimate.png",
+      "gitBlobSha": "d8d6db70f751749da908dfb647b06e34a5101890",
+      "sha256": "cfa55aa1409d585feb4409f1e7b8573522fe5ad81fd107889767111e90ad1d7e",
+      "bytes": 100140,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicImages/winterStorm.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicImages/winterStorm.png",
+      "gitBlobSha": "4b01eae075f723e7bb13bcfb0ca15410a128d79e",
+      "sha256": "2e11a5451a2b10bba84b61991e2988de4cec2ff0f9fa79354e2ca15ec05d3757",
+      "bytes": 69805,
+      "kind": "image"
+    },
+    {
+      "file": "assets/magicSurvival.ttf",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicSurvival.ttf",
+      "gitBlobSha": "a53fb82112cca103da32884a9ea69fca2d743f2f",
+      "sha256": "08c0cd4b72d3f0edcffa5b799578009a02b3ed720c58df06d9ab750534c41e65",
+      "bytes": 19924,
+      "kind": "font"
+    },
+    {
+      "file": "assets/passiveImages/adrenaline.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/adrenaline.png",
+      "gitBlobSha": "7e65397a11a876e74be213580ac60efc21f24590",
+      "sha256": "6cbbdabb8eabf1fc06983c07c746780bb905ebcf3d8ce83cb74bcea7e305d1e9",
+      "bytes": 55763,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/arcana.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/arcana.png",
+      "gitBlobSha": "9b5b425ebbaf5022af3630dfe7ca4373d0f769e9",
+      "sha256": "5348ecda4bd13697ccbd28d9e7542869ad61888aaf419a5fe418eee114dd78fb",
+      "bytes": 60217,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/arcaneeffuse.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/arcaneeffuse.png",
+      "gitBlobSha": "fd3e6bef3d6a4425eea62883f94927c20ae035d0",
+      "sha256": "2aa356b83f9df93b2ff78fdc2e5e21b94f39b03d878d0fa0417a8d4e1c4e87d5",
+      "bytes": 67787,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/bloodmagic.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/bloodmagic.png",
+      "gitBlobSha": "b18dd4e507fe85eefab6eccc93ac7aa8a7cac9bd",
+      "sha256": "7600739833cc96a46fbc7e6f34f580369b0272c8b46d8165b89469a416df4d9d",
+      "bytes": 70397,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/chakra.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/chakra.png",
+      "gitBlobSha": "43716493d17293731076d3135058a44915d16e8c",
+      "sha256": "10b89d7a7c216fa240fa60cc3dd3ef8ff59ee408691d0bc3a752b48e361ee040",
+      "bytes": 80996,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/concentration.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/concentration.png",
+      "gitBlobSha": "a78f076ce4317621c135d6a833e9dcfc52fa5ff6",
+      "sha256": "e17e2bf6da72f5b7179f937fb0e322c70d06756fcf6412ee9b1adee58121af5a",
+      "bytes": 67652,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/curse.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/curse.png",
+      "gitBlobSha": "c93c792a9062aca5c3c43a793e24d07bfc024259",
+      "sha256": "2e79db89a20053f4264eb8b6ddbcb8082cd7075c5083c317bad57c81b31be5c4",
+      "bytes": 64884,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/doctor.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/doctor.png",
+      "gitBlobSha": "30b0ad391e2a540c57600a7453a19a6598ebbd14",
+      "sha256": "a055344443a82bc008346ab6a1999e23d69778665c2fc9c0e0ec00dd4548aae6",
+      "bytes": 72991,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/eldritch.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/eldritch.png",
+      "gitBlobSha": "3c99526720da4216037b8bddeb664a20ad9227d8",
+      "sha256": "8ed56d95df2f5f25df6e9186fcb4bf0b2312916c45c48081610bae29de4b3a06",
+      "bytes": 62512,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/energyengineering.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/energyengineering.png",
+      "gitBlobSha": "886d23ddf683a827ab15865fa72e12a85bbebada",
+      "sha256": "43d758f0919e15a95e9a1040b90744abd2f0c6f53a0678e865db2d4394cf43d5",
+      "bytes": 38956,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/explorer.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/explorer.png",
+      "gitBlobSha": "ee53b0d4aab3d8588f95e692bbf6a22626756641",
+      "sha256": "c483c2c1be5d101b6a4ca2a19843dc007bb05a8952ff6d5e9bee2de4400a8a09",
+      "bytes": 45944,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/fastcasting.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/fastcasting.png",
+      "gitBlobSha": "215c820247350bf349cbe2eaf62a1a7fe5582366",
+      "sha256": "cd464b60fcd0e8292c8035aab97ee019397745dc83491098e9f8d6c27e3130fb",
+      "bytes": 55519,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/guardianangel.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/guardianangel.png",
+      "gitBlobSha": "d3ca30d1e084af18a064c2d5fc0b9b26fbc432a1",
+      "sha256": "fb94ebdc6fd7d33b008be6451bbf8466ab089aa6c621c7ddc8dddd34f60ab07b",
+      "bytes": 30195,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/haste.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/haste.png",
+      "gitBlobSha": "22670c1b390cf7ac22a98f4d144ad84d5a7f4e65",
+      "sha256": "72d6d4ed92f32cc7e7ca2fd02ad1ce90f8fab8c2a57578c211f977c422e7f74c",
+      "bytes": 66564,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/intelligence.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/intelligence.png",
+      "gitBlobSha": "25eab21f3672fe4fdfda15854431d165a86f3d89",
+      "sha256": "474eb55aa674ce2ede2026f9e868fe08a7cf4e30bf8d5cce6868e343087cd052",
+      "bytes": 64047,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/juggernaut.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/juggernaut.png",
+      "gitBlobSha": "259f40eaf8030a0852a305c786d6889f4f71fd19",
+      "sha256": "014f9d1d12ecfb9356fcc8cff329f044ac2e963fbf4bcf24d66da343e75a9fba",
+      "bytes": 34131,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/lordoffire.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/lordoffire.png",
+      "gitBlobSha": "2f9f1d84bec367b38155d17c62bf2d515d796e7c",
+      "sha256": "6b168ec61174811061ae17a8254ebdca948a8bc9abca2972129a35a7aee580dd",
+      "bytes": 68647,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/manafactory.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/manafactory.png",
+      "gitBlobSha": "0a3d31f44c8d21d646bfb5667862fcb1a10f01f5",
+      "sha256": "c66eaa175bbcf6322f44a267a5106c218283a5a0db127cd0881b42c508a1dd52",
+      "bytes": 63386,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/naturewrath.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/naturewrath.png",
+      "gitBlobSha": "b6cee01f7da79609ded5663e77a5973ed1b2c069",
+      "sha256": "23491f2f65555db57111807cd25e31832cf66bbed2a5cb26f2a63ee7c7bd7b13",
+      "bytes": 59637,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/noblesse.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/noblesse.png",
+      "gitBlobSha": "77a796030f09d998670af2861ffc1644f0ebb436",
+      "sha256": "6a2731674a4cf861e66051f0c79aaa4ba2b64f680dc5f0196117710e7125c151",
+      "bytes": 53395,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/pioneer.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/pioneer.png",
+      "gitBlobSha": "58a36b0b457380d076d9bea4edcc4ad53bad8451",
+      "sha256": "e9cbde432470127f1f79cc7c03093eb8cd6368305dc081771657935cb9eec9bc",
+      "bytes": 67455,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/priest.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/priest.png",
+      "gitBlobSha": "97b4b8fbbf7a9fea26b228bf77019d87da3db90a",
+      "sha256": "70454119962db6d0c2364cf80433b3ab557c50d0d7df7f6e0335c0496e52f56f",
+      "bytes": 42702,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/seal.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/seal.png",
+      "gitBlobSha": "67a507cfe2c043522698510970f8e12f7dda4bf2",
+      "sha256": "081a547f4d51ea307ba5c40bdcda155ab4dfb60d7dffa8e4acfad9f7ab6a10e6",
+      "bytes": 69111,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/silentcasting.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/silentcasting.png",
+      "gitBlobSha": "c5714e8a62b03344b814936bc22559dec4b01c7d",
+      "sha256": "b33099633750f155fd877204fd185a34c1dc72ec530d7095316128156c90a753",
+      "bytes": 38852,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/smite.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/smite.png",
+      "gitBlobSha": "007eb08f3960f6cb5e460bad7d3573769b33ddc4",
+      "sha256": "04f560fa55ce5facc2fa48739327422291f18652e7d067a3d9506402f9826f3b",
+      "bytes": 66630,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/snipe.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/snipe.png",
+      "gitBlobSha": "b01821e8e78c5c4760f54dc1ed72ea423f5fe5ca",
+      "sha256": "d6a74fed1b6892673e556915275e8fb1726610d3048b02645e2baaec0172ea3a",
+      "bytes": 38534,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/stormyclouds.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/stormyclouds.png",
+      "gitBlobSha": "b354b3892fab7bd1be8d4ec2a95d0c2b89756fbc",
+      "sha256": "c5dac09fe931aea5b4f8dae345a8627419d8c849c7a06106aeb8e08dadaa77f1",
+      "bytes": 44074,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/timekeeper.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/timekeeper.png",
+      "gitBlobSha": "6766dee87cddc6884692899379cfc703ff01393d",
+      "sha256": "1563794c91fd82add3df221e585e56eae9164ae33fe570dc5b42fce3ac927376",
+      "bytes": 65983,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/vitality.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/vitality.png",
+      "gitBlobSha": "6b3d0954d87beb41f1f5f7c64a73d3d861024ea4",
+      "sha256": "9c6cd539082e228c2360f42da8dc978805343ff9db4a6a67f2be19c7f65cd496",
+      "bytes": 33933,
+      "kind": "image"
+    },
+    {
+      "file": "assets/passiveImages/warmagic.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/passiveImages/warmagic.png",
+      "gitBlobSha": "6c97cbc2933533604fd136d79699dd0ef12a844d",
+      "sha256": "a0e969348d051e0b73cdc71a4948ecb950bc99c9b66be1362ebc34b9e6849d31",
+      "bytes": 66623,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/agility.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/agility.png",
+      "gitBlobSha": "55347edfa5e84a9dae448de588c31d9e90907a18",
+      "sha256": "495047ba1f3ee1911341d675f375c0bebe109fefc71f5b71c836e9bfbc7a2f24",
+      "bytes": 30330,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/analysis.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/analysis.png",
+      "gitBlobSha": "80e96d8a284e6a2dac494fb50a17c8ab5d37aec0",
+      "sha256": "e47b7c058d595e9d88e5a5a4c5534c3f3e22d760a2c3a6ea368d71062abaab92",
+      "bytes": 30554,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/arcaneeffuse.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/arcaneeffuse.png",
+      "gitBlobSha": "ccdc90387fd97adade1cd0015f1c03daed83f9dd",
+      "sha256": "041a3d711d083eff30154fd2415a0410590d80f61493ff88b99e06d99dad803b",
+      "bytes": 32615,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/awakening.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/awakening.png",
+      "gitBlobSha": "f47dd9a659de90791fb97612bbd2e96e14646856",
+      "sha256": "a71e02f458d8ad748ad5395ee4e8cf3d2d3d3ffe1dbcbb31abaca0f813e6378f",
+      "bytes": 29978,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/blessing.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/blessing.png",
+      "gitBlobSha": "92da8f8911fc68ba15356cf29b0923ccd9bff8dc",
+      "sha256": "4f3cbffecbce548ffc326d06a9a4994efdb67d04c9b68110fa7db0e063f052db",
+      "bytes": 33954,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/concentration.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/concentration.png",
+      "gitBlobSha": "da5f40821e9b63bdd911638f8d3e9bee11e6bde4",
+      "sha256": "7d70d985804cacc39aa209f49eff828057e8be13157d130e74e66720c5560d0b",
+      "bytes": 32403,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/explorer.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/explorer.png",
+      "gitBlobSha": "ca5fdd0d603f8c7885a82b8ee881445a32afd0f8",
+      "sha256": "19cb8ded5e5abc29e2e17b93d3ff6c13f398270622736339a1352d3c51c6a7d2",
+      "bytes": 23887,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/fastcasting.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/fastcasting.png",
+      "gitBlobSha": "de8223069ddd030c67519053937f24d5090d2416",
+      "sha256": "9ec9c681859a853496818e047b28e9278b67ce0b27420b986ca8b41735b7299b",
+      "bytes": 29278,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/growth.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/growth.png",
+      "gitBlobSha": "d04079223a6af907a1aac19c99a658f94d3f353c",
+      "sha256": "363e174a1c40790120edc81b5dcb7b0294144820899736d1e7757afdb7f66680",
+      "bytes": 33040,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/haste.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/haste.png",
+      "gitBlobSha": "6cb90a98828afbf7698d1bfa910c67e9032d0b56",
+      "sha256": "56b0561db11d034280bf7c58c735b3a1b4c569f847da0e28266afe01a2a2e699",
+      "bytes": 31812,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/intelligence.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/intelligence.png",
+      "gitBlobSha": "1f70cf574d43ee426cb8862535e5670966c57ead",
+      "sha256": "1037818aea2c200e3fbdd5e0c6203249678a65fac7de7bd5d6e321ba81dce34a",
+      "bytes": 30521,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/loot.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/loot.png",
+      "gitBlobSha": "96d0c602b072bc85efe0007ae38e13f2959bc4b3",
+      "sha256": "27691daaae5dbaad45b830500c6b80955feea181dcd82b4008a28e672874aed0",
+      "bytes": 15538,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/luck.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/luck.png",
+      "gitBlobSha": "2794fbf923684111d1443f231135c9cba00b60bc",
+      "sha256": "3ea2d469a294fdc8d8d233cbb347e238f539050f607d16641d672ae9cab7c0c0",
+      "bytes": 23862,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/manarefining.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/manarefining.png",
+      "gitBlobSha": "5db392f4f31b411974bfa4f05a3923cdc1ee3997",
+      "sha256": "5a3e02fa77e1f79389a8e4a144601ef23dfb40b06edacb1fb9b9539e5686d618",
+      "bytes": 31391,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/recycle.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/recycle.png",
+      "gitBlobSha": "8e2b327756bfdb079abe7d7218de0280aa8e1abf",
+      "sha256": "a8d8aeadd8d26c59a6a38cce4b6e8b4d7b4b0b3d7a9b3c54bdbb380f1d675d3d",
+      "bytes": 24676,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/regeneration.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/regeneration.png",
+      "gitBlobSha": "7a917c557a725c455494d3396845c66d6bbe29d7",
+      "sha256": "5fd7d6cab3bc08b47d8c8c41b0e22d2842ebc29c7c6305d804a6863cc87c77c7",
+      "bytes": 16447,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/resistance.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/resistance.png",
+      "gitBlobSha": "6eb940aa7f86d6bdfcdac8df7bb8bc158d1f4696",
+      "sha256": "18a1df148dfd6d5405b722f1a20330660eb91b0987c8c0b71cc475afed00c7e1",
+      "bytes": 30505,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/snipe.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/snipe.png",
+      "gitBlobSha": "a69ad7c328fb5f4aec213469d814a5f04f49df0f",
+      "sha256": "a377afbf7e0e4daa36059b0821f7e8cb68036f67d8c5c1a6572eb94d2aef08ba",
+      "bytes": 24459,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/support.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/support.png",
+      "gitBlobSha": "a9163b6dd76bd2cd12127ff7684120a37d11dfe8",
+      "sha256": "3499863202462a834135ffd4556785cd809a3dcaf36300992b99573f8ab92f7b",
+      "bytes": 29773,
+      "kind": "image"
+    },
+    {
+      "file": "assets/researchImages/vitality.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/researchImages/vitality.png",
+      "gitBlobSha": "b1937169fd1101b771ca1ed1c293482f493cd5af",
+      "sha256": "139eadcbd14aec83abf0a0c62d56cc15b852b306307ca2bd6fffa663efd8898e",
+      "bytes": 20561,
+      "kind": "image"
+    },
+    {
+      "file": "assets/rightarrow.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/rightarrow.png",
+      "gitBlobSha": "0e214d971060137dd3cd1b93443c8f2349a59d26",
+      "sha256": "8d77468062980fda152c90088d89119df808808f35be94aacd20f75945be8191",
+      "bytes": 721,
+      "kind": "image"
+    }
+  ]
+}
