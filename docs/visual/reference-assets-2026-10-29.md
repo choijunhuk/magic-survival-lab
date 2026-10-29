@@ -4,7 +4,7 @@
 
 | 분류 | 이미지 수 | 종류 |
 | --- | ---: | --- |
-| 구역 | 16 | 15구역 선택 화면 + 비교1장 |
+| 구역 | 16 | 기본 구역14종 + 테라 하드 + 비교1장 |
 | 실험체 | 24 | 30×40 참조 이미지 |
 | 클래스 | 24 | 40×40 아이콘 |
 | 적 / 보스 | 8 | 각각4종, 게임 화면 일부 포함 |
@@ -18,7 +18,7 @@
 | UI | 9 | 기존4 + 신규5 |
 | 합계 | 464 | 464개의 서로 다른SHA-256 |
 
-![15구역과 비교 자료](screenshots/reference-map-overview.png)
+![기본 구역14종·테라 하드와 비교 자료](screenshots/reference-map-overview.png)
 ![모바일 자료관](screenshots/reference-atlas-mobile.png)
 ![실험체 자료](screenshots/reference-subjects-mobile.png)
 
@@ -32,4 +32,9 @@
 
 이 모음은 공개 자료로 확보한 이미지 목록이며 게임 전체 내부 자산 덤프가 아니다. 원작 선택 화면의 자원과 기록은 출처 스크린샷의 일부다. 새 맵/클래스/마법이 구현됐다는 의미가 아니며 배경타일·투명 애니메이션 시트·적 패턴은 별도 작업이다. 팬 위키 자료는 버전 차이가 있을 수 있다. 수집한 원본과 참조 기반 생성6종은 별도 폴더와 장부를 유지한다.
 
-공개 배포의 URL과 실제 서버 검증은 배포 후 추가한다.
+## 공개 배포 확인
+
+[자료관](https://choijunhuk.github.io/magic-survival-lab/atlas.html) · [전체 ZIP](https://choijunhuk.github.io/magic-survival-lab/reference-assets.zip).
+
+[배포40870016637](https://github.com/choijunhuk/magic-survival-lab/actions/runs/40870016637)가 성공했고 build-info는 d8799a4 커밋과 일치했다. 공개 서버의464개 파일 전부 HTTP200, 모바일에서 Pyromancer 검색→화염술사1건, 원본/출처 분리, 가로 넘침 없음과 콘솔 오류 없음을 확인했다. 공개 ZIP을 다시 내려받아473항목 CRC와464이미지 해시가 원본 장부와 일치함을 확인했다. 구역 수는 기본14종과 테라 하드 변형1개를 구별한다.
+

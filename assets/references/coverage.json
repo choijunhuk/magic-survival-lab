@@ -44,5 +44,9 @@
     "Public fan wiki snapshots can predate the current game patch.",
     "Additional Namu CDN portraits returned503; Fandom pages blocked retrieval; no protections bypassed.",
     "Collected artwork is reference material; no new map logic/classes/spells were silently implemented."
-  ]
+  ],
+  "base_zones": 14,
+  "zone_variants": 1,
+  "map_comparison_images": 1,
+  "map_reference_images": 16
 }
