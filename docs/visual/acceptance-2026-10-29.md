@@ -34,4 +34,15 @@ APK SHA-256: `b81951e81324616191bf6cccbd7908b25f56127c7a00880f748af1b767aa5197`.
 
 ## 미검증
 
-실물 휴대폰, 사람이 전체 원정을 완주한 난이도·재미, 후속 콘텐츠, 스토어 출하 권리는 이번 검증에 포함하지 않는다. 공개 Pages 배포와 실제 렌더 검증 결과는 배포 완료 후 덧붙인다.
+실물 휴대폰, 사람이 전체 원정을 완주한 난이도·재미, 후속 콘텐츠, 스토어 출하 권리는 이번 검증에 포함하지 않는다. 공개 배포 검증은 아래와 같이 완료했다.
+
+## 공개 배포
+
+[GitHub Actions run40855755461](https://github.com/choijunhuk/magic-survival-lab/actions/runs/40855755461) 빌드·배포 성공. [공개 체험판](https://choijunhuk.github.io/magic-survival-lab/?v=79f53f2)에서 build-info의 commit과 실제 PCK 이름이 `79f53f278131b819de017c79934feb1399c40ab8`로 일치했다. wasm/PCK/PDF는 HTTPS200과 올바른 MIME으로 응답했다.
+
+새 격리 브라우저의 390×844에서 메뉴·전투·실제 레벨업·화면 터치로 냉기 선택·정지를 확인했다. 콘솔 오류 없음. 공개 서버의 실제 일반 플레이 캡처는 아래에 따로 보관한다.
+
+![공개 메뉴](screenshots/web-public-menu.png)
+![공개 일반 플레이](screenshots/web-public-combat.png)
+![공개 실제 강화](screenshots/web-public-magic-choice.png)
+![공개 선택 후 정지](screenshots/web-public-paused.png)

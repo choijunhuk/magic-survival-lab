@@ -13,7 +13,7 @@
 
 ## 원작 기준 시각 수정
 
-Godot 화면은 원작의 검정 메뉴·푸른 숲, 올리브색 전장, 작은 먹선 마법사와 적 군집, 청록색 제목·거친 검정 선택 카드로 다시 맞췄습니다. 캐릭터·적·보스·전장·숲·불꽃 문양 6종은 공식 화면을 참고해 새로 생성한 이미지입니다. 추출한 원작 스프라이트라는 뜻은 아닙니다. [참조와 검증 기준](docs/visual/magic-survival-reference.md), [생성 이력](godot/assets/generated/manifest.json)을 함께 남깁니다.
+Godot 화면은 원작의 검정 메뉴·푸른 숲, 올리브색 전장, 작은 먹선 마법사와 적 군집, 청록색 제목·거친 검정 선택 카드로 다시 맞췄습니다. 캐릭터·적·보스·전장·숲·불꽃 문양 6종은 공식 화면을 참고해 새로 생성한 이미지입니다. 추출한 원작 스프라이트라는 뜻은 아닙니다. [참조와 검증 기준](docs/visual/magic-survival-reference.md), [생성 이력](godot/assets/generated/manifest.json), [변경 화면과 검증 결과](docs/visual/acceptance-2026-10-29.md)를 함께 남깁니다.
 
 ## 실행
 

@@ -12,3 +12,5 @@ Spec: docs/visual/magic-survival-reference.md; godot/DESIGN.md correction author
 6. Run native/reference suites, fresh Android/Web exports, actual browser and emulator interactions, review regressions, commit/push and verify Pages updates to the new build.
 
 Done means the original references and actual new captures visibly align, not merely that code compiles. Native first-build scope remains8/4/12; full GDD content and physical-device balance are separate.
+
+Verified result: docs/visual/acceptance-2026-10-29.md. Implementation commit79f53f2, Pages run40855755461 succeeded; actual public start/drag/upgrade/choice/pause and fresh APK0.2 emulator validation completed. Physical phone and human full-run balance remain outside this acceptance.
