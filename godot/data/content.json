@@ -1,0 +1,246 @@
+{
+  "spellIds": [
+    "bolt",
+    "orbit",
+    "lightning",
+    "frost",
+    "fireball",
+    "vortex",
+    "meteor",
+    "pulse"
+  ],
+  "upgrades": [
+    {
+      "id": "bolt",
+      "name": "마나 창",
+      "description": "자동 투사체의 위력을 높입니다",
+      "color": "#80d4d1",
+      "icon": "assets/magicImages/manaSpear.png"
+    },
+    {
+      "id": "orbit",
+      "name": "염동력 검",
+      "description": "주위를 도는 검을 추가합니다",
+      "color": "#d9b66f",
+      "icon": "assets/magicImages/telekineticSword.png"
+    },
+    {
+      "id": "lightning",
+      "name": "번개",
+      "description": "가까운 적에게 연쇄 번개를 내립니다",
+      "color": "#b5bdff",
+      "icon": "assets/magicImages/heartOfLightning.png"
+    },
+    {
+      "id": "frost",
+      "name": "냉기",
+      "description": "주변 적을 얼리고 피해를 줍니다",
+      "color": "#a2d9f4",
+      "icon": "assets/magicImages/snowflakeBlossom.png"
+    },
+    {
+      "id": "fireball",
+      "name": "화염구",
+      "description": "폭발하는 화염구를 발사합니다",
+      "color": "#f3a36b",
+      "icon": "assets/magicImages/pyrotechnics.png"
+    },
+    {
+      "id": "vortex",
+      "name": "소용돌이",
+      "description": "적을 둔화시키는 지속 영역을 만듭니다",
+      "color": "#9bd0df",
+      "icon": "assets/magicImages/vortex.png"
+    },
+    {
+      "id": "meteor",
+      "name": "운석",
+      "description": "잠시 뒤 넓은 지역에 운석이 떨어집니다",
+      "color": "#ed8f70",
+      "icon": "assets/magicImages/greatImpact.png"
+    },
+    {
+      "id": "pulse",
+      "name": "파동",
+      "description": "주위로 퍼지는 마력 파동을 방출합니다",
+      "color": "#c0a9eb",
+      "icon": "assets/magicImages/energyBombardment.png"
+    },
+    {
+      "id": "power",
+      "name": "지능",
+      "description": "모든 마법의 피해를 높입니다",
+      "color": "#edb878",
+      "icon": "assets/passiveImages/intelligence.png"
+    },
+    {
+      "id": "haste",
+      "name": "고속 시전",
+      "description": "마법을 더 자주 사용합니다",
+      "color": "#d6b4e8",
+      "icon": "assets/passiveImages/fastcasting.png"
+    },
+    {
+      "id": "vitality",
+      "name": "활력",
+      "description": "최대 체력과 현재 체력을 높입니다",
+      "color": "#d7979c",
+      "icon": "assets/passiveImages/vitality.png"
+    },
+    {
+      "id": "magnet",
+      "name": "레이더",
+      "description": "경험치 수집 범위를 넓힙니다",
+      "color": "#a8d59e",
+      "icon": "assets/artifactImages/radar.png"
+    }
+  ],
+  "fusions": [
+    {
+      "id": "plasma",
+      "name": "플라즈마",
+      "description": "마나 창이 적을 관통하는 광선이 됩니다",
+      "icon": "assets/magicImages/plasmaRay.png",
+      "color": "#92e7f4",
+      "requires": {
+        "bolt": 3,
+        "lightning": 3
+      },
+      "kind": "fusion"
+    },
+    {
+      "id": "blizzard",
+      "name": "눈보라",
+      "description": "냉기와 소용돌이의 범위와 둔화를 강화합니다",
+      "icon": "assets/magicImages/winterStorm.png",
+      "color": "#b9e9f5",
+      "requires": {
+        "frost": 3,
+        "vortex": 3
+      },
+      "kind": "fusion"
+    },
+    {
+      "id": "supernova",
+      "name": "초신성",
+      "description": "화염구와 운석의 폭발이 거대해집니다",
+      "icon": "assets/magicImages/supernova.png",
+      "color": "#ffb27f",
+      "requires": {
+        "fireball": 3,
+        "meteor": 3
+      },
+      "kind": "fusion"
+    },
+    {
+      "id": "hyperion",
+      "name": "히페리온",
+      "description": "공전 검과 파동의 사거리와 위력을 높입니다",
+      "icon": "assets/magicImages/hyperion.png",
+      "color": "#eac782",
+      "requires": {
+        "orbit": 3,
+        "pulse": 3
+      },
+      "kind": "fusion"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "magicwand",
+      "name": "마법 지팡이",
+      "description": "모든 마법 피해 +20%",
+      "icon": "assets/artifactImages/magicwand.png",
+      "color": "#e4c483"
+    },
+    {
+      "id": "blackcat",
+      "name": "검은 고양이",
+      "description": "시전 속도 +12%",
+      "icon": "assets/artifactImages/blackcat.png",
+      "color": "#aaa3ce"
+    },
+    {
+      "id": "broom",
+      "name": "빗자루",
+      "description": "이동 속도 +15%",
+      "icon": "assets/artifactImages/broom.png",
+      "color": "#d7b878"
+    },
+    {
+      "id": "secondheart",
+      "name": "두 번째 심장",
+      "description": "최대 체력 +3, 체력 +3",
+      "icon": "assets/artifactImages/secondheart.png",
+      "color": "#e89b9e"
+    },
+    {
+      "id": "worldtreeleaf",
+      "name": "세계수 잎",
+      "description": "초당 체력 0.06 회복",
+      "icon": "assets/artifactImages/worldtreeleaf.png",
+      "color": "#a9d39a"
+    },
+    {
+      "id": "radar",
+      "name": "레이더",
+      "description": "경험치 끌어당김 범위 +80",
+      "icon": "assets/artifactImages/radar.png",
+      "color": "#a8d59e"
+    },
+    {
+      "id": "battery",
+      "name": "전지",
+      "description": "연쇄 번개 대상 +1",
+      "icon": "assets/artifactImages/battery.png",
+      "color": "#b6c6f4"
+    },
+    {
+      "id": "ruby",
+      "name": "루비",
+      "description": "화염구와 운석 피해 +30%",
+      "icon": "assets/artifactImages/ruby.png",
+      "color": "#ed9393"
+    },
+    {
+      "id": "snowflakecrown",
+      "name": "눈꽃 왕관",
+      "description": "둔화 지속 시간 증가",
+      "icon": "assets/artifactImages/snowflakecrown.png",
+      "color": "#bce8f0"
+    },
+    {
+      "id": "circularsawblade",
+      "name": "원형 톱날",
+      "description": "공전 검 피해 +25%",
+      "icon": "assets/artifactImages/circularsawblade.png",
+      "color": "#c7ccd0"
+    },
+    {
+      "id": "sapphire",
+      "name": "사파이어",
+      "description": "획득 경험치 +25%",
+      "icon": "assets/artifactImages/sapphire.png",
+      "color": "#89bcf2"
+    },
+    {
+      "id": "aegis",
+      "name": "이지스",
+      "description": "15초마다 피해 1회 방어",
+      "icon": "assets/artifactImages/aegis.png",
+      "color": "#e8d6a5"
+    }
+  ],
+  "modes": {
+    "quick": {
+      "id": "quick",
+      "label": "퀵 모드",
+      "duration": 300
+    },
+    "expedition": {
+      "id": "expedition",
+      "label": "균열 원정",
+      "duration": 600
+    }
+  }
+}

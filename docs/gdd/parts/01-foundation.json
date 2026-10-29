@@ -4,7 +4,7 @@
       "id": "p001",
       "chapter": "01 비전과 플레이 계약",
       "title": "균열 연대기",
-      "strap": "MAGIC SURVIVAL LAB · GAME DESIGN DOCUMENT · v0.3 · 2026.10.29",
+      "strap": "MAGIC SURVIVAL LAB · GAME DESIGN DOCUMENT · v0.4 · 2026.10.29",
       "status": "design",
       "blocks": [
         {
@@ -36,7 +36,7 @@
         },
         {
           "kind": "callout",
-          "text": "문서 상태: 제작용 초안. 설계 수치와 미래 콘텐츠는 구현·기기 검증 완료를 뜻하지 않는다. 엔진 권고는 Godot 4 + GDScript이며 최종 선택은 별도 기록한다."
+          "text": "문서 상태: 제작용 초안. 설계 수치와 미래 콘텐츠는 구현·기기 검증 완료를 뜻하지 않는다. 2026-10-29 사용자 선택에 따라 Godot 4 + GDScript로 확정했다. 네이티브 구현과 실제 기기 수용은 별도 검증한다."
         }
       ],
       "sources": [
@@ -779,7 +779,7 @@
         {
           "kind": "p",
           "heading": "앱에서의 구성",
-          "text": "Android 네이티브 앱을 우선 검토하고 iOS를 후속 대상으로 둔다. 실제 엔진 선택은 Godot 4 + GDScript 권고와 Unity 대안을 비교한 결정 기록으로 확정한다. HTML은 전투 규칙과 테스트를 비교하는 시제품으로 유지한다. 모드 데이터와 콘텐츠 ID는 플랫폼 UI와 분리하고, 엔진을 동시에 두 개 운영하기 위한 공통 프레임워크는 만들지 않는다."
+          "text": "Android 네이티브 앱을 우선 검토하고 iOS를 후속 대상으로 둔다. 2026-10-29 사용자 선택으로 Godot 4 + GDScript를 확정했고 현재 도구 기준은4.7stable이다. HTML은 전투 규칙과 테스트를 비교하는 시제품으로 유지한다. 모드 데이터와 콘텐츠 ID는 플랫폼 UI와 분리하고, 엔진을 동시에 두 개 운영하기 위한 공통 프레임워크는 만들지 않는다."
         },
         {
           "kind": "p",

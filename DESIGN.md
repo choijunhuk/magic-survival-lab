@@ -1,7 +1,7 @@
 # 매직 서바이벌 팬게임
 
 ## Source of truth
-- Active, 2026-10-29. 이 문서는 HTML 참조 시제품의 실제 UI/동작 기준이다. 네이티브 앱과 장기 확장 설계는 docs/gdd/FULL_DESIGN.md를 따른다. 앱 엔진은 Godot 4 + GDScript 권고, 최종 선택 대기 상태다.
+- Active, 2026-10-29. 이 문서는 HTML 참조 시제품의 실제 UI/동작 기준이다. 네이티브 UI는 godot/DESIGN.md, 장기 확장은 docs/gdd/FULL_DESIGN.md를 따른다. 앱 엔진은 사용자 선택으로 Godot4.7 + GDScript로 확정했다.
 - 근거: index.html, game.js, core.mjs, style.css, assets/catalog.json, 기존 PC·모바일 화면.
 
 ## Brand

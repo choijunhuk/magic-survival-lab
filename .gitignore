@@ -4,3 +4,10 @@ artifacts/
 .omc/
 __pycache__/
 tmp/pdfs/
+godot/.godot/
+godot/android/build/
+godot/export_credentials.cfg
+godot/builds/
+output/android/
+output/web/
+.site/

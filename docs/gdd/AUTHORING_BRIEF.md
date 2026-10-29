@@ -2,7 +2,7 @@
 
 2026-10-29. User says previous proposal was too small and wants a substantive PDF longer than 70 pages, including long-term expansion. They also authorized implementation and the separate Claude hook repair. This GDD replaces the old proposal's final scope; the old first10min slice remains the first implementation step.
 
-User platform override: native mobile app is now the production target; HTML remains the tested reference prototype. Godot4 + GDScript is the recommendation after official-doc comparison; user engine selection is pending. Installed Godot4.7 was verified. Android-first/iOS-later is a proposed order, not a confirmed platform limitation. The existing no-new-dependencies rule does not prohibit the explicitly requested native engine. Do not describe the final product as HTML-only or native migration as indefinitely deferred.
+User platform override: native mobile app is now the production target; HTML remains the tested reference prototype. User selected Godot4 + GDScript on2026-10-29; engine selection is confirmed. Installed Godot4.7 was verified. Android-first/iOS-later is a proposed order, not a confirmed platform limitation. The existing no-new-dependencies rule does not prohibit the explicitly requested native engine. Do not describe the final product as HTML-only or native migration as indefinitely deferred.
 
 ## Product and counts (all totals, never incremental)
 
