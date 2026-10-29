@@ -1,0 +1,48 @@
+{
+  "collected_on": "2026-10-29",
+  "scope": "All curated URLs in candidates.json plus all images in the original provided GitHub catalog; not an official complete game asset dump",
+  "original_images": 265,
+  "new_unique_images": 199,
+  "total_images": 464,
+  "candidate_urls": 201,
+  "exact_duplicate_sources": 2,
+  "download_failures": 0,
+  "new_category_counts": {
+    "bosses": 4,
+    "classes": 24,
+    "enemies": 4,
+    "fieldItems": 20,
+    "maps": 16,
+    "passiveImages": 25,
+    "researchImages": 20,
+    "screenshots": 22,
+    "subjects": 24,
+    "synergies": 35,
+    "ui": 5
+  },
+  "map_names": [
+    "배열지",
+    "교외",
+    "수목원",
+    "아카데미",
+    "발전소",
+    "배양실",
+    "저수지",
+    "삼림",
+    "도시",
+    "가상 생태계",
+    "심층",
+    "테라",
+    "테라 하드",
+    "실험실",
+    "하수도",
+    "배열지-테라 비교"
+  ],
+  "limits": [
+    "Map pictures are zone-selection screenshots, not isolated terrain tiles.",
+    "Enemy/boss pictures include screenshot crops and are not transparent animation sheets.",
+    "Public fan wiki snapshots can predate the current game patch.",
+    "Additional Namu CDN portraits returned503; Fandom pages blocked retrieval; no protections bypassed.",
+    "Collected artwork is reference material; no new map logic/classes/spells were silently implemented."
+  ]
+}

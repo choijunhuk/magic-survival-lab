@@ -6,6 +6,11 @@ on:
     paths:
       - 'godot/**'
       - 'output/pdf/**'
+      - 'assets/**'
+      - 'atlas.html'
+      - 'build-atlas.mjs'
+      - 'core.mjs'
+      - 'scripts/package-reference-assets.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -76,6 +81,11 @@ jobs:
           set -euo pipefail
           mkdir -p .site
           "$GODOT_BIN" --headless --path godot --export-release Web "$GITHUB_WORKSPACE/.site/index.html"
+          node --check build-atlas.mjs
+          node build-atlas.mjs
+          cp atlas.html .site/atlas.html
+          cp -R assets .site/assets
+          python3 scripts/package-reference-assets.py .site/reference-assets.zip
           cp godot/THIRD_PARTY_NOTICES.md .site/THIRD_PARTY_NOTICES.md
           cp output/pdf/magic-survival-full-design.pdf .site/design.pdf
           touch .site/.nojekyll

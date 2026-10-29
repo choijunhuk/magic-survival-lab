@@ -1,0 +1,1824 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/388/Testsubject.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "screenshots",
+      "name": "클래스 선택 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "Testsubject"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/666/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "마법사",
+      "asset_type": "subject-portrait",
+      "original_name": "魔法使い",
+      "english_name": "Wizard",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/667/%E5%A4%A9%E6%96%87%E5%AD%A6%E8%80%85.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "천문학자",
+      "asset_type": "subject-portrait",
+      "original_name": "天文学者",
+      "english_name": "Astronomer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/668/%E6%B0%B7%E7%B5%90%E5%B8%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "빙결사",
+      "asset_type": "subject-portrait",
+      "original_name": "氷結師",
+      "english_name": "Cryomancer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/669/%E5%91%AA%E8%A1%93%E5%B8%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "주술사",
+      "asset_type": "subject-portrait",
+      "original_name": "呪術師",
+      "english_name": "Shaman",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/670/%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AD%E3%83%83%E3%82%AF.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "워록",
+      "asset_type": "subject-portrait",
+      "original_name": "ウォーロック",
+      "english_name": "Warlock",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/671/%E9%AD%94%E9%81%93%E5%AD%A6%E8%80%85.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "마도학자",
+      "asset_type": "subject-portrait",
+      "original_name": "魔道学者",
+      "english_name": "Arcanist",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/672/%E5%8F%AC%E5%96%9A%E5%B8%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "소환사",
+      "asset_type": "subject-portrait",
+      "original_name": "召喚師",
+      "english_name": "Summoner",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/673/%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "비숍",
+      "asset_type": "subject-portrait",
+      "original_name": "ビショップ",
+      "english_name": "Bishop",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/674/%E7%A5%9E%E7%A7%98%E8%A1%93%E5%B8%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "신비술사",
+      "asset_type": "subject-portrait",
+      "original_name": "神秘術師",
+      "english_name": "Occultist",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/675/%E3%83%89%E3%83%AB%E3%82%A4%E3%83%89.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "드루이드",
+      "asset_type": "subject-portrait",
+      "original_name": "ドルイド",
+      "english_name": "Druid",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/676/%E7%81%AB%E7%84%94%E8%A1%93%E5%B8%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "화염술사",
+      "asset_type": "subject-portrait",
+      "original_name": "火焔術師",
+      "english_name": "Pyromancer"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/677/%E3%82%BD%E3%83%BC%E3%82%B5%E3%83%A9%E3%83%BC.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "소서러",
+      "asset_type": "subject-portrait",
+      "original_name": "ソーサラー",
+      "english_name": "Sorcerer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/678/%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "연금술사",
+      "asset_type": "subject-portrait",
+      "original_name": "錬金術師",
+      "english_name": "Alchemist",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/690/%E5%AD%A6%E8%80%85.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "학자",
+      "asset_type": "subject-portrait",
+      "original_name": "学者",
+      "english_name": "Scholar",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/679/%E9%AD%94%E5%A5%B3.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "마녀",
+      "asset_type": "subject-portrait",
+      "original_name": "魔女",
+      "english_name": "Witch",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/680/%E9%9B%BB%E8%8D%B7%E8%A1%93%E5%B8%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "전하술사",
+      "asset_type": "subject-portrait",
+      "original_name": "電荷術師",
+      "english_name": "Electromancer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/681/%E8%AA%BF%E5%BE%8B%E8%80%85.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "조율자",
+      "asset_type": "subject-portrait",
+      "original_name": "調律者",
+      "english_name": "Arbiter",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/689/%E5%A4%A7%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "대마법사",
+      "asset_type": "subject-portrait",
+      "original_name": "大魔法使い",
+      "english_name": "Archmage",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/682/%E8%80%83%E5%8F%A4%E5%AD%A6%E8%80%85.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "고고학자",
+      "asset_type": "subject-portrait",
+      "original_name": "考古学者",
+      "english_name": "Archaeologist",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/683/%E9%AD%94%E8%A1%93%E5%B8%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "마술사",
+      "asset_type": "subject-portrait",
+      "original_name": "魔術師",
+      "english_name": "Magician",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/684/%E3%83%A1%E3%82%A4%E3%82%B8.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "메이지",
+      "asset_type": "subject-portrait",
+      "original_name": "メイジ",
+      "english_name": "Mage",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/685/%E6%88%A6%E9%97%98%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "전투 마법사",
+      "asset_type": "subject-portrait",
+      "original_name": "戦闘魔法使い",
+      "english_name": "Battle Mage",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/686/%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AD%E3%83%BC%E3%83%89.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "워로드",
+      "asset_type": "subject-portrait",
+      "original_name": "ウォーロード",
+      "english_name": "Warlord",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/195/687/%E9%BB%92%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/195.html",
+      "category": "subjects",
+      "name": "흑마법사",
+      "asset_type": "subject-portrait",
+      "original_name": "黒魔法使い",
+      "english_name": "Dark Wizard",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/606/Screenshot_20250626-083805.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "screenshots",
+      "name": "클래스 선택 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "Screenshot_20250626-083805"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3442/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "마법사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "魔法使いクラス",
+      "english_name": "Wizard",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3445/%E5%A4%A9%E6%96%87%E5%AD%A6%E8%80%85%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "천문학자 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "天文学者クラス",
+      "english_name": "Astronomer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3458/%E6%B0%B7%E7%B5%90%E5%B8%AB%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "빙결사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "氷結師クラス",
+      "english_name": "Cryomancer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3453/%E5%91%AA%E8%A1%93%E5%B8%AB%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "주술사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "呪術師クラス",
+      "english_name": "Shaman",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3456/%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AD%E3%83%83%E3%82%AF%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "워록 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "ウォーロッククラス",
+      "english_name": "Warlock",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3450/%E9%AD%94%E9%81%93%E5%AD%A6%E8%80%85%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "마도학자 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "魔道学者クラス",
+      "english_name": "Arcanist",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3446/%E5%8F%AC%E5%96%9A%E5%B8%AB%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "소환사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "召喚師クラス",
+      "english_name": "Summoner",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3457/%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "비숍 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "ビショップクラス",
+      "english_name": "Bishop",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3462/%E7%A5%9E%E7%A7%98%E8%A1%93%E5%B8%AB%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "신비술사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "神秘術師クラス",
+      "english_name": "Occultist",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3465/%E3%83%89%E3%83%AB%E3%82%A4%E3%83%89%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "드루이드 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "ドルイドクラス",
+      "english_name": "Druid",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3452/%E7%81%AB%E7%82%8E%E8%A1%93%E5%B8%AB%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "화염술사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "火炎術師クラス",
+      "english_name": "Pyromancer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3443/%E3%82%BD%E3%83%BC%E3%82%B5%E3%83%A9%E3%83%BC%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "소서러 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "ソーサラークラス",
+      "english_name": "Sorcerer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3455/%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "연금술사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "錬金術師クラス",
+      "english_name": "Alchemist",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3449/%E5%AD%A6%E8%80%85%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "학자 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "学者クラス",
+      "english_name": "Scholar",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3448/%E9%AD%94%E5%A5%B3%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "마녀 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "魔女クラス",
+      "english_name": "Witch",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3447/%E9%9B%BB%E8%8D%B7%E8%A1%93%E5%B8%AB%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "전하술사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "電荷術師クラス",
+      "english_name": "Electromancer",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3459/%E8%AA%BF%E5%BE%8B%E8%80%85%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "조율자 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "調律者クラス",
+      "english_name": "Arbiter",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3461/%E5%A4%A7%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "대마법사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "大魔法使いクラス",
+      "english_name": "Archmage",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3463/%E8%80%83%E5%8F%A4%E5%AD%A6%E8%80%85%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "고고학자 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "考古学者クラス",
+      "english_name": "Archaeologist",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3451/%E9%AD%94%E8%A1%93%E5%B8%AB%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "마술사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "魔術師クラス",
+      "english_name": "Magician",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3460/%E3%83%A1%E3%82%A4%E3%82%B8%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "메이지 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "メイジクラス",
+      "english_name": "Mage",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3454/%E6%88%A6%E9%97%98%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "전투 마법사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "戦闘魔法使いクラス",
+      "english_name": "Battle Mage",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3444/%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AD%E3%83%BC%E3%83%89%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "워로드 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "ウォーロードクラス",
+      "english_name": "Warlord",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/3464/%E9%BB%92%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%82%AF%E3%83%A9%E3%82%B9.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "classes",
+      "name": "흑마법사 클래스",
+      "asset_type": "class-portrait",
+      "original_name": "黒魔法使いクラス",
+      "english_name": "Dark Wizard",
+      "name_note": "Korean display translation; original Japanese name retained"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/8/1353/%E3%82%AF%E3%83%A9%E3%82%B9Tier.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/8.html",
+      "category": "screenshots",
+      "name": "클래스 티어 비교표",
+      "asset_type": "community-chart",
+      "original_name": "クラスTier"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/387/Research.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "screenshots",
+      "name": "연구 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "Research"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/691/%E7%9F%A5%E8%83%BD.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "知能",
+      "asset_type": "research-icon",
+      "original_name": "知能"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/692/%E7%94%9F%E5%91%BD%E5%8A%9B.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "生命力",
+      "asset_type": "research-icon",
+      "original_name": "生命力"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/694/%E3%83%9E%E3%83%8A%E7%B2%BE%E8%A3%BD.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "マナ精製",
+      "asset_type": "research-icon",
+      "original_name": "マナ精製"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/693/%E9%AB%98%E9%80%9F%E8%A9%A0%E5%94%B1.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "高速詠唱",
+      "asset_type": "research-icon",
+      "original_name": "高速詠唱"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/695/%E7%8B%99%E6%92%83.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "狙撃",
+      "asset_type": "research-icon",
+      "original_name": "狙撃"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/696/%E6%8A%B5%E6%8A%97%E5%8A%9B.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "抵抗力",
+      "asset_type": "research-icon",
+      "original_name": "抵抗力"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/697/%E6%A9%9F%E6%95%8F.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "機敏",
+      "asset_type": "research-icon",
+      "original_name": "機敏"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/698/%E5%8A%A0%E9%80%9F.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "加速",
+      "asset_type": "research-icon",
+      "original_name": "加速"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/699/%E5%86%8D%E7%94%9F.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "再生",
+      "asset_type": "research-icon",
+      "original_name": "再生"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/700/%E6%8E%A2%E7%B4%A2.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "探索",
+      "asset_type": "research-icon",
+      "original_name": "探索"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/701/%E9%AD%94%E5%8A%9B%E7%99%BA%E6%95%A3.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "魔力発散",
+      "asset_type": "research-icon",
+      "original_name": "魔力発散"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/702/%E9%9B%86%E4%B8%AD.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "集中",
+      "asset_type": "research-icon",
+      "original_name": "集中"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/703/%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "リサイクル",
+      "asset_type": "research-icon",
+      "original_name": "リサイクル"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/704/%E5%88%86%E6%9E%90.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "分析",
+      "asset_type": "research-icon",
+      "original_name": "分析"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/705/%E7%A5%9D%E7%A6%8F.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "祝福",
+      "asset_type": "research-icon",
+      "original_name": "祝福"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/706/%E8%A6%9A%E9%86%92.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "覚醒",
+      "asset_type": "research-icon",
+      "original_name": "覚醒"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/707/%E6%88%90%E9%95%B7.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "成長",
+      "asset_type": "reference-screenshot",
+      "original_name": "成長"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/708/%E6%94%AF%E6%8F%B4.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "支援",
+      "asset_type": "research-icon",
+      "original_name": "支援"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/709/%E5%B9%B8%E9%81%8B.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "幸運",
+      "asset_type": "research-icon",
+      "original_name": "幸運"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/710/%E6%88%A6%E5%88%A9%E5%93%81.n.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "researchImages",
+      "name": "戦利品",
+      "asset_type": "research-icon",
+      "original_name": "戦利品"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/3420/Noah%E7%A0%94%E7%A9%B6%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D%E3%81%BF%E3%81%BF%E3%81%BF.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "screenshots",
+      "name": "연구 화면 · Noah研究優先順位みみみ",
+      "asset_type": "reference-screenshot",
+      "original_name": "Noah研究優先順位みみみ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/98/Research%20Gold1.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "screenshots",
+      "name": "연구 화면 · Research Gold1",
+      "asset_type": "reference-screenshot",
+      "original_name": "Research Gold1"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/47/99/Research%20Gold2.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/47.html",
+      "category": "screenshots",
+      "name": "연구 화면 · Research Gold2",
+      "asset_type": "reference-screenshot",
+      "original_name": "Research Gold2"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/264/bar.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "ui",
+      "name": "상단 시간 바",
+      "asset_type": "ui-reference",
+      "original_name": "bar"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/265/levelup.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "레벨업 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "levelup"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/266/gold.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "ui",
+      "name": "골드 표시",
+      "asset_type": "ui-reference",
+      "original_name": "gold"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/361/Research.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "연구 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "Research"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/267/jem.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "ui",
+      "name": "젬 표시",
+      "asset_type": "ui-reference",
+      "original_name": "jem"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/292/Class.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "클래스 선택 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "Class"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/291/Testsubject.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "실험체 선택 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "Testsubject"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/263/arraysterra.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "arraysterra",
+      "asset_type": "reference-screenshot",
+      "original_name": "arraysterra"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/248/Wave.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "파동 룬",
+      "asset_type": "field-item-reference",
+      "original_name": "Wave",
+      "english_name": "Wave"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/89/mana%20s.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "마나 구슬 소형",
+      "asset_type": "field-item-reference",
+      "original_name": "mana s",
+      "english_name": "mana s"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/90/mana%20m.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "마나 구슬 중형",
+      "asset_type": "field-item-reference",
+      "original_name": "mana m",
+      "english_name": "mana m"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/91/mana%20l.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "마나 구슬 대형",
+      "asset_type": "field-item-reference",
+      "original_name": "mana l",
+      "english_name": "mana l"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/92/life%20o.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "생명 구슬",
+      "asset_type": "field-item-reference",
+      "original_name": "life o",
+      "english_name": "life o"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/229/World%20Tree%20Fruit.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "세계수의 열매",
+      "asset_type": "field-item-reference",
+      "original_name": "World Tree Fruit",
+      "english_name": "World Tree Fruit"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/247/Frenzy.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "광란 룬",
+      "asset_type": "field-item-reference",
+      "original_name": "Frenzy",
+      "english_name": "Frenzy"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/246/Invincible.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "무적 룬",
+      "asset_type": "field-item-reference",
+      "original_name": "Invincible",
+      "english_name": "Invincible"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/245/Greed.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "탐욕 룬",
+      "asset_type": "field-item-reference",
+      "original_name": "Greed",
+      "english_name": "Greed"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/244/Purification.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "정화 룬",
+      "asset_type": "field-item-reference",
+      "original_name": "Purification",
+      "english_name": "Purification"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/95/cell%20a.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "마력 세포 A",
+      "asset_type": "field-item-reference",
+      "original_name": "cell a",
+      "english_name": "cell a"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/96/cell%20b.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "마력 세포 B",
+      "asset_type": "field-item-reference",
+      "original_name": "cell b",
+      "english_name": "cell b"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/97/cell%20g.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "마력 세포 G",
+      "asset_type": "field-item-reference",
+      "original_name": "cell g",
+      "english_name": "cell g"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/875/P_SynergyIcon.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "ui",
+      "name": "시너지 표시 아이콘",
+      "asset_type": "ui-reference",
+      "original_name": "P_SynergyIcon"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/877/1000006931.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "유물 선택 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "1000006931"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/230/Treasure%20Chest.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "보물 상자",
+      "asset_type": "field-item-reference",
+      "original_name": "Treasure Chest",
+      "english_name": "Treasure Chest"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/873/1000006903.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "마법 정보 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "1000006903"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/231/Relic%20Chest.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "유물 상자",
+      "asset_type": "field-item-reference",
+      "original_name": "Relic Chest",
+      "english_name": "Relic Chest"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/233/Obelisk.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "오벨리스크",
+      "asset_type": "field-item-reference",
+      "original_name": "Obelisk",
+      "english_name": "Obelisk"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/872/1000006902.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "마법 선택 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "1000006902"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/234/Broken%20Obelisk.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "부서진 오벨리스크",
+      "asset_type": "field-item-reference",
+      "original_name": "Broken Obelisk",
+      "english_name": "Broken Obelisk"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/232/Transfer%20Stone.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "전이석",
+      "asset_type": "field-item-reference",
+      "original_name": "Transfer Stone",
+      "english_name": "Transfer Stone"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/239/purchasing%20A.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "상인 표식",
+      "asset_type": "field-item-reference",
+      "original_name": "purchasing A",
+      "english_name": "purchasing A"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/240/purchasing%20B.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "fieldItems",
+      "name": "상인 표식 상세",
+      "asset_type": "field-item-reference",
+      "original_name": "purchasing B",
+      "english_name": "purchasing B"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/874/Screenshot_20250811-234221.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "시너지 목록 화면",
+      "asset_type": "reference-screenshot",
+      "original_name": "Screenshot_20250811-234221"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/252/Swarm.s.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "Swarm.s",
+      "asset_type": "reference-screenshot",
+      "original_name": "Swarm.s"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/235/Elite%20Monsters.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "Elite Monsters",
+      "asset_type": "reference-screenshot",
+      "original_name": "Elite Monsters"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/861/s06.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "s06",
+      "asset_type": "reference-screenshot",
+      "original_name": "s06"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/236/Citadel.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "Citadel",
+      "asset_type": "reference-screenshot",
+      "original_name": "Citadel"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/237/Nemesis.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "Nemesis",
+      "asset_type": "reference-screenshot",
+      "original_name": "Nemesis"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/238/Apostle.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "Apostle",
+      "asset_type": "reference-screenshot",
+      "original_name": "Apostle"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/249/hugewizard.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "screenshots",
+      "name": "hugewizard",
+      "asset_type": "reference-screenshot",
+      "original_name": "hugewizard"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/ffy7tIqEA8I9Ja5iW5irFPtkoaC1ixH5jHbGeW-0JLSryU83bRXtN03eZqreAyuCig7l4HWFgN8U_LZqwow4IA=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "ui",
+      "name": "공식 앱 아이콘",
+      "asset_type": "app-icon",
+      "original_name": "ffy7tIqEA8I9Ja5iW5irFPtkoaC1ixH5jHbGeW-0JLSryU83bRXtN03eZqreAyuCig7l4HWFgN8U_LZqwow4IA=s0"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/T-gBVUawRhJ2MLVzUHu58mWYhyBUO3bClplryRZF43yNfjOSX4Thp3eJOfgRCM_c2djr5l5o3mZ0u3cpf5K7=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "screenshots",
+      "name": "공식 Google Play 이미지 1",
+      "asset_type": "official-screenshot",
+      "original_name": "T-gBVUawRhJ2MLVzUHu58mWYhyBUO3bClplryRZF43yNfjOSX4Thp3eJOfgRCM_c2djr5l5o3mZ0u3cpf5K7=s0"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/Cjt3h0rZdPKaSiIxrlOlpVRrpoTs7klGvnePgEmyL3VYLCmiLDIlFeh4StgjDjQ0pbnGRTrLwMzlJo86d3vGgak=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "screenshots",
+      "name": "공식 Google Play 이미지 2",
+      "asset_type": "official-screenshot",
+      "original_name": "Cjt3h0rZdPKaSiIxrlOlpVRrpoTs7klGvnePgEmyL3VYLCmiLDIlFeh4StgjDjQ0pbnGRTrLwMzlJo86d3vGgak=s0"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/nYGTrJ0j-diBTS_Udj0i3z2NUyf9xtGiK-qlnNyMhYErev_SLnHtDsUyHnykbs1KiYJ11D8BTYXfzjkBtWChTA=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "screenshots",
+      "name": "공식 Google Play 이미지 3",
+      "asset_type": "official-screenshot",
+      "original_name": "nYGTrJ0j-diBTS_Udj0i3z2NUyf9xtGiK-qlnNyMhYErev_SLnHtDsUyHnykbs1KiYJ11D8BTYXfzjkBtWChTA=s0"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/BYKMUCvAX-LFLMC9PuosOCuYw4ojwYzyz-_8sZaHwMVvaWYLI8o8CB-j9ONPKUoILPOoXFndyIqHE-J8Ntzq0Q=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "screenshots",
+      "name": "공식 Google Play 이미지 4",
+      "asset_type": "official-screenshot",
+      "original_name": "BYKMUCvAX-LFLMC9PuosOCuYw4ojwYzyz-_8sZaHwMVvaWYLI8o8CB-j9ONPKUoILPOoXFndyIqHE-J8Ntzq0Q=s0"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/P3FL4ki8qpZD4JHwiqsbaoPSyrilf5iXGmbD-GCXe5YrRy80K8Ys8jCGikC88rv1QQ0XH7B7-NW5io8ozV1YFw=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "screenshots",
+      "name": "공식 Google Play 이미지 5",
+      "asset_type": "official-screenshot",
+      "original_name": "P3FL4ki8qpZD4JHwiqsbaoPSyrilf5iXGmbD-GCXe5YrRy80K8Ys8jCGikC88rv1QQ0XH7B7-NW5io8ozV1YFw=s0"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/U0ZPCbkSiPXDGkr_i56WlIsjgiZCAk82_A-kVWy-RfNrAAAX0EW4hhD-qwR2ug1RbnjVW4Ri4wqiQqHmhFtiwg=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "screenshots",
+      "name": "공식 Google Play 이미지 6",
+      "asset_type": "official-screenshot",
+      "original_name": "U0ZPCbkSiPXDGkr_i56WlIsjgiZCAk82_A-kVWy-RfNrAAAX0EW4hhD-qwR2ug1RbnjVW4Ri4wqiQqHmhFtiwg=s0"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/3rl5bC1Rq00iZJIH0snnHfEhLR-gPXjmhF1uCFPKBNOchtrx4SqqY4HWAwmf5-3hio40R9w-R-q59_WRDcw4=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "screenshots",
+      "name": "공식 Google Play 이미지 7",
+      "asset_type": "official-screenshot",
+      "original_name": "3rl5bC1Rq00iZJIH0snnHfEhLR-gPXjmhF1uCFPKBNOchtrx4SqqY4HWAwmf5-3hio40R9w-R-q59_WRDcw4=s0"
+    },
+    {
+      "source": "https://play-lh.googleusercontent.com/0IwdlwdT5COqOQvCQVS4K5U6jdX_VjsoHadS2rTgVNsReqwbdR-A6xRb-4VjKKX_5VO-WfuUgw5vEg8edB7sljE=s0",
+      "source_page": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+      "category": "screenshots",
+      "name": "공식 Google Play 이미지 8",
+      "asset_type": "official-screenshot",
+      "original_name": "0IwdlwdT5COqOQvCQVS4K5U6jdX_VjsoHadS2rTgVNsReqwbdR-A6xRb-4VjKKX_5VO-WfuUgw5vEg8edB7sljE=s0"
+    },
+    {
+      "id": "arrays",
+      "name": "배열지",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/14/180/Screenshot_2025-01-11-02-19-18-14_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/14.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-18-14_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "laboratory",
+      "name": "실험실",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/37/181/Screenshot_2025-01-11-02-19-22-55_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/37.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-22-55_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "sewage_system",
+      "name": "하수도",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/41/182/Screenshot_2025-01-11-02-19-25-13_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/41.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-25-13_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "city_outskirts",
+      "name": "교외",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/176/183/Screenshot_2025-01-11-02-19-27-58_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/176.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-27-58_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "arboretum",
+      "name": "수목원",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/177/184/Screenshot_2025-01-11-02-19-30-03_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/177.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-30-03_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "academy",
+      "name": "아카데미",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/178/186/Screenshot_2025-01-11-02-19-32-76_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/178.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-32-76_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "power_plant",
+      "name": "발전소",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/179/187/Screenshot_2025-01-11-02-19-35-13_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/179.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-35-13_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "clean_room",
+      "name": "배양실",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/180/188/Screenshot_2025-01-11-02-19-37-54_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/180.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-37-54_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "reservoir",
+      "name": "저수지",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/181/189/Screenshot_2025-01-11-02-19-40-96_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/181.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-40-96_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "forest",
+      "name": "삼림",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/182/190/Screenshot_2025-01-11-02-19-44-39_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/182.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-44-39_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "city",
+      "name": "도시",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/183/191/Screenshot_2025-01-11-02-19-47-00_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/183.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-47-00_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "artificial_ecosystem",
+      "name": "가상 생태계",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/184/192/Screenshot_2025-01-11-02-19-49-56_a018ce24e5d63bb13a8d24754083b426.jpg",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/184.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_2025-01-11-02-19-49-56_a018ce24e5d63bb13a8d24754083b426"
+    },
+    {
+      "id": "depths",
+      "name": "심층",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/185/270/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-04-17%20132338.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/185.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "スクリーンショット 2025-04-17 132338"
+    },
+    {
+      "id": "terra",
+      "name": "테라",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/196/1370/Screenshot_20250907-231233.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/196.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "Screenshot_20250907-231233"
+    },
+    {
+      "id": "terra_hard",
+      "name": "테라 하드",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/282/3481/%E3%83%86%E3%83%A9%E3%83%8F%E3%83%BC%E3%83%89.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/282.html",
+      "category": "maps",
+      "asset_type": "zone-selection-screenshot",
+      "original_name": "テラハード"
+    },
+    {
+      "id": "array_to_terra_overview",
+      "name": "배열지-테라 비교",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/263/arraysterra.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "maps",
+      "asset_type": "zone-overview-screenshot",
+      "original_name": "arraysterra"
+    },
+    {
+      "id": "swarm",
+      "name": "스웜",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/252/Swarm.s.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "enemies",
+      "asset_type": "enemy-reference",
+      "original_name": "Swarm.s",
+      "english_name": "Swarm"
+    },
+    {
+      "id": "elite",
+      "name": "엘리트",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/235/Elite%20Monsters.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "enemies",
+      "asset_type": "enemy-reference",
+      "original_name": "Elite Monsters",
+      "english_name": "Elite"
+    },
+    {
+      "id": "servant",
+      "name": "서번트",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/242/Servant.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "enemies",
+      "asset_type": "enemy-reference",
+      "original_name": "Servant",
+      "english_name": "Servant"
+    },
+    {
+      "id": "super_elite",
+      "name": "슈퍼 엘리트",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/861/s06.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "enemies",
+      "asset_type": "enemy-reference",
+      "original_name": "s06",
+      "english_name": "Super Elite"
+    },
+    {
+      "id": "citadel",
+      "name": "시타델",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/236/Citadel.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "bosses",
+      "asset_type": "boss-reference",
+      "original_name": "Citadel",
+      "english_name": "Citadel"
+    },
+    {
+      "id": "nemesis",
+      "name": "네메시스",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/237/Nemesis.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "bosses",
+      "asset_type": "boss-reference",
+      "original_name": "Nemesis",
+      "english_name": "Nemesis"
+    },
+    {
+      "id": "apostle",
+      "name": "아포슬",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/238/Apostle.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "bosses",
+      "asset_type": "boss-reference",
+      "original_name": "Apostle",
+      "english_name": "Apostle"
+    },
+    {
+      "id": "amadeus",
+      "name": "아마데우스",
+      "source": "https://img.atwiki.jp/magicsurvival/attach/53/249/hugewizard.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/53.html",
+      "category": "bosses",
+      "asset_type": "boss-reference",
+      "original_name": "hugewizard",
+      "english_name": "Amadeus"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/772/1000006393.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006393",
+      "asset_type": "passive-icon",
+      "original_name": "1000006393"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/773/1000006394.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006394",
+      "asset_type": "passive-icon",
+      "original_name": "1000006394"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/774/1000006395.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006395",
+      "asset_type": "passive-icon",
+      "original_name": "1000006395"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/775/1000006396.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006396",
+      "asset_type": "passive-icon",
+      "original_name": "1000006396"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/776/1000006397.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006397",
+      "asset_type": "passive-icon",
+      "original_name": "1000006397"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/777/1000006398.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006398",
+      "asset_type": "passive-icon",
+      "original_name": "1000006398"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/778/1000006399.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006399",
+      "asset_type": "passive-icon",
+      "original_name": "1000006399"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/779/1000006400.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006400",
+      "asset_type": "passive-icon",
+      "original_name": "1000006400"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/780/1000006401.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006401",
+      "asset_type": "passive-icon",
+      "original_name": "1000006401"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/781/1000006402.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006402",
+      "asset_type": "passive-icon",
+      "original_name": "1000006402"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/782/1000006403.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006403",
+      "asset_type": "passive-icon",
+      "original_name": "1000006403"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/783/1000006404.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006404",
+      "asset_type": "passive-icon",
+      "original_name": "1000006404"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/784/1000006405.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006405",
+      "asset_type": "passive-icon",
+      "original_name": "1000006405"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/785/1000006406.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006406",
+      "asset_type": "passive-icon",
+      "original_name": "1000006406"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/786/1000006407.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006407",
+      "asset_type": "passive-icon",
+      "original_name": "1000006407"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/787/1000006408.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006408",
+      "asset_type": "passive-icon",
+      "original_name": "1000006408"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/788/1000006409.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006409",
+      "asset_type": "passive-icon",
+      "original_name": "1000006409"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/789/1000006410.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006410",
+      "asset_type": "passive-icon",
+      "original_name": "1000006410"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/790/1000006411.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006411",
+      "asset_type": "passive-icon",
+      "original_name": "1000006411"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/791/1000006412.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006412",
+      "asset_type": "passive-icon",
+      "original_name": "1000006412"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/792/1000006413.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006413",
+      "asset_type": "passive-icon",
+      "original_name": "1000006413"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/794/1000006414.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006414",
+      "asset_type": "passive-icon",
+      "original_name": "1000006414"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/837/%E3%81%9F%E3%81%8A.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "たお",
+      "asset_type": "passive-icon",
+      "original_name": "たお"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/3433/%E3%83%95%E3%83%AD%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%88.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "フローリスト",
+      "asset_type": "passive-icon",
+      "original_name": "フローリスト"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/793/1000006203.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "passiveImages",
+      "name": "1000006203",
+      "asset_type": "passive-icon",
+      "original_name": "1000006203"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/15/711/mk001.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/15.html",
+      "category": "screenshots",
+      "name": "마법 강화 화면 · mk001",
+      "asset_type": "reference-screenshot",
+      "original_name": "mk001"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/804/%E3%81%88%E3%81%94.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "えご",
+      "asset_type": "synergy-icon",
+      "original_name": "えご"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/803/%E3%81%AA%E3%81%84.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ない",
+      "asset_type": "synergy-icon",
+      "original_name": "ない"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/802/%E3%82%8C%E3%81%A9.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "れど",
+      "asset_type": "synergy-icon",
+      "original_name": "れど"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/801/%E3%82%94%E3%81%87%E3%81%AE.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ゔぇの",
+      "asset_type": "synergy-icon",
+      "original_name": "ゔぇの"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/800/%E3%81%82%E3%82%94%E3%81%81.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "あゔぁ",
+      "asset_type": "synergy-icon",
+      "original_name": "あゔぁ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/817/%E3%81%8A%E3%82%89.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "おら",
+      "asset_type": "synergy-icon",
+      "original_name": "おら"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/829/%E3%81%82%E3%81%8F.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "あく",
+      "asset_type": "synergy-icon",
+      "original_name": "あく"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/825/%E3%81%A0%E3%81%84%E3%81%94.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "だいご",
+      "asset_type": "synergy-icon",
+      "original_name": "だいご"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/811/%E3%81%AD%E3%81%8F%E3%82%8D.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ねくろ",
+      "asset_type": "synergy-icon",
+      "original_name": "ねくろ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/830/%E3%81%A7%E3%81%A3%E3%81%A9.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "でっど",
+      "asset_type": "synergy-icon",
+      "original_name": "でっど"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/834/%E3%81%A8%E3%82%8A.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "とり",
+      "asset_type": "synergy-icon",
+      "original_name": "とり"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/807/%E3%81%99%E3%81%AA.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "すな",
+      "asset_type": "synergy-icon",
+      "original_name": "すな"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/810/%E3%81%AB%E3%82%85%E3%83%BC%E3%81%8F%E3%82%8A.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "にゅーくり",
+      "asset_type": "synergy-icon",
+      "original_name": "にゅーくり"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/828/%E3%81%9C%E3%82%8D.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ぜろ",
+      "asset_type": "synergy-icon",
+      "original_name": "ぜろ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/832/%E3%81%82%E3%81%B3.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "あび",
+      "asset_type": "synergy-icon",
+      "original_name": "あび"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/809/%E3%81%8F%E3%82%8D.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "くろ",
+      "asset_type": "synergy-icon",
+      "original_name": "くろ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/816/%E3%82%82%E3%81%AA.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "もな",
+      "asset_type": "synergy-icon",
+      "original_name": "もな"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/821/%E3%81%94%E3%81%AF%E3%82%93.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ごはん",
+      "asset_type": "synergy-icon",
+      "original_name": "ごはん"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/814/%E3%81%B1%E3%82%89.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ぱら",
+      "asset_type": "synergy-icon",
+      "original_name": "ぱら"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/805/%E3%81%82%E3%81%98.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "あじ",
+      "asset_type": "synergy-icon",
+      "original_name": "あじ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/818/%E3%81%A8%E3%82%8C.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "とれ",
+      "asset_type": "synergy-icon",
+      "original_name": "とれ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/806/%E3%81%B6%E3%82%89.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ぶら",
+      "asset_type": "synergy-icon",
+      "original_name": "ぶら"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/826/%E3%81%AF%E3%81%A8.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "はと",
+      "asset_type": "synergy-icon",
+      "original_name": "はと"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/822/%E3%82%8F%E3%82%93%E3%81%A0%E3%82%89.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "わんだら",
+      "asset_type": "synergy-icon",
+      "original_name": "わんだら"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/820/%E3%81%93%E3%81%9A%E3%81%BB.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "こずほ",
+      "asset_type": "synergy-icon",
+      "original_name": "こずほ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/824/%E3%81%82%E3%82%93%E3%81%A9.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "あんど",
+      "asset_type": "synergy-icon",
+      "original_name": "あんど"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/831/%E3%81%90%E3%82%89.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ぐら",
+      "asset_type": "synergy-icon",
+      "original_name": "ぐら"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/823/%E3%81%98%E3%81%AB.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "じに",
+      "asset_type": "synergy-icon",
+      "original_name": "じに"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/815/%E3%81%88%E3%82%8A.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "えり",
+      "asset_type": "synergy-icon",
+      "original_name": "えり"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/812/%E3%81%B2%E3%82%8A%E3%81%B5%E3%81%81.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "ひりふぁ",
+      "asset_type": "synergy-icon",
+      "original_name": "ひりふぁ"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/833/%E3%81%99%E3%81%A1%E3%81%B1%E3%82%93.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "すちぱん",
+      "asset_type": "synergy-icon",
+      "original_name": "すちぱん"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/808/%E3%81%AB%E3%82%93.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "にん",
+      "asset_type": "synergy-icon",
+      "original_name": "にん"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/819/%E3%81%8B%E3%81%8A%E3%81%99.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "かおす",
+      "asset_type": "synergy-icon",
+      "original_name": "かおす"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/835/%E3%81%98%E3%82%93.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "じん",
+      "asset_type": "synergy-icon",
+      "original_name": "じん"
+    },
+    {
+      "source": "https://img.atwiki.jp/magicsurvival/attach/34/813/%E3%81%86%E3%81%89%E3%81%BE.png",
+      "source_page": "https://w.atwiki.jp/magicsurvival/pages/34.html",
+      "category": "synergies",
+      "name": "うぉま",
+      "asset_type": "synergy-icon",
+      "original_name": "うぉま"
+    }
+  ]
+}

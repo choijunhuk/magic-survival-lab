@@ -10,4 +10,5 @@ godot/export_credentials.cfg
 godot/builds/
 output/android/
 output/web/
+output/reference-assets/
 .site/
