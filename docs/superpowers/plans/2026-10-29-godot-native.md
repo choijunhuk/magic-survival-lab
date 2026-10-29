@@ -35,31 +35,31 @@
 - Corrupt/blocked/native record writes and Android export configuration must not touch unrelated user data or credentials.
 
 ### Task1: Content and simulation
-- [ ] Export catalog/copy28assets, preserving hashes and sources.
-- [ ] Write headless behavioraltests before port; observe missing-feature failures.
-- [ ] Port core rules to simulation.gd, preserving catalog caps, effects, fusions, artifacts, boss and terminal priorities.
-- [ ] Run headless suite and JS reference suite; require all green.
+- [x] Export catalog/copy28assets, preserving hashes and sources.
+- [x] Write headless behavioraltests before port; observe missing-feature failures.
+- [x] Port core rules to simulation.gd, preserving catalog caps, effects, fusions, artifacts, boss and terminal priorities.
+- [x] Run headless suite and JS reference suite; require all green.
 
 ### Task2: Scene and native HUD
-- [ ] Build real start/play/pause/upgrade/artifact/result/native codex states with shared style.
-- [ ] Render enemy kinds, all spells, zones/strikes/hazards, boss health/direction, XP and touch joystick.
-- [ ] Support keyboard/touch, mobile Back and background pause without automatic resume.
-- [ ] Capture actual desktop/native UI and narrow layouts; run visual verdict before further visual edits.
+- [x] Build real start/play/pause/upgrade/artifact/result/native codex states with shared style.
+- [x] Render enemy kinds, all spells, zones/strikes/hazards, boss health/direction, XP and touch joystick.
+- [x] Support keyboard/touch, mobile Back and background pause without automatic resume.
+- [x] Capture actual desktop/native UI and narrow layouts; run visual verdict before further visual edits.
 
 ### Task3: Native records
-- [ ] Test empty/corrupt/partial records, independent modes, win ranking, write failure before implementation.
-- [ ] Implement validated native persistence with temp write/rename and honest errors; never delete browser records.
-- [ ] Verify fresh start, win/loss/retry, restart persistence and isolated test cleanup.
+- [x] Test empty/corrupt/partial records, independent modes, win ranking, write failure before implementation.
+- [x] Implement validated native persistence with temp write/rename and honest errors; never delete browser records.
+- [x] Verify fresh start, win/loss/retry, restart persistence and isolated test cleanup.
 
 ### Task4: Android delivery and acceptance
-- [ ] Import project headless and parse all scripts; launch real native window.
-- [ ] Create Android debug preset excluding tests/fixtures/private files and export a fresh APK with matching templates.
-- [ ] Verify package/signature/ABI, install to an isolated emulator if available and test launch/input/pause/choices/results.
-- [ ] Review code independently, fix material findings with regression tests, update GDD engine choice and current-state docs.
-- [ ] Commit/push with Lore trailers; attach APK/project/evidence. Report physical-device and human balance limits honestly.
+- [x] Import project headless and parse all scripts; launch real native window.
+- [x] Create Android debug preset excluding tests/fixtures/private files and export a fresh APK with matching templates.
+- [x] Verify package/signature/ABI, install to an isolated emulator if available and test launch/input/pause/choices/results.
+- [x] Review code independently, fix material findings with regression tests, update GDD engine choice and current-state docs.
+- [x] Commit/push with Lore trailers; attach APK/project/evidence. Report physical-device and human balance limits honestly.
 
 ### Task5: Same-project web preview and GitHub Pages
-- [ ] Export Godot Web in Compatibility/single-thread mode, with no runtime server or custom isolation headers required.
-- [ ] Verify local browser loading, Korean text, start/input/pause and persistent-record error handling.
-- [ ] Add a least-privilege GitHub Actions workflow using official Godot binaries/templates and official Pages actions.
-- [ ] Enable Pages, run deployment and verify the actual HTTPS game URL after success. Never report a configured but unbuilt URL as live.
+- [x] Export Godot Web in Compatibility/single-thread mode, with no runtime server or custom isolation headers required.
+- [x] Verify local browser loading, Korean text, start/input/pause and persistent-record error handling.
+- [x] Add a least-privilege GitHub Actions workflow using official Godot binaries/templates and official Pages actions.
+- [x] Enable Pages, run deployment and verify the actual HTTPS game URL after success. Never report a configured but unbuilt URL as live.

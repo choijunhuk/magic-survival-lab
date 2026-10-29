@@ -3,7 +3,7 @@
 매직 서바이벌에서 영감을 받은 모바일 생존 게임 프로젝트입니다. Godot4.7 + GDScript로 엔진을 확정하고 실제 네이티브 클라이언트를 구현했습니다. HTML/Canvas 버전은 전투 규칙을 비교하는 참조로 유지합니다.
 
 - **[Godot 프로젝트와 실행·검증 안내](godot/README.md)**
-- **[라이브 Godot 웹 체험판](https://choijunhuk.github.io/magic-survival-lab/)** — GitHub Pages 자동 배포 대상. 실제 배포 성공과 로딩 검증은 별도 기록합니다.
+- **[라이브 Godot 웹 체험판](https://choijunhuk.github.io/magic-survival-lab/)** — 공개 HTTPS에서 로딩·시작·일시정지를 확인했습니다. Godot/PDF 변경을 main에 올리면 테스트 후 자동 배포됩니다.
 
 - **[전체 게임 기획서 PDF - 100쪽](output/pdf/magic-survival-full-design.pdf)** — 출시 설계와 장기 확장, 전투·콘텐츠·세계·성장·아트·앱 제작·검증
 - **[전체 기획 원고](docs/gdd/FULL_DESIGN.md)** — 출시 제안 24마법·36조합·96유물·6지역, 장기 제안 48마법·72조합·180유물·9지역. 미래 목표이며 구현 수량이 아닙니다.
