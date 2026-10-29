@@ -1,0 +1,105 @@
+name: Playable Godot preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'godot/**'
+      - 'output/pdf/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+env:
+  GODOT_VERSION: '4.7'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/configure-pages@v6.0.0
+      - name: Cache official Godot editor and Web template
+        id: godot-cache
+        uses: actions/cache@v6.1.0
+        with:
+          path: ~/.cache/magic-survival-godot
+          key: godot-4.7-linux-x86_64-web-v1
+      - name: Download and verify official Godot binaries
+        if: steps.godot-cache.outputs.cache-hit != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          cache_dir="$HOME/.cache/magic-survival-godot"
+          download_dir="$RUNNER_TEMP/godot-download"
+          mkdir -p "$cache_dir/templates" "$download_dir"
+          cd "$download_dir"
+          base_url="https://github.com/godotengine/godot-builds/releases/download/${GODOT_VERSION}-stable"
+          editor_zip="Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          templates_zip="Godot_v${GODOT_VERSION}-stable_export_templates.tpz"
+          curl --fail --location --retry 3 "$base_url/$editor_zip" --output "$editor_zip"
+          curl --fail --location --retry 3 "$base_url/$templates_zip" --output "$templates_zip"
+          curl --fail --location --retry 3 "$base_url/SHA512-SUMS.txt" --output SHA512-SUMS.txt
+          sha512sum --check --ignore-missing SHA512-SUMS.txt
+          unzip -q -j "$editor_zip" -d "$cache_dir"
+          unzip -q -j "$templates_zip" templates/web_nothreads_release.zip templates/version.txt -d "$cache_dir/templates"
+          chmod +x "$cache_dir/Godot_v${GODOT_VERSION}-stable_linux.x86_64"
+      - name: Install Web export template
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
+          cp "$HOME/.cache/magic-survival-godot/templates/"* "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable/"
+          echo "GODOT_BIN=$HOME/.cache/magic-survival-godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64" >> "$GITHUB_ENV"
+      - name: Import and verify native game rules
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$GODOT_BIN" --version
+          "$GODOT_BIN" --headless --path godot --import
+          "$GODOT_BIN" --headless --path godot --script res://tests/test_simulation.gd
+          "$GODOT_BIN" --headless --path godot --script res://tests/test_records.gd
+          "$GODOT_BIN" --headless --path godot --script res://tests/test_ui.gd --quit-after 5
+      - name: Build the single-thread Godot Web preview
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .site
+          "$GODOT_BIN" --headless --path godot --export-release Web "$GITHUB_WORKSPACE/.site/index.html"
+          cp godot/THIRD_PARTY_NOTICES.md .site/THIRD_PARTY_NOTICES.md
+          cp output/pdf/magic-survival-full-design.pdf .site/design.pdf
+          touch .site/.nojekyll
+          python3 - <<'PY'
+          import datetime, json, os
+          from pathlib import Path
+          Path('.site/build-info.json').write_text(json.dumps({
+              'commit': os.environ['GITHUB_SHA'],
+              'engine': os.environ['GODOT_VERSION'] + '.stable',
+              'built_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              'threaded': False,
+          }, indent=2) + '\n')
+          PY
+      - uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: .site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish the playable preview
+        id: deployment
+        uses: actions/deploy-pages@v5.0.1
