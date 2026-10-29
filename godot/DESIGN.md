@@ -1,12 +1,18 @@
 # Godot Native Design
 
+## Visual correction authority - 2026-10-29
+- User rejected the prior navy/gold UI and primitive characters. docs/visual/magic-survival-reference.md and the official Magic Survival screenshots override contradictory visual language below.
+- Target: muted olive/gray textured ground; tiny black robed subject and ragged ink enemies; green HP below player; slim top blue XP/time/pause; black rough upgrade rows, cyan headings, white distressed ASCII type.
+- Menu is black with blue forest zone art and a white PLAY action. Remove marketing hero copy and oversized dashboard blocks.
+- Keep gameplay/save IDs/project config/name stable. User-data compatibility and functional tests remain binding. Native project/export/record contracts below still apply.
+
 ## Source of truth
 - Active, 2026-10-29. User selected Godot 4 + GDScript for the mobile app.
 - Full vision: ../docs/gdd/FULL_DESIGN.md. HTML reference: ../core.mjs and ../game.js, verified at commit78a47c4 with35tests.
 - Native first build preserves8spells/4fusions/12artifacts, quick300s and expedition600s/boss510s. Later GDD catalogs remain proposed content.
 
 ## Brand
-- Dark grimoire/ruins, high-contrast magic, teal/silver text and gold actions. Avoid noisy surfaces that obscure danger.
+- Magic Survival reference: black ink silhouettes on quiet olive/gray terrain, bright magic, cyan headings and distressed white actions. See ../docs/visual/magic-survival-reference.md.
 - Reuse imported icons with their source manifest; new art is separate. The current app is a fan-game prototype.
 
 ## Product goals
@@ -19,8 +25,8 @@
 - Understand the next attack, choose a build and retry without setup friction.
 
 ## Information architecture
-- Welcome: title, short promise, quick/expedition selection, actual best record, start.
-- Play: health/time/XP/level, small loadout strip, pause; boss health and direction when relevant.
+- Welcome: black zone menu, blue forest art, quick/expedition selection, actual best record and PLAY.
+- Play: thin top XP/time/pause, short green HP below player; boss health and direction when relevant. Loadout and recipes live in pause.
 - Upgrade/artifact:3readable choices, actual icon/name/effect, combat frozen.
 - Pause: resume and current loadout/recipe list. Result: reason/time/kills/level, retry/home.
 
@@ -30,14 +36,14 @@
 - Active danger differs from warning by fill, outline/pattern and timing, not color alone.
 
 ## Visual language
-- Ink #0b1016, panel #111b25, silver #e2e8e5, gold #d9b66f, teal #80d4d1.
-- Bundle an openly licensed Korean font. Body text >=18logical px and primary touch targets >=48logical px at540viewport.
-- Reuse simple flat panels, slim separators, generous spacing and a restrained procedural sigil. No 3D camera/postprocessing.
+- Black #020302, olive ground #7d8065, white #f2f3eb, cyan #60eadb, yellow #ffdf56 for levels, blue #50b9ff for XP.
+- Bundle Noto Sans KR for readable Korean and the provided MagicSurvival font for ASCII display text. Body text >=18logical px; separate visible thin icons from generous touch regions.
+- Rough black choice rows, white brush icons, large cyan heading and a restrained occult seal. Menu art is blue fog forest. No 3D camera/postprocessing.
 - Persistent effects bounded; a filled danger region must not look identical to its warning.
 
 ## Components
 - Native Control/Container/Button/Label/TextureRect/ProgressBar; styles built once and reused.
-- Canvas drawing for combat entities, projectiles, rings and joystick; texture imports for existing UI icons.
+- Canvas draws generated alpha sprites for player/enemies/boss, tiled ground, layered spell FX and drag feedback; texture imports for original and generated UI icons.
 - HUD owns layout and selection callbacks; game owns scene/input/camera; simulation owns all combat rules.
 
 ## Accessibility

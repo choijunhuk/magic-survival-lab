@@ -226,6 +226,24 @@
       "sha256": "914ecbd41220487b3939148bcf1d95e465bf1d5a5c4f0327fb03e44330937b23",
       "bytes": 130442,
       "kind": "image"
+    },
+    {
+      "file": "assets/magic-survival-icon.png",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/icon.png",
+      "gitBlobSha": "b3b12207b474ced2e55a628ecd2671088e945983",
+      "sha256": "7adfd62a91d6b6b676206d0c0550545e79ff434895f30017191338cb44404670",
+      "bytes": 11753,
+      "kind": "image",
+      "original_file": "assets/icon.png"
+    },
+    {
+      "file": "assets/fonts/MagicSurvival.ttf",
+      "source": "https://raw.githubusercontent.com/TomkoSK/magic-survival-builder/d58d53117e6bead22ee08f0ecac7bff9658ae922/magicSurvival.ttf",
+      "gitBlobSha": "a53fb82112cca103da32884a9ea69fca2d743f2f",
+      "sha256": "08c0cd4b72d3f0edcffa5b799578009a02b3ed720c58df06d9ab750534c41e65",
+      "bytes": 19924,
+      "kind": "font",
+      "original_file": "assets/magicSurvival.ttf"
     }
   ]
 }

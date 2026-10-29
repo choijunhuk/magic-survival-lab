@@ -4,8 +4,17 @@ const Simulation = preload("res://scripts/simulation.gd")
 const Records = preload("res://scripts/records.gd")
 const Hud = preload("res://scripts/hud.gd")
 const INK = Color("#0b1016")
-const TEAL = Color("#80d4d1")
-const GOLD = Color("#d9b66f")
+const GROUND = Color("#7d8065")
+const PLAYER_SPRITE = "res://assets/generated/player-ink.png"
+const ENEMY_SPRITE = "res://assets/generated/enemy-ink.png"
+const BOSS_SPRITE = "res://assets/generated/boss-ink.png"
+const GROUND_TEXTURE = "res://assets/generated/ground-olive.png"
+const REQUIRED_TEXTURES = {
+	PLAYER_SPRITE: preload("res://assets/generated/player-ink.png"),
+	ENEMY_SPRITE: preload("res://assets/generated/enemy-ink.png"),
+	BOSS_SPRITE: preload("res://assets/generated/boss-ink.png"),
+	GROUND_TEXTURE: preload("res://assets/generated/ground-olive.png"),
+}
 
 var sim: RefCounted
 var records: RefCounted
@@ -17,8 +26,11 @@ var touch_id := -1
 var touch_origin := Vector2.ZERO
 var touch_position := Vector2.ZERO
 var fixed_step := 0.0
+var _textures := {}
+var _sprite_regions := {}
 
 func _ready() -> void:
+	DisplayServer.window_set_title("Magic Survival Lab")
 	get_viewport().gui_release_focus()
 	sim = Simulation.new(1, selected_mode)
 	records = Records.new()
@@ -96,7 +108,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if sim == null or sim.state.get("phase") != "playing":
 		return
 	if event is InputEventScreenTouch:
-		if event.pressed and touch_id == -1 and event.position.y > get_viewport_rect().size.y * 0.48 and event.position.x < get_viewport_rect().size.x * 0.65:
+		if event.pressed and touch_id == -1:
 			touch_id = event.index
 			touch_origin = event.position
 			touch_position = event.position
@@ -146,86 +158,135 @@ func _world(point: Dictionary) -> Vector2:
 
 func _draw() -> void:
 	var size := get_viewport_rect().size
-	draw_rect(Rect2(Vector2.ZERO, size), INK)
 	var phase: String = sim.state.get("phase", "ready") if sim != null else "ready"
 	if phase == "ready":
-		_draw_sigil(size * Vector2(0.77, 0.42), minf(size.x * 0.23, 160), 0.3)
+		draw_rect(Rect2(Vector2.ZERO, size), Color.BLACK)
 		return
 	var p: Dictionary = sim.state.get("player", {})
 	var center := size * 0.5
-	var base := Vector2(floorf(float(p.get("x", 0)) / 80.0) * 80.0, floorf(float(p.get("y", 0)) / 80.0) * 80.0)
-	for ix in range(-5, 6):
-		for iy in range(-8, 9):
-			var at := center + base + Vector2(ix * 80, iy * 80) - Vector2(float(p.get("x", 0)), float(p.get("y", 0)))
-			if at.x >= 0 and at.x < size.x and at.y >= 0 and at.y < size.y:
-				draw_circle(at, 1.0, Color("#20313a"))
+	_draw_ground(size, Vector2(float(p.get("x", 0)), float(p.get("y", 0))))
 	for zone in sim.state.get("zones", []):
 		var at := _world(zone)
 		var radius := float(zone.get("radius", 50))
-		draw_circle(at, radius, Color(0.3, 0.7, 0.8, 0.1))
-		draw_arc(at, radius, 0, TAU, 48, TEAL.darkened(0.25), 2.0)
+		draw_circle(at, radius, Color(0.16, 0.18, 0.12, 0.13))
+		draw_arc(at, radius, 0, TAU, 48, Color(0.45, 0.62, 0.35, 0.5), 2.0)
 	for strike in sim.state.get("strikes", []):
 		var at := _world(strike)
 		var radius := float(strike.get("radius", 75))
-		draw_arc(at, radius, 0, TAU, 48, GOLD, 3.0)
-		draw_line(at + Vector2(-radius * .55, 0), at + Vector2(radius * .55, 0), GOLD, 2)
+		draw_arc(at, radius, 0, TAU, 48, Color("#f3e3a1"), 2.0)
+		draw_line(at + Vector2(-radius * .55, 0), at + Vector2(radius * .55, 0), Color("#fff2c7"), 2)
 	for hazard in sim.state.get("hazards", []):
 		var at := _world(hazard)
 		var radius := float(hazard.get("radius", 70))
 		if _hazard_is_active(hazard):
-			draw_circle(at, radius, Color(0.91, 0.28, 0.23, 0.35))
-			draw_arc(at, radius, 0, TAU, 48, Color("#ff927e"), 4)
+			draw_circle(at, radius, Color(0.8, 0.19, 0.11, 0.42))
+			draw_arc(at, radius, 0, TAU, 48, Color("#ffdd9c"), 3)
 		else:
-			draw_arc(at, radius, 0, TAU, 48, Color("#ffb78f"), 3)
+			draw_arc(at, radius, 0, TAU, 48, Color("#e8b993"), 3)
 			for j in range(8):
 				var angle := TAU * j / 8.0
-				draw_line(at + Vector2.from_angle(angle) * radius * .65, at + Vector2.from_angle(angle) * radius * .9, GOLD, 2)
+				draw_line(at + Vector2.from_angle(angle) * radius * .72, at + Vector2.from_angle(angle) * radius, Color("#f5caa1"), 2)
 	for gem in sim.state.get("gems", []):
 		var at := _world(gem)
-		draw_colored_polygon(PackedVector2Array([at + Vector2(0, -6), at + Vector2(5, 0), at + Vector2(0, 6), at + Vector2(-5, 0)]), TEAL)
+		draw_circle(at, 5.0, Color(0.12, 0.53, 1.0, 0.24))
+		draw_circle(at, 2.8, Color("#18a6ff"))
+		draw_circle(at, 1.2, Color.WHITE)
 	for chest in sim.state.get("chests", []):
 		var at := _world(chest)
-		draw_rect(Rect2(at - Vector2(10, 8), Vector2(20, 16)), GOLD)
-		draw_rect(Rect2(at - Vector2(7, 5), Vector2(14, 10)), Color("#513e27"))
+		draw_circle(at, 15, Color(0.08, 0.08, 0.06, 0.25))
+		draw_colored_polygon(PackedVector2Array([at + Vector2(0, -10), at + Vector2(8, 0), at + Vector2(0, 10), at + Vector2(-8, 0)]), Color("#f2eee2"))
+		draw_colored_polygon(PackedVector2Array([at + Vector2(0, -7), at + Vector2(5, 0), at + Vector2(0, 7), at + Vector2(-5, 0)]), Color("#161611"))
 	for enemy in sim.state.get("enemies", []):
-		var at := _world(enemy)
-		var radius := float(enemy.get("radius", 12))
-		var kind: String = enemy.get("kind", "normal")
-		if kind == "boss":
-			var crown := PackedVector2Array([at + Vector2(-radius, radius), at + Vector2(-radius*.8, -radius*.8), at + Vector2(-radius*.3, -radius*.3), at + Vector2(0, -radius*1.35), at + Vector2(radius*.3, -radius*.3), at + Vector2(radius*.8, -radius*.8), at + Vector2(radius, radius)])
-			draw_colored_polygon(crown, Color("#75454b"))
-			draw_arc(at, radius * 1.1, 0, TAU, 48, GOLD, 3)
-		elif kind == "elite":
-			draw_circle(at, radius, Color("#b1796e"))
-			draw_arc(at, radius + 3, 0, TAU, 24, GOLD, 2)
-		else:
-			draw_circle(at, radius, Color("#6b858a") if float(enemy.get("slow", 0)) <= 0 else Color("#96d9e7"))
-		if kind != "normal":
-			var health := float(enemy.get("hp", 0)) / maxf(1, float(enemy.get("maxHp", 1)))
-			draw_rect(Rect2(at + Vector2(-radius, radius+6), Vector2(radius*2, 3)), Color("#3a3033"))
-			draw_rect(Rect2(at + Vector2(-radius, radius+6), Vector2(radius*2*health, 3)), GOLD)
+		_draw_enemy(enemy)
 	for projectile in sim.state.get("projectiles", []):
-		var at := _world(projectile)
-		var fire: bool = projectile.get("kind", "") == "fireball"
-		draw_circle(at, float(projectile.get("radius", 6)) + 4, Color(1.0, .48, .24, .2) if fire else Color(.5, .9, 1, .18))
-		draw_circle(at, float(projectile.get("radius", 6)), Color("#ffab6e") if fire else TEAL)
+		_draw_projectile(projectile)
 	for effect in sim.state.get("effects", []):
 		_draw_effect(effect)
 	var orbit_count := mini(8, int(sim.state.get("spells", {}).get("orbit", 0)))
 	for i in range(orbit_count):
 		var orbit_pos: Vector2 = sim.orbit_position(i)
 		var at := center + orbit_pos - Vector2(float(p.get("x", 0)), float(p.get("y", 0)))
-		draw_colored_polygon(PackedVector2Array([at + Vector2(0, -13), at + Vector2(7, 4), at + Vector2(0, 11), at + Vector2(-7, 4)]), GOLD)
+		draw_circle(at, 12, Color(0.64, 0.55, 1, 0.12))
+		draw_circle(at, 6, Color("#ece0ff"))
+		draw_circle(at, 3, Color.WHITE)
 	if int(p.get("shield", 0)) > 0:
-		draw_arc(center, 24, 0, TAU, 40, GOLD, 2)
+		draw_arc(center, 22, 0, TAU, 40, Color("#d6e5ed"), 2)
 	if float(p.get("invulnerable", 0)) <= 0 or fmod(float(sim.state.get("time", 0)) * 12, 2) < 1:
-		draw_circle(center, 18, Color(.45, .83, .82, .14))
-		draw_colored_polygon(PackedVector2Array([center + Vector2(0,-17), center + Vector2(13,14), center + Vector2(0,8), center + Vector2(-13,14)]), Color("#bedbd9"))
-		draw_circle(center + Vector2(7,-7), 3, TEAL)
+		_draw_shadow(center + Vector2(0, 15), 12)
+		_draw_sprite(PLAYER_SPRITE, center + Vector2(0, -2), Vector2(28, 32))
+	var health := clampf(float(p.get("hp", 0)) / maxf(1, float(p.get("maxHp", 1))), 0, 1)
+	draw_rect(Rect2(center + Vector2(-12, 18), Vector2(24, 3)), Color("#25261a"))
+	draw_rect(Rect2(center + Vector2(-12, 18), Vector2(24 * health, 3)), Color("#5ae321"))
 	if touch_id != -1:
-		draw_circle(touch_origin, 54, Color(0.5, .83, .82, .14))
-		draw_arc(touch_origin, 54, 0, TAU, 40, TEAL, 2)
-		draw_circle(touch_origin + (touch_position - touch_origin).limit_length(54), 23, Color(.5, .83, .82, .42))
+		draw_arc(touch_origin, 54, 0, TAU, 40, Color(1, 1, 1, 0.19), 1)
+		draw_circle(touch_origin + (touch_position - touch_origin).limit_length(54), 13, Color(1, 1, 1, 0.23))
+
+func _texture(path: String) -> Texture2D:
+	if _textures.has(path):
+		return _textures[path]
+	var texture: Texture2D = REQUIRED_TEXTURES[path]
+	_textures[path] = texture
+	_sprite_regions[path] = texture.get_image().get_used_rect()
+	return texture
+
+func _draw_sprite(path: String, at: Vector2, dimensions: Vector2, rotation := 0.0, flip := false, tint := Color.WHITE) -> void:
+	var texture := _texture(path)
+	if texture == null:
+		return
+	var region: Rect2i = _sprite_regions[path]
+	if region.size.x <= 0 or region.size.y <= 0:
+		return
+	draw_set_transform(at, rotation, Vector2(-1 if flip else 1, 1))
+	draw_texture_rect_region(texture, Rect2(-dimensions * 0.5, dimensions), Rect2(region), tint)
+	draw_set_transform(Vector2.ZERO)
+
+func _draw_ground(size: Vector2, player_position: Vector2) -> void:
+	draw_rect(Rect2(Vector2.ZERO, size), GROUND)
+	var texture := _texture(GROUND_TEXTURE)
+	if texture == null:
+		return
+	var tile := Vector2(512, 512)
+	var offset := Vector2(fposmod(size.x * 0.5 - player_position.x, tile.x), fposmod(size.y * 0.5 - player_position.y, tile.y))
+	var columns := ceili(size.x / tile.x) + 2
+	var rows := ceili(size.y / tile.y) + 2
+	for ix in range(-1, columns):
+		for iy in range(-1, rows):
+			var at := offset + Vector2(ix * tile.x, iy * tile.y)
+			draw_texture_rect(texture, Rect2(at, tile), false, Color(1, 1, 1, 0.55))
+
+func _draw_shadow(at: Vector2, radius: float) -> void:
+	draw_set_transform(at, 0, Vector2(1, 0.38))
+	draw_circle(Vector2.ZERO, radius, Color(0.07, 0.08, 0.05, 0.14))
+	draw_set_transform(Vector2.ZERO)
+
+func _draw_enemy(enemy: Dictionary) -> void:
+	var at := _world(enemy)
+	var kind: String = enemy.get("kind", "normal")
+	var id := int(enemy.get("id", 0))
+	var radius := float(enemy.get("radius", 15))
+	var height := 70.0 if kind == "boss" else 48.0 if kind == "elite" else 25.0 if kind == "swift" else 32.0
+	if kind != "boss":
+		height *= 0.8 + float(posmod(id * 17, 11)) * 0.04
+	var width := height * (0.62 if kind == "swift" else 0.9)
+	if kind != "boss":
+		width *= 0.8 + float(posmod(id * 29, 11)) * 0.04
+	_draw_shadow(at + Vector2(0, radius * 0.6), width * 0.48)
+	var tint := Color("#bfcde0") if float(enemy.get("slow", 0)) > 0 else Color.WHITE
+	var angle := 0.0 if kind == "boss" else (get_viewport_rect().size * 0.5 - at).angle() + PI * 0.5 if kind == "swift" else fposmod(float(id) * 2.399963, TAU)
+	_draw_sprite(BOSS_SPRITE if kind == "boss" else ENEMY_SPRITE, at + Vector2(0, -height * 0.24), Vector2(width, height), angle, id % 2 == 0, tint)
+	if float(enemy.get("slow", 0)) > 0:
+		draw_arc(at, radius + 2, 0, TAU, 24, Color(0.68, 0.88, 1, 0.58), 2)
+
+func _draw_projectile(projectile: Dictionary) -> void:
+	var at := _world(projectile)
+	var fire: bool = projectile.get("kind", "") == "fireball"
+	var velocity := Vector2(float(projectile.get("vx", 0)), float(projectile.get("vy", 0))).normalized()
+	var radius := float(projectile.get("radius", 6))
+	draw_line(at - velocity * 19, at, Color(1, 0.32, 0.03, 0.3) if fire else Color(0.58, 0.61, 1, 0.4), 7)
+	draw_line(at - velocity * 9, at, Color("#ffb236") if fire else Color("#d9deff"), 3)
+	draw_circle(at, radius + 6, Color(1, 0.36, 0.03, 0.18) if fire else Color(0.45, 0.53, 1, 0.17))
+	draw_circle(at, radius, Color("#ff9d1f") if fire else Color("#afbbff"))
+	draw_circle(at, maxf(2, radius * 0.48), Color("#fff8d8") if fire else Color.WHITE)
 
 func _hazard_is_active(hazard: Dictionary) -> bool:
 	return float(hazard.get("warning", 0)) <= 0 and float(hazard.get("active", 0)) > 0
@@ -233,24 +294,45 @@ func _hazard_is_active(hazard: Dictionary) -> bool:
 func _draw_effect(effect: Dictionary) -> void:
 	var at := _world(effect)
 	var kind: String = effect.get("type", "")
-	var progress := 1.0 - float(effect.get("life", 0)) / maxf(.001, float(effect.get("maxLife", 1)))
+	var progress := clampf(1.0 - float(effect.get("life", 0)) / maxf(.001, float(effect.get("maxLife", 1))), 0, 1)
 	var radius := float(effect.get("radius", 20))
 	match kind:
 		"beam", "lightning":
 			var from := _world({"x": effect.get("fromX", 0), "y": effect.get("fromY", 0)})
-			draw_line(from, at, TEAL if kind == "beam" else Color("#b5bdff"), 8 if kind == "beam" else 4)
-		"frost", "vortex", "pulse", "explosion", "meteor":
+			var points := PackedVector2Array()
+			for i in range(9):
+				var t := float(i) / 8.0
+				var side := Vector2(-(at.y - from.y), at.x - from.x).normalized()
+				var jitter := sin(float(i * 37) + float(sim.state.get("time", 0)) * 11.0) * (5.0 if kind == "lightning" else 2.0)
+				points.append(from.lerp(at, t) + side * jitter if i > 0 and i < 8 else from.lerp(at, t))
+			draw_polyline(points, Color(0.46, 0.35, 1, 0.32), 10)
+			draw_polyline(points, Color("#fff9e9") if kind == "lightning" else Color("#b9ecff"), 3)
+		"frost":
+			draw_circle(at, radius, Color(0.54, 0.81, 1, 0.12))
+			for i in range(12):
+				var v := Vector2.from_angle(TAU * float(i) / 12.0)
+				draw_line(at + v * radius * 0.55, at + v * radius * (0.88 + 0.1 * progress), Color("#d9f2ff"), 3)
+			draw_arc(at, radius, 0, TAU, 48, Color("#8bd9ff"), 3)
+		"vortex":
+			draw_circle(at, radius * 0.8, Color(0.12, 0.05, 0.2, 0.3))
+			for i in range(3):
+				draw_arc(at, radius * (0.45 + i * 0.23), progress * TAU + i, progress * TAU + i + PI * 1.3, 24, Color(0.68, 0.53, 0.98, 0.8 - i * 0.15), 3)
+		"pulse", "explosion", "meteor":
 			if kind == "pulse":
 				radius = float(effect.get("maxRadius", 120)) * progress
-			draw_arc(at, radius, 0, TAU, 48, Color("#ffab6e") if kind in ["explosion", "meteor"] else Color("#a2d9f4") if kind == "frost" else TEAL, 4)
+			var color := Color("#fff2b3") if kind in ["explosion", "meteor"] else Color("#dad0ff")
+			draw_circle(at, radius * 0.6, Color(color.r, color.g, color.b, 0.12 * (1 - progress)))
+			draw_arc(at, radius, 0, TAU, 48, color, 4)
+			for i in range(10):
+				var angle := TAU * float(i) / 10.0 + progress * 0.5
+				var v := Vector2.from_angle(angle)
+				draw_line(at + v * radius * 0.65, at + v * radius * (1.05 + 0.2 * progress), color, 2)
 		"hit", "death", "heal":
-			draw_circle(at, 10 + progress * 18, Color(.98, .41, .4, .25) if kind == "hit" else Color(.5, .86, .62, .25) if kind == "heal" else Color(.8, .7, .55, .16))
+			var color := Color("#ffe3bb") if kind == "hit" else Color("#8df052") if kind == "heal" else Color("#17170e")
+			for i in range(6):
+				var v := Vector2.from_angle(TAU * float(i) / 6.0 + float(effect.get("x", 0)) * 0.1)
+				draw_circle(at + v * (4 + progress * 18), 2.5 * (1 - progress) + 0.5, color)
 		_:
-			draw_circle(at, 12 + progress * 10, Color(.96, .58, .38, .3) if kind == "fireball" else Color(.5, .86, .82, .25))
-
-func _draw_sigil(at: Vector2, radius: float, opacity: float) -> void:
-	draw_arc(at, radius, 0, TAU, 64, Color(.5, .83, .82, opacity * .4), 2)
-	for i in range(8):
-		var v := Vector2.from_angle(TAU * i / 8.0)
-		draw_circle(at + v * radius, 2, Color(.7, .85, .8, opacity))
-	draw_colored_polygon(PackedVector2Array([at+Vector2(0,-16), at+Vector2(10,0), at+Vector2(0,16), at+Vector2(-10,0)]), Color(.85,.7,.43,opacity))
+			var fire := kind == "fireball"
+			draw_circle(at, 12 + progress * 12, Color(1, 0.38, 0.04, 0.22) if fire else Color(0.54, 0.55, 1, 0.2))
+			draw_circle(at, 5 * (1 - progress) + 1, Color("#fff4cf") if fire else Color("#faf5ff"))

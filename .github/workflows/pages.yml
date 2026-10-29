@@ -82,6 +82,17 @@ jobs:
           python3 - <<'PY'
           import datetime, json, os
           from pathlib import Path
+          # Pack names change per commit so a cached previous preview cannot mix art/code.
+          import re
+          entry = Path('.site/index.html')
+          source = entry.read_text().replace('<title>균열 원정</title>', '<title>Magic Survival Lab</title>')
+          match = re.search(r'const GODOT_CONFIG = (\{[^\n]+\});', source)
+          config = json.loads(match.group(1))
+          pack = 'index-' + os.environ['GITHUB_SHA'] + '.pck'
+          Path('.site/index.pck').rename('.site/' + pack)
+          config['mainPack'] = pack
+          config['fileSizes'][pack] = config['fileSizes'].pop('index.pck')
+          entry.write_text(source[:match.start(1)] + json.dumps(config) + source[match.end(1):])
           Path('.site/build-info.json').write_text(json.dumps({
               'commit': os.environ['GITHUB_SHA'],
               'engine': os.environ['GODOT_VERSION'] + '.stable',

@@ -1,0 +1,140 @@
+{
+  "source_url": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+  "assets": [
+    {
+      "file": "assets/generated/player-ink.png",
+      "role": "player",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-29",
+      "reference": "official Magic Survival Google Play screenshots",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "used_rect": [
+        33,
+        64,
+        1232,
+        1200
+      ],
+      "sha256": "d07c2cf7092cb90a6f8429cd13c4c6e54689a82901e96897cc1d3d6c06ca2813"
+    },
+    {
+      "file": "assets/generated/enemy-ink.png",
+      "role": "enemy",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-29",
+      "reference": "official Magic Survival Google Play screenshots",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "used_rect": [
+        152,
+        20,
+        1158,
+        1171
+      ],
+      "sha256": "140ddc6869c291385c17bef55689154a2b8c0cd5122667194ce959d378fe6472"
+    },
+    {
+      "file": "assets/generated/boss-ink.png",
+      "role": "boss",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-29",
+      "reference": "official Magic Survival Google Play screenshots",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "used_rect": [
+        0,
+        4,
+        1224,
+        1254
+      ],
+      "sha256": "975b42fe56e7ca56dab678e2efa5dbe647da2fe5564a4e15e959df88c7059019"
+    },
+    {
+      "file": "assets/generated/ground-olive.png",
+      "role": "ground",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-29",
+      "reference": "official Magic Survival Google Play screenshots",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "used_rect": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "sha256": "f3c6a0950816d8e280963b8c32fd9f40636122382d8eeb0b3a220cd2b618bd1d",
+      "previous_sha256": "3cd1328ac81214882f9f82b748aaee8f50ed250b929b08e8b41805fb21d4c29f",
+      "refinement": "Remove uniform pepper noise; retain isolated grass/scuff clusters and quiet olive ground."
+    },
+    {
+      "file": "assets/generated/zone-forest.png",
+      "role": "forest",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-29",
+      "reference": "official Magic Survival Google Play screenshots",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "used_rect": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "sha256": "b7d0fbc0c686ec59ad56ba718c1e2b50d7052fe4e78cde6e87cd1896e3370ac6"
+    },
+    {
+      "file": "assets/generated/icon-fireball.png",
+      "role": "fireball-choice-icon",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-29",
+      "reference": "official Magic Survival Select Magic screenshot",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1795014f2041c69ba6a2df0f1eaaf564b52374a78ce66232cf4db50db31b0220"
+    }
+  ],
+  "prompt_file": "prompts.json"
+}

@@ -1,0 +1,50 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompts": [
+    {
+      "role": "player",
+      "reference_file": "combat.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset type: production transparent 2D game sprite. From the reference Magic Survival gameplay screenshot, extract and faithfully reconstruct ONLY the tiny central player: a pure-black ragged pointed wizard-hat and robe HUMANOID silhouette, slender body with little arms and feet and a slightly crooked hat. Preserve its simple distressed ink/pixel silhouette identity; it is not a triangle, spaceship, colorful chibi, realistic person, or white ghost. Enlarge that single character to occupy about 80% of a square output canvas so it can later be drawn at 28-32 pixels high. Rough crisp pixel/ink edges, near-black core with only very subtle dark-gray grain. One single standing/walking-neutral 3/4 side sprite facing right, not a sheet. Remove terrain, HP bar, shadow, magic, enemies, UI and all text. Truly transparent alpha background; no checkerboard, no panel, no glow, no drop shadow."
+    },
+    {
+      "role": "enemy",
+      "reference_file": "combat.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset type: production transparent enemy sprite for the same 2D Magic Survival-like game. From the reference, isolate and reconstruct ONE of the ragged black spirit clumps approaching the player. Faithful rough pixel-ink/twig cluster, irregular roughly oval mass, many tiny spiky/torn leaf-like black flecks at its edge, dense near-black center and a few small transparent holes. Slightly asymmetric, like a crawling knot of corrupted black ink. No humanoid face, eyes, slime ball, smooth circle, animal, big horns or colorful creature. Single isolated sprite centered and occupying about 80% of square canvas, readable when drawn 24-34 pixels high. Remove all other enemies, ground, UI, shadow and effects. Actual transparent alpha background, no checkerboard or text. Match source game's restrained coarse low-resolution texture."
+    },
+    {
+      "role": "boss",
+      "reference_file": "combat.png",
+      "transparent_background": true,
+      "prompt": "Use case: style-transfer / precise-object-edit. Asset type: one large transparent boss spirit sprite extending the same reference's enemy design. Reconstruct a larger menacing corrupted black ink mass consistent with the supplied Magic Survival black swarms: asymmetrical tall oval core, dense torn ink, long uneven twig-like protrusions, holes and shredded pixel fringes. Minimal monochrome near-black and dark-gray grain, no face, no crown, no geometric polygon, no 3D shading, no neon aura or text. Single isolated 2D overhead/slightly-front sprite with grounded silhouette, about 80% of square canvas, intended to appear 60-80 game pixels high. No ground, no other figures, no shadow, no GUI. True transparent alpha background, crisp rough sprite edges."
+    },
+    {
+      "role": "ground",
+      "reference_file": "combat.png",
+      "transparent_background": false,
+      "prompt": "Use case: style-transfer. Asset type: seamless repeatable top-down 2D gameplay terrain texture. Reconstruct ONLY the flat desaturated gray-olive dirt/grass ground visible in the reference Magic Survival screenshot. Match its average muted olive (#7c8065 approximately), restrained contrast and coarse small grain, scattered faint gray/brown scuffs, sparse tiny broken black grass marks and worn dirt flecks. Seamless on all four edges. Flat overhead orthographic, no perspective, no horizon, no scenic lighting or vignette. Keep most ground empty and visually quiet so small black characters and colored spells stand out. No characters, enemies, pickups, magic, shadows, HP bars, border, UI, text, roads, large stones or big decorative patterns. Square production tile, moderate texture density, faithful low-resolution ink-game feel rather than photorealistic grass."
+    },
+    {
+      "role": "forest",
+      "reference_file": "zone-menu.png",
+      "transparent_background": false,
+      "prompt": "Use case: precise-object-edit / background-extraction. Asset type: native-game zone selection artwork. Remove the screenshot's black outer page, all headings, arrows, X, progress bar, clock, descriptions and PLAY text. Reconstruct ONLY its central blue foggy forest/abandoned structure illustration as a clean portrait-ish square artwork: desaturated cyan-blue mist, rough black bare tree trunks and broken crossbeams dominating the right, low black brambles at the bottom, faint distant silhouettes, large blue atmospheric negative space on left. Preserve the reference's exact rough ink/pixel poster language and restrained blue/black palette, not a new lush fantasy forest, glossy painting or 3D scene. Artwork fills image, no surrounding frame, no white background, no characters or lettering. Slightly ragged dark edge is fine; no UI elements."
+    },
+    {
+      "role": "fireball-choice-icon",
+      "reference_file": "magic-choice.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset type: a transparent 2D game spell-selection icon. From the provided Magic Survival Select Magic screenshot, isolate and faithfully reconstruct ONLY the WHITE FIREBALL FLAME GLYPH at the left of the FIRST black card. It is a single upright curling teardrop flame drawn in ragged distressed white ink, with a dark/transparent hollow core, rough spiky brush flecks and a clear readable flame silhouette. Keep the reference's icon identity and distressed low-resolution texture. Enlarge this one icon to fill about 80% of a square canvas for later display at 70 game pixels. Remove the card, lettering, level label, all other icons, all background and all UI. True transparent alpha background; the interior hole is transparent too. White and pale-gray strokes only, no orange, no fireworks, no staff, no brain, no shadow, no checkerboard, no text."
+    },
+    {
+      "role": "ground-refinement",
+      "reference_file": [
+        "ground-v1",
+        "combat.png"
+      ],
+      "transparent_background": false,
+      "prompt": "Use case: precise-object-edit / texture refinement. Asset type: seamless top-down 2D terrain tile for the referenced Magic Survival game. Edit the first supplied ground texture to match the second gameplay reference more faithfully: REMOVE the uniform fine black pepper/sand noise that covers the entire ground. At least 80 percent of the surface should be clean quiet flat muted olive-gray around #7d8066, with only subtle tonal variation. Keep a SMALL NUMBER of localized clusters of worn dirt/scuff spots and tiny torn grass tufts, separated by broad empty spaces; the marks should cluster rather than be evenly sprinkled. Preserve the flat overhead muted ink-game style, no lighting gradient, no vignette, no photoreal grass, no roads or large stones. Seamless matching all four edges. Absolutely no player, enemies, orbs, spells, shadows, interface, labels or borders. Square production texture. Do not add new decorative details; simplify noise while retaining the reference's worn terrain identity."
+    }
+  ]
+}

@@ -8,8 +8,12 @@
 - **[전체 게임 기획서 PDF - 100쪽](output/pdf/magic-survival-full-design.pdf)** — 출시 설계와 장기 확장, 전투·콘텐츠·세계·성장·아트·앱 제작·검증
 - **[전체 기획 원고](docs/gdd/FULL_DESIGN.md)** — 출시 제안 24마법·36조합·96유물·6지역, 장기 제안 48마법·72조합·180유물·9지역. 미래 목표이며 구현 수량이 아닙니다.
 - [초기 확장 제안](docs/superpowers/specs/2026-10-29-expansion-design.md) — 초기 논의 기록. 최종 규모·공명·경제는 전체 기획서를 우선합니다.
-- [현재 UI/동작 기준](DESIGN.md)
+- [Godot UI/동작 기준](godot/DESIGN.md)
 - [다운로드한 전체 에셋 출처](assets/catalog.json) / [현재 게임에 사용한 28개 에셋](assets/sources.json)
+
+## 원작 기준 시각 수정
+
+Godot 화면은 원작의 검정 메뉴·푸른 숲, 올리브색 전장, 작은 먹선 마법사와 적 군집, 청록색 제목·거친 검정 선택 카드로 다시 맞췄습니다. 캐릭터·적·보스·전장·숲·불꽃 문양 6종은 공식 화면을 참고해 새로 생성한 이미지입니다. 추출한 원작 스프라이트라는 뜻은 아닙니다. [참조와 검증 기준](docs/visual/magic-survival-reference.md), [생성 이력](godot/assets/generated/manifest.json)을 함께 남깁니다.
 
 ## 실행
 
