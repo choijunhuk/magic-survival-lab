@@ -38,3 +38,4 @@
 
 [배포40870016637](https://github.com/choijunhuk/magic-survival-lab/actions/runs/40870016637)가 성공했고 build-info는 d8799a4 커밋과 일치했다. 공개 서버의464개 파일 전부 HTTP200, 모바일에서 Pyromancer 검색→화염술사1건, 원본/출처 분리, 가로 넘침 없음과 콘솔 오류 없음을 확인했다. 공개 ZIP을 다시 내려받아473항목 CRC와464이미지 해시가 원본 장부와 일치함을 확인했다. 구역 수는 기본14종과 테라 하드 변형1개를 구별한다.
 
+최종 배포 [40870704299](https://github.com/choijunhuk/magic-survival-lab/actions/runs/40870704299)도 성공했다. 공개 build-info의 d499515 커밋, coverage의 기본14구역·변형1개·비교1장, 최종 ZIP의473항목 CRC와464이미지 해시를 다시 확인했다.
