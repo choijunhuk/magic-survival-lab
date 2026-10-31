@@ -3,6 +3,7 @@
 매직 서바이벌에서 영감을 받은 모바일 생존 게임 프로젝트입니다. Godot4.7 + GDScript 기반 네이티브 클라이언트에 15분 캠페인 확장을 구현했습니다. 기존 퀵5분·10분 원정과 저장 기록은 유지합니다. HTML/Canvas 버전은 전투 규칙을 비교하는 참조로 유지합니다.
 
 - **[Godot 프로젝트와 실행·검증 안내](godot/README.md)**
+- **[Android 앱 다운로드 · 1.0.0 개발 빌드](https://github.com/choijunhuk/magic-survival-lab/releases/download/v1.0.0-dev/magic-survival-godot-debug.apk)** · [릴리스 안내](https://github.com/choijunhuk/magic-survival-lab/releases/tag/v1.0.0-dev) — ARM64, Android 7.0 이상. 개발용 debug 서명입니다.
 - **[1.0 확장 구현·검증표](docs/implementation/1.0-acceptance.md)** — 24마법·36융합·96유물, 6지역·보스·시작 계열, 연구24개와 사건12개. 실제 기기·사람의 밸런스 수용은 별도입니다.
 - **[전체 이미지 자료관 · 464개](https://choijunhuk.github.io/magic-survival-lab/atlas.html)** · **[전체 이미지 ZIP](https://choijunhuk.github.io/magic-survival-lab/reference-assets.zip)** — 기본 구역14종·테라 하드·실험체24종·적/보스8종 등을 추가 수집했습니다. [출처·종류·한계](assets/references/README.md).
 - **[라이브 Godot 웹 체험판](https://choijunhuk.github.io/magic-survival-lab/)** — 공개 HTTPS에서 로딩·시작·일시정지를 확인했습니다. Godot/PDF/이미지 자료 변경을 main에 올리면 테스트 후 자동 배포됩니다.
