@@ -1,0 +1,169 @@
+{
+  "source_url": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+  "source_note": "Original Magic Survival screenshots and existing generated Z01 artwork guided style; new zone scenes are original assets, not screenshot crops.",
+  "tool": "image_gen.imagegen",
+  "model": null,
+  "prompt_file": "prompts.json",
+  "assets": [
+    {
+      "file": "z02-ground.png",
+      "zone": "Z02",
+      "role": "ground",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/ground-olive.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "0600e29405e68f6bd6661237cb401a1a56d314c2dc165100e3e5a80db15c132c"
+    },
+    {
+      "file": "z02-preview.png",
+      "zone": "Z02",
+      "role": "preview",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "eb4efde96cdcc26bca9b75a44cb3873e688ccbe449e0b59289c67cd0de199078"
+    },
+    {
+      "file": "z03-ground.png",
+      "zone": "Z03",
+      "role": "ground",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/ground-olive.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "6b41c7b4797d270c76db19a0de51fb83f8a30125f468d2df5e9d32b43597f790"
+    },
+    {
+      "file": "z03-preview.png",
+      "zone": "Z03",
+      "role": "preview",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "07c1050e921ca957554f8caa9b937e659e7dba099d346426bc9177ed1ef5a62f"
+    },
+    {
+      "file": "z04-ground.png",
+      "zone": "Z04",
+      "role": "ground",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": null,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "7b3970fb8bbbc8152eb8ff1abc97c190b7a2fa195ae9e9fba81594af1493ffde"
+    },
+    {
+      "file": "z04-preview.png",
+      "zone": "Z04",
+      "role": "preview",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "7401fa990240a97e4778934b57b778fe8cf57f3a2d6da6f51fd53c2e547008ce"
+    },
+    {
+      "file": "z05-ground.png",
+      "zone": "Z05",
+      "role": "ground",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "/Users/choi/.codex/generated_images/01a18fc0-073e-7563-bc8e-695679d707e5/exec-6141cb8c-c2fc-408e-abd7-1b5ef00f6dba.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "34392d079af9c016c8baa8e74979d59a224cabe5545df83999f256b023dad22b"
+    },
+    {
+      "file": "z05-preview.png",
+      "zone": "Z05",
+      "role": "preview",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "85cc0f9fcb8fc9c5576974aa7246b56320283e67aac18410f6a696d204fec5a4"
+    },
+    {
+      "file": "z06-ground.png",
+      "zone": "Z06",
+      "role": "ground",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "/Users/choi/.codex/generated_images/01a18fc0-073e-7563-bc8e-695679d707e5/exec-6e2a600f-1a5b-4068-9ecb-bc4a8b840561.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "921d4a39c85b0c722a46966eea7aa7c3a8bd4ecb643c781fe183ff5f7f0a643e"
+    },
+    {
+      "file": "z06-preview.png",
+      "zone": "Z06",
+      "role": "preview",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "sha256": "6e5ec8faa94df063a9cd1318ebf13e6f580133975805b00833a538575c5b1014"
+    }
+  ]
+}

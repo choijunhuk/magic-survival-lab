@@ -99,7 +99,7 @@ func _run() -> void:
 	invalid.bossDefeated = true
 	expect(not p.complete_run(invalid).ok, "defeat without spawn rejected")
 	invalid.bossSpawned = true
-	expect(not p.complete_run(invalid).ok, "death after boss defeat rejected")
+	expect(not p.complete_run(invalid).ok, "boss defeat before spawn time rejected")
 	invalid.bossDefeated = false
 	expect(not p.complete_run(invalid).ok, "boss cannot spawn before 810 seconds")
 	invalid.erase("phase")
@@ -171,6 +171,32 @@ func _run() -> void:
 	invalid_catalog_run.zoneId = "Z02"
 	invalid_catalog_run.bossKind = "B01"
 	expect(not unknown_catalog.complete_run(invalid_catalog_run).ok, "real catalog still rejects mismatched zone and boss")
+
+
+	# Terminal priority is resolved by the real simulation; raw simultaneous boss
+	# death remains visible in state, but only a final win earns victory rewards.
+	for terminal in ["death", "timeout", "win"]:
+		var sim = ReleaseSimulation.new(91, "campaign", {"runId": "terminal-" + terminal})
+		sim.start()
+		for spell in sim.state.spells: sim.state.spells[spell] = 0
+		sim.state.spawnTimer = 10000
+		sim.state.eliteTimer = 10000
+		sim.state.bossSpawned = true
+		sim.state.bossDefeated = true
+		sim.state.time = 899.99 if terminal == "timeout" else 810.0
+		if terminal == "death": sim.state.player.hp = 0
+		sim.tick(0.05)
+		var terminal_profile = Progression.new(path("terminal-%s.json" % terminal), sim.catalog)
+		expect(terminal_profile.load_profile(), "%s terminal profile starts" % terminal)
+		expect(sim.state.bossDefeated and sim.state.phase == ("won" if terminal == "win" else "lost"), "%s simulation retains raw kill and resolves phase" % terminal)
+		var settled: Dictionary = terminal_profile.complete_run(sim.state)
+		var expected_reward: int = 48 if terminal == "win" else (33 if terminal == "timeout" else 30)
+		expect(settled.ok and settled.reward == expected_reward, "%s terminal receives correct reward" % terminal)
+		expect(terminal_profile.data.clearedZones.has("Z01") == (terminal == "win") and terminal_profile.data.encounteredBosses.has("B01"), "%s terminal sets correct flags" % terminal)
+		expect(terminal_profile.data.best.Z01.bossDefeated == (terminal == "win"), "%s stored record follows final phase" % terminal)
+		expect(terminal_profile.complete_run(sim.state).ok and not terminal_profile.complete_run(sim.state).credited, "%s terminal duplicate is idempotent" % terminal)
+		var loaded_terminal = Progression.new(path("terminal-%s.json" % terminal), sim.catalog)
+		expect(loaded_terminal.load_profile() and loaded_terminal.data.wallet == expected_reward and loaded_terminal.data.clearedZones == terminal_profile.data.clearedZones and loaded_terminal.data.encounteredBosses == ["B01"] and loaded_terminal.data.best.Z01.bossDefeated == (terminal == "win"), "%s terminal reload preserves consistent flags" % terminal)
 
 	# Each scheduled opportunity permits one completion, including at the boundary.
 	for boundary in [90, 270, 450]:

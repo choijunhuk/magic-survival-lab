@@ -21,3 +21,14 @@ olive ground, blue forest and fireball glyph. These are generated recreations,
 not extracted sprites from the original game. manifest.json and prompts.json
 record actual tool, source references, prompts, hashes and alpha checks.
 An AI-generated reconstruction is not evidence of permission from leme.
+
+Release1.0 adds126 unchanged source icon PNG copies used for132 new designed
+choices. data/release_icons.json records the source paths, SHA-256 and motif
+substitutions. Source artwork names are not identities of these new designs.
+Additional10 generated ground/preview PNGs forZ02-Z06 are tracked in
+assets/generated/release-maps/{manifest,prompts}.json with actual tool and hashes.
+The reported model is unknown when imagegen does not supply it.
+
+Five additional transparent boss sprites B02-B06 are generated original
+reconstructions, tracked in assets/generated/release-bosses/manifest.json
+and prompts.json. The B01 runtime image is unchanged.

@@ -4,7 +4,7 @@
       "id": "p001",
       "chapter": "01 비전과 플레이 계약",
       "title": "균열 연대기",
-      "strap": "MAGIC SURVIVAL LAB · GAME DESIGN DOCUMENT · v0.5 · 2026.10.29",
+      "strap": "MAGIC SURVIVAL LAB · GAME DESIGN DOCUMENT · v0.6 · 2026.10.31",
       "status": "design",
       "blocks": [
         {
@@ -36,7 +36,7 @@
         },
         {
           "kind": "callout",
-          "text": "문서 상태: 제작용 초안. 설계 수치와 미래 콘텐츠는 구현·기기 검증 완료를 뜻하지 않는다. 2026-10-29 사용자 선택에 따라 Godot 4 + GDScript로 확정했다. 네이티브 구현과 실제 기기 수용은 별도 검증한다."
+          "text": "문서 상태: 제작·검증용 설계. Godot 4 + GDScript로 확정했다. 2026-10-31 캠페인 구현은 별도 검증표로 추적하며 설계 수량이나 자동 검사 통과를 실기기·사람의 밸런스 수용으로 바꾸지 않는다. 기존 퀵·10분 원정과 새 15분 캠페인은 별도 모드다."
         }
       ],
       "sources": [

@@ -10,6 +10,9 @@ on:
       - 'atlas.html'
       - 'build-atlas.mjs'
       - 'core.mjs'
+      - 'scripts/build-release-catalog.py'
+      - 'scripts/build-release-icons.py'
+      - 'scripts/run-godot-tests.py'
       - 'scripts/package-reference-assets.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
@@ -72,9 +75,9 @@ jobs:
           set -euo pipefail
           "$GODOT_BIN" --version
           "$GODOT_BIN" --headless --path godot --import
-          "$GODOT_BIN" --headless --path godot --script res://tests/test_simulation.gd
-          "$GODOT_BIN" --headless --path godot --script res://tests/test_records.gd
-          "$GODOT_BIN" --headless --path godot --script res://tests/test_ui.gd --quit-after 5
+          python3 scripts/build-release-catalog.py --check
+          python3 scripts/build-release-icons.py
+          python3 scripts/run-godot-tests.py test_simulation test_records test_ui test_release_catalog test_progression test_release_simulation test_release_combat test_release_encounters test_release_review_regressions test_release_effect_budget test_settlement_integration test_artifact_rules test_artifact_integration test_campaign_ui
       - name: Build the single-thread Godot Web preview
         shell: bash
         run: |

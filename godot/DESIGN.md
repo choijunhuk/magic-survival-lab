@@ -9,7 +9,7 @@
 ## Source of truth
 - Active, 2026-10-29. User selected Godot 4 + GDScript for the mobile app.
 - Full vision: ../docs/gdd/FULL_DESIGN.md. HTML reference: ../core.mjs and ../game.js, verified at commit78a47c4 with35tests.
-- Native first build preserves8spells/4fusions/12artifacts, quick300s and expedition600s/boss510s. Later GDD catalogs remain proposed content.
+- Legacy modes preserve8spells/4fusions/12artifacts, quick300s and expedition600s/boss510s. The release campaign adds900s/boss810s with24/36/96 content,6 zones/bosses/classes,24 research,12 events and24normal/18elite definitions; validation status is tracked in ../docs/implementation/1.0-acceptance.md. The 2.x catalog remains proposed.
 
 ## Brand
 - Magic Survival reference: black ink silhouettes on quiet olive/gray terrain, bright magic, cyan headings and distressed white actions. See ../docs/visual/magic-survival-reference.md.
@@ -25,7 +25,7 @@
 - Understand the next attack, choose a build and retry without setup friction.
 
 ## Information architecture
-- Welcome: black zone menu, blue forest art, quick/expedition selection, actual best record and PLAY.
+- Welcome: fixed hub tabs and PLAY footer, scrolling map/class/research/codex/record/mode body, six distinct ink zone previews and actual profile records.
 - Play: thin top XP/time/pause, short green HP below player; boss health and direction when relevant. Loadout and recipes live in pause.
 - Upgrade/artifact:3readable choices, actual icon/name/effect, combat frozen.
 - Pause: resume and current loadout/recipe list. Result: reason/time/kills/level, retry/home.

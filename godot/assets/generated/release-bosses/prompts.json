@@ -1,0 +1,48 @@
+{
+  "tool": "image_gen.imagegen",
+  "model": null,
+  "source_reference": "Official Magic Survival combat screenshot and existing generated B01 boss-ink.png for visual language; GDD boss descriptions in docs/gdd/parts/03-worlds.json and godot/data/release_content.json",
+  "generated_date": "2026-10-31",
+  "prompts": [
+    {
+      "file": "b02.png",
+      "boss_id": "B02",
+      "name_ko": "맹목의 관측자",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "transparent_background": true,
+      "prompt": "Use case: game-sprite. Create ONE isolated transparent 2D boss sprite, B02 Blind Observer, for an overhead dark ink survival game. The supplied boss-ink PNG is STYLE REFERENCE ONLY for ragged near-black handmade ink/twig texture. Change the shape completely: a compact near-round dark orbital eye/lens body, slightly tall, with a single tiny pale off-white slit at its center and 7-9 uneven short spiky ray/scale protrusions radiating around it like rotating markers. Distinct circular silhouette readable at only 70 game pixels. Near-black charred ink with restrained dark gray flecks; no polished eyeball, iris, realistic eye, gears or large glow. Single sprite centered, silhouette fills ~78% of square, true transparent alpha outside and in holes. No background, floor, shadow, aura, second character, text, UI, frame, 3D or painted portrait."
+    },
+    {
+      "file": "b03.png",
+      "boss_id": "B03",
+      "name_ko": "침식의 뿌리",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "transparent_background": true,
+      "prompt": "Use case: game-sprite. Create ONE isolated transparent 2D boss sprite, B03 Root of Erosion, for overhead dark ink survival game. Supplied boss-ink PNG is STYLE REFERENCE ONLY for near-black shredded brush-ink grain. Change shape completely: a broad LOW sprawling root mass, width clearly much greater than height, with 5-7 thick twisting black roots fanning horizontally, a dark central knot and only 2-3 tiny pale gray spore nubs. Silhouette must be legible as a root boss at 70 game pixels and clearly different from tall oval B01 and round B02. Flat 2D overhead/slightly-front game sprite, no botanical realism, no leaves or tree crown. Centered; occupies ~85% width and 50% height of square transparent canvas. True transparent alpha beyond ink, no background, ground, shadow, magic, text, UI, frame, 3D, portrait."
+    },
+    {
+      "file": "b04.png",
+      "boss_id": "B04",
+      "name_ko": "유속 장인",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "transparent_background": true,
+      "prompt": "Use case: game-sprite. Create ONE isolated transparent 2D boss sprite, B04 Flow Artisan, for overhead dark ink survival game. Supplied boss-ink PNG is STYLE REFERENCE ONLY for near-black ragged ink brush edges, not shape. Distinct TALL CROOKED CERAMIC FIGURE: narrow asymmetrical upright torso made of cracked pale-gray ceramic inlays wrapped in black ink, small bent head, two long wavy OUTSTRETCHED arms like liquid channels and three thin trailing flow strands; very limited dim cyan accent in two cracks only. Silhouette at 70px must be recognizable as tall biped/artist, different from B01 blot, B02 round lens and B03 wide root. Flat 2D top-down/slightly front game sprite, rough graphic contours, strong body mass, no detailed portrait face. Centered and fills 75% of square. True transparent alpha outside. No backdrop, water surface, ground, shadow, text, UI, 3D, character painting or photorealism."
+    },
+    {
+      "file": "b05.png",
+      "boss_id": "B05",
+      "name_ko": "유리 서기",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "transparent_background": true,
+      "prompt": "Use case: game-sprite. Create ONE isolated transparent 2D boss sprite, B05 Glass Scribe, for overhead dark ink survival game. Supplied boss-ink is STYLE REFERENCE ONLY for ragged near-black ink grain, not shape. Create a sharp ANGULAR floating stack of three misaligned black glass-page slabs around a hollow mask-like center, with 4 irregular projecting glass shards. Make central negative-space pale gray crack and only tiny desaturated violet cues, no glowing gem. Strong jagged diamond/vertical fragmented silhouette at 70px, visibly distinct from tall B01, round B02, wide B03, bent ceramic B04. Flat hand-inked 2D sprite, centered filling 75-80% square; true transparent alpha around and between fragments. No legs, human face, text, writing, UI, backdrop, ground, shadow, 3D, photorealism or portrait."
+    },
+    {
+      "file": "b06.png",
+      "boss_id": "B06",
+      "name_ko": "종점 방송자",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "transparent_background": true,
+      "prompt": "Use case: game-sprite. Create ONE isolated true-transparent 2D boss sprite, B06 Terminus Broadcaster, for overhead dark ink survival game. Supplied boss-ink PNG is STYLE REFERENCE ONLY for near-black ragged hand-ink brush texture; change the shape completely. Silhouette: a TALL narrow black station signal / loudspeaker stack, with two unequal round horn mouths at different heights, a broken crossbar and 5 thin branching antennae above, torn rail-like legs below. Very small muted ember-red/orange signal slit in one horn, no flames or large glow. At 70 game pixels the overall tall mast and horns must remain distinguishable from other boss shapes. Flat 2D ink game sprite, centered filling 80% height and 55% width of square. True transparent alpha outside and in holes. No background, rails/ground, shadow, full scene, text, UI, anthropomorphic face, 3D, photorealism, portrait."
+    }
+  ]
+}

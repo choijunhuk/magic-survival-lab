@@ -55,7 +55,7 @@ h1{font-size:clamp(30px,5vw,50px);font-weight:700;letter-spacing:-.04em;margin:0
     </div>
     <p class="swipe-hint" aria-hidden="true">분류를 옆으로 밀어보세요 →</p>
   </div>
-  <label class="check"><input id="implemented" type="checkbox">현재 전투에 구현된 항목만 보기</label>
+  <label class="check"><input id="implemented" type="checkbox">HTML 기준선의 전투 구현만 보기</label>
 </div>
 <p class="count" id="count" aria-live="polite"></p>
 <ul class="grid" id="grid"></ul>
@@ -105,7 +105,7 @@ function render() {
     const imageLink = document.createElement('a'); imageLink.className = 'image-link'; imageLink.href = icon.path;
     imageLink.target = '_blank'; imageLink.rel = 'noopener noreferrer'; imageLink.setAttribute('aria-label', icon.name + ' 원본 이미지 열기');
     const img = document.createElement('img'); img.src = icon.path; img.alt = icon.name + ' ' + (typeLabels[icon.assetType] || icon.assetType); img.loading = 'lazy'; imageLink.append(img); card.append(imageLink);
-    const badge = document.createElement('span'); badge.className = 'badge' + (icon.implemented ? ' live' : ''); badge.textContent = icon.implemented ? '전투 구현' : icon.reference ? '참조 자료' : '아이콘 자료'; card.append(badge);
+    const badge = document.createElement('span'); badge.className = 'badge' + (icon.implemented ? ' live' : ''); badge.textContent = icon.implemented ? '기본판 구현' : icon.reference ? '참조 자료' : '아이콘 자료'; card.append(badge);
     const title = document.createElement('h2'); title.textContent = icon.name; card.append(title);
     if (icon.english !== icon.name) { const en = document.createElement('p'); en.className = 'english'; en.textContent = icon.english; card.append(en); }
     const meta = document.createElement('p'); meta.className = 'file'; meta.textContent = labels[icon.category] + ' · ' + (typeLabels[icon.assetType] || icon.assetType) + (icon.reference ? '' : ' · ' + icon.filename); card.append(meta);

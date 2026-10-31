@@ -250,22 +250,8 @@ func tick(dt: float, input: Vector2 = Vector2.ZERO) -> void:
 	dt = minf(dt, 0.05)
 	state.time = minf(state.duration, state.time + dt)
 	var player: Dictionary = state.player
-	var direction := input.limit_length(1.0)
-	player.x += direction.x * player.speed * dt
-	player.y += direction.y * player.speed * dt
-	player.invulnerable = maxf(0, player.invulnerable - dt)
-	if state.artifacts.has("worldtreeleaf"): player.hp = minf(player.maxHp, player.hp + 0.06 * dt)
-	if state.artifacts.has("aegis") and not player.shield:
-		state.shieldTimer -= dt
-		if state.shieldTimer <= 0: player.shield = 1
-	for visual in state.effects:
-		visual.life -= dt
-		if visual.type == "pulse":
-			visual.radius = visual.maxRadius * minf(1, 1 - visual.life / visual.maxLife)
-			for enemy in state.enemies.duplicate():
-				if not visual.hitIds.has(enemy.id) and _distance(visual, enemy) <= visual.radius + enemy.radius:
-					visual.hitIds.append(enemy.id)
-					_hurt_enemy(enemy, visual.damage)
+	_advance_player(dt, input)
+	_advance_effects(dt)
 	var kept := []
 	for visual in state.effects:
 		if visual.life > 0: kept.append(visual)
@@ -283,6 +269,36 @@ func tick(dt: float, input: Vector2 = Vector2.ZERO) -> void:
 		if _distance(gem, player) < 950: kept.append(gem)
 	state.gems = kept
 	if state.mode == "expedition" and state.time >= 510: _spawn_boss()
+	_advance_spawns(dt)
+	_advance_enemies(dt)
+	_advance_world(dt)
+	_advance_attacks(dt)
+	_collect_gems(dt)
+	if state.bossDefeated: state.hazards = []
+	if not _resolve_terminal(): _offer_pending_choices()
+
+func _advance_player(dt: float, input: Vector2) -> void:
+	var player: Dictionary = state.player
+	var direction := input.limit_length(1.0)
+	player.x += direction.x * player.speed * dt
+	player.y += direction.y * player.speed * dt
+	player.invulnerable = maxf(0, player.invulnerable - dt)
+	if state.artifacts.has("worldtreeleaf"): player.hp = minf(player.maxHp, player.hp + 0.06 * dt)
+	if state.artifacts.has("aegis") and not player.shield:
+		state.shieldTimer -= dt
+		if state.shieldTimer <= 0: player.shield = 1
+
+func _advance_effects(dt: float) -> void:
+	for visual in state.effects:
+		visual.life -= dt
+		if visual.type == "pulse":
+			visual.radius = visual.maxRadius * minf(1, 1 - visual.life / visual.maxLife)
+			for enemy in state.enemies.duplicate():
+				if not visual.hitIds.has(enemy.id) and _distance(visual, enemy) <= visual.radius + enemy.radius:
+					visual.hitIds.append(enemy.id)
+					_hurt_enemy(enemy, visual.damage)
+
+func _advance_spawns(dt: float) -> void:
 	state.spawnTimer -= dt
 	if state.spawnTimer <= 0:
 		for i in range(mini(7, 1 + int(floor(state.time / 50.0)))): _spawn_enemy()
@@ -291,6 +307,9 @@ func tick(dt: float, input: Vector2 = Vector2.ZERO) -> void:
 	if state.eliteTimer <= 0:
 		_spawn_enemy(true)
 		state.eliteTimer = maxf(16, 30 - state.time / 25.0)
+
+func _advance_enemies(dt: float) -> void:
+	var player: Dictionary = state.player
 	for enemy in state.enemies:
 		var delta := _pos(player) - _pos(enemy)
 		if delta.length() > 0:
@@ -301,6 +320,8 @@ func tick(dt: float, input: Vector2 = Vector2.ZERO) -> void:
 			enemy.y += movement.y
 		enemy.slow = maxf(0, enemy.slow - dt)
 		if _distance(enemy, player) < enemy.radius + player.radius: _hurt_player(enemy.damage)
+
+func _advance_world(dt: float) -> void:
 	if state.mode == "expedition":
 		var boss_index := _enemy_index(state.bossId) if state.bossId != null else -1
 		if boss_index >= 0 and not state.bossDefeated:
@@ -309,6 +330,8 @@ func tick(dt: float, input: Vector2 = Vector2.ZERO) -> void:
 				_warn_boss(state.enemies[boss_index])
 				state.bossAttackTimer = 3.0
 		_update_hazards(dt)
+
+func _advance_attacks(dt: float) -> void:
 	_cast_bolt(dt)
 	_update_projectiles(dt)
 	_cast_orbit()
@@ -320,9 +343,9 @@ func tick(dt: float, input: Vector2 = Vector2.ZERO) -> void:
 	_cast_meteor(dt)
 	_update_strikes(dt)
 	_cast_pulse(dt)
-	_collect_gems(dt)
-	if state.bossDefeated: state.hazards = []
-	if player.hp <= 0:
+
+func _resolve_terminal() -> bool:
+	if state.player.hp <= 0:
 		state.phase = "lost"
 		state.endReason = "death"
 	elif state.time >= state.duration:
@@ -331,13 +354,17 @@ func tick(dt: float, input: Vector2 = Vector2.ZERO) -> void:
 	elif state.bossDefeated:
 		state.phase = "won"
 		state.endReason = "boss-defeated"
-	else:
-		for chest in state.chests:
-			if _distance(chest, player) <= 50:
-				state.chests.erase(chest)
-				_offer_artifact()
-				break
-		if state.phase == "playing" and state.xp >= state.xpNeeded: _offer_upgrade()
+	else: return false
+	return true
+
+func _offer_pending_choices() -> void:
+	var player: Dictionary = state.player
+	for chest in state.chests:
+		if _distance(chest, player) <= 50:
+			state.chests.erase(chest)
+			_offer_artifact()
+			break
+	if state.phase == "playing" and state.xp >= state.xpNeeded: _offer_upgrade()
 
 func _cast_bolt(dt: float) -> void:
 	state.cooldowns.bolt -= dt

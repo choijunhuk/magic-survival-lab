@@ -12,9 +12,15 @@ godot --headless --path godot --script res://tests/test_records.gd
 godot --headless --path godot --script res://tests/test_ui.gd --quit-after 5
 ```
 
-명령은 저장소 루트에서 실행합니다. Editor에서 열 때는 이 폴더의 `project.godot`을 선택하세요. 입력은 WASD/방향키 또는 화면 드래그, P/Esc/Android 뒤로 가기는 일시정지, 1/2/3은 강화·유물 선택입니다. 앱이 배경으로 가면 정지하고 자동 재개하지 않습니다.
+명령은 저장소 루트에서 실행합니다. Editor에서 열 때는 이 폴더의 `project.godot`을 선택하세요. 입력은 물리 키 위치 기준 WASD/방향키 또는 화면 드래그, P/Esc/Android 뒤로 가기는 일시정지, 1/2/3은 강화·유물 선택입니다. 앱이 배경으로 가면 정지하고 자동 재개하지 않습니다.
 
-## 현재 구현
+## 확장 캠페인
+
+새 기본 모드는15분 캠페인·13분30초 보스입니다. 6지역/6시작 계열,24마법/36융합/96유물,24일반 변종/18정예,12사건,24연구·6장착,공명12분기와 별도 저장 프로필을 연결했습니다. 퀵·기존 원정은 이전 규칙과 records.json을 유지합니다. 캠페인 보상은 campaign-profile.json에서 원자적으로 정산하며 동일 판을 두 번 지급하지 않습니다.
+
+원정/연습/시드 도전과 획득 이미지·실제 기능·검증 범위는 [검증표](../docs/implementation/1.0-acceptance.md)를 우선합니다.
+
+## 기존 모드 구현
 
 - 퀵300초, 원정600초와510초에 등장하는 보스.
 - 마법8종·조합4종·유물12종, 경험치·강화·상자·효과·결과.
@@ -56,4 +62,4 @@ godot --headless --path godot --export-release Web ../output/web/index.html
 - `data/content.json`: 현재 구현 카탈로그이며 장기 기획의 전체 콘텐츠가 아닙니다.
 - `assets/sources.json`, `assets/fonts/OFL.txt`, `THIRD_PARTY_NOTICES.md`: 출처와 라이선스 정보.
 
-100쪽 전체 기획서의 출시/장기 수량은 후속 목표입니다. 현재 APK가 그 전체 수량을 구현했다고 표시하지 않습니다.
+100쪽 전체 기획서의1.0 핵심 확장과 장기2.x 목표는 구분합니다. 개발 빌드의 코드·자동 시험과 실물 기기/사람의 최종 밸런스 수용은 별도입니다.

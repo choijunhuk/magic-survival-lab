@@ -1,0 +1,134 @@
+{
+  "source_url": "https://play.google.com/store/apps/details?id=com.vkslrzm.Zombie",
+  "source_note": "Original boss designs based on GDD mechanics; existing B01 art and official combat screenshot used for visual grammar. No screenshot crops.",
+  "tool": "image_gen.imagegen",
+  "model": null,
+  "prompt_file": "prompts.json",
+  "assets": [
+    {
+      "file": "b02.png",
+      "boss_id": "B02",
+      "role": "boss-sprite",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "used_rect": [
+        25,
+        31,
+        1170,
+        1230
+      ],
+      "sha256": "3b5f0dec1ce4bf5d17aafb8a104542548087ce7ebba355e26b9e8261740a1cd6"
+    },
+    {
+      "file": "b03.png",
+      "boss_id": "B03",
+      "role": "boss-sprite",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "used_rect": [
+        25,
+        23,
+        1238,
+        1228
+      ],
+      "sha256": "ae3f5598bf533a6da2859b4d2b35ef414ed2a55a6a1a758f03f755926f8ce76c"
+    },
+    {
+      "file": "b04.png",
+      "boss_id": "B04",
+      "role": "boss-sprite",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "used_rect": [
+        0,
+        10,
+        1226,
+        1254
+      ],
+      "sha256": "a6db42b9c7274ea91a3f6e8e085d3b900785fcc6941debdf92be849238aa9653"
+    },
+    {
+      "file": "b05.png",
+      "boss_id": "B05",
+      "role": "boss-sprite",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "used_rect": [
+        0,
+        9,
+        1228,
+        1254
+      ],
+      "sha256": "0d53c71259ccb65737981f997823451bbc1d2eccfa6ea3815345fb8293c64b48"
+    },
+    {
+      "file": "b06.png",
+      "boss_id": "B06",
+      "role": "boss-sprite",
+      "tool": "image_gen.imagegen",
+      "model": null,
+      "generated_date": "2026-10-31",
+      "reference_file": "godot/assets/generated/boss-ink.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "used_rect": [
+        65,
+        0,
+        1194,
+        1252
+      ],
+      "sha256": "243688f99cf2188f5762493c23227aed9050a68ca59e2a4a63110834188c4b69"
+    }
+  ]
+}

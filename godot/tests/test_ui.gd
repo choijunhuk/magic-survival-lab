@@ -35,6 +35,52 @@ func run() -> void:
 	check(scene._hazard_is_active({"warning": 0.0, "active": 0.6}), "Active danger is filled")
 	check(not scene._hazard_is_active({"warning": 0.0, "active": 0.0}), "Expired danger is inactive")
 	scene.begin("quick")
+	var physical_pause := InputEventKey.new()
+	physical_pause.keycode = KEY_Q
+	physical_pause.physical_keycode = KEY_P
+	physical_pause.pressed = true
+	scene._input(physical_pause)
+	check(scene.sim.state.phase == "paused", "physical P pauses when logical key differs")
+	scene.pause_run()
+	var logical_pause := InputEventKey.new()
+	logical_pause.keycode = KEY_P
+	logical_pause.pressed = true
+	scene._input(logical_pause)
+	check(scene.sim.state.phase == "paused", "keycode-only P remains supported")
+	scene.pause_run()
+	scene.sim.state.phase = "upgrade"
+	scene.sim.state.choices = [scene.sim.catalog.upgrades[0]]
+	var chosen_id: String = scene.sim.state.choices[0].id
+	var previous_level: int = int(scene.sim.state.spells.get(chosen_id, 0))
+	var physical_choice := InputEventKey.new()
+	physical_choice.keycode = KEY_Q
+	physical_choice.physical_keycode = KEY_1
+	physical_choice.pressed = true
+	scene._input(physical_choice)
+	check(scene.sim.state.phase == "playing" and int(scene.sim.state.spells.get(chosen_id, 0)) == previous_level + 1, "physical 1 selects the first offered choice")
+	var physical_move := InputEventKey.new()
+	physical_move.keycode = KEY_Q
+	physical_move.physical_keycode = KEY_W
+	physical_move.pressed = true
+	Input.parse_input_event(physical_move)
+	Input.flush_buffered_events()
+	check(scene._movement().y < -0.9, "physical W moves upward despite a different logical key")
+	var physical_release: InputEventKey = physical_move.duplicate()
+	physical_release.pressed = false
+	Input.parse_input_event(physical_release)
+	Input.flush_buffered_events()
+	check(scene._movement().is_zero_approx(), "physical W release clears movement")
+	var arrow_move := InputEventKey.new()
+	arrow_move.keycode = KEY_RIGHT
+	arrow_move.pressed = true
+	Input.parse_input_event(arrow_move)
+	Input.flush_buffered_events()
+	check(scene._movement().x > 0.9, "logical arrow key still moves right")
+	var arrow_release: InputEventKey = arrow_move.duplicate()
+	arrow_release.pressed = false
+	Input.parse_input_event(arrow_release)
+	Input.flush_buffered_events()
+	check(scene._movement().is_zero_approx(), "arrow key release clears movement")
 	var touch := InputEventScreenTouch.new()
 	touch.index = 7
 	touch.pressed = true

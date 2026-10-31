@@ -1,0 +1,78 @@
+{
+  "tool": "image_gen.imagegen",
+  "model": null,
+  "source_reference": "Official Magic Survival Google Play screenshots described in docs/visual/magic-survival-reference.md; local generated Z01 artwork used as style reference where listed",
+  "generated_date": "2026-10-31",
+  "prompts": [
+    {
+      "file": "z02-ground.png",
+      "zone": "Z02",
+      "role": "ground",
+      "reference_file": "godot/assets/generated/ground-olive.png",
+      "prompt": "Square seamless repeating top-down 2D gameplay GROUND TEXTURE TILE for a dark ink survival game, zone Z02 Ashen Observatory. Continue the supplied ground-olive reference's visual language: flat muted desaturated ash-gray worn stone, barely visible broad shallow concentric observation-circle traces underfoot, a few irregular localized scuffs and faint black ink grit. 85 percent wide quiet playable neutral surface for tiny sprites and bright spells. Truly tileable at all four edges, no visible border, perspective, lighting gradient, objects, architecture, large decorative circles, repeated uniform pepper dots, text, UI, creatures. Hand-drawn flat 2D with sparse stipple and thin ink marks, restrained contrast. Square full-bleed raster."
+    },
+    {
+      "file": "z02-preview.png",
+      "zone": "Z02",
+      "role": "preview",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "prompt": "Square 2D hand-painted MENUPREVIEW artwork for dark survival game zone Z02 Ashen Observatory. Match supplied blue-foggy zone-forest reference: graphic black ink silhouettes, rough cut contours, layered flat atmospheric fog, restrained desaturated palette. Abandoned stone observatory with broken dark arches framing a pale cold moon in dusty ash-blue night sky; tiny distant low masonry, black silhouette foreground lower edge. Clear central atmospheric opening, evocative and lonely, strong readable forms at thumbnail size. No characters, monsters, stars-as-particles, text, UI, border, logo, photorealism, 3D, purple fantasy glow. Square full-bleed raster."
+    },
+    {
+      "file": "z03-ground.png",
+      "zone": "Z03",
+      "role": "ground",
+      "reference_file": "godot/assets/generated/ground-olive.png",
+      "prompt": "Edit the supplied ground tile into a Sunken Garden variant. Preserve its exact flat hand-drawn 2D rendering, open space, scale of tiny marks and overall quietness; keep all marks ground-level. Change the overall base color from olive brown to cool desaturated gray-green sage. Replace about half of the tiny black grass tufts with soft irregular dark moss flecks, and add only 3 very faint low-contrast blue-gray water stain smears, each diffuse and smaller than 8 percent of the canvas. Keep at least 85 percent calm unmarked surface. NO photo texture, dense grain, large puddles, standing objects, roots, slab seams, black speckles, text, UI or characters. Square seamless top-down game ground."
+    },
+    {
+      "file": "z03-preview.png",
+      "zone": "Z03",
+      "role": "preview",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "prompt": "Square 2D hand-painted MENUPREVIEW for dark ink survival game Z03 Sunken Garden. Supplied zone-forest image is style reference: flat layered fog, black rough silhouette shapes, spare evocative composition. A drowned forgotten garden: still dark water across low ground, black tangled roots from skeletal garden trees, distant broken trellis and submerged stone, desaturated blue-green mist filling the open center. Thumbnail-readable foreground silhouette and quiet atmospheric distance. No characters, enemies, text, UI, border, logo, photorealism, 3D, neon magic or generic fantasy castle. Square full-bleed raster."
+    },
+    {
+      "file": "z04-ground.png",
+      "zone": "Z04",
+      "role": "ground",
+      "reference_file": null,
+      "prompt": "Create one square full-bleed flat 2D top-down survival-game GROUND TILE, Z04 Ceramic Waterway. Palette pale warm gray fired ceramic (#a6a39a) with a cool desaturated blue-gray undertone. Viewed directly from overhead, nearly featureless traversable ground with very faint large irregular ceramic slab seams, tiny hairline cracks and only a few shallow water-flow rub marks. 85 percent of image is calm neutral flat surface for tiny black sprites and bright spells. Sparse hand-inked scuff marks, subtle grain; not a busy decorative pattern. All four edges should connect seamlessly when tiled. No 3D relief, perspective, shadows, standing objects, large puddles, blue river, repeated uniform dots, UI, text, characters. Feels like worn handcrafted indie 2D game art, not a photo."
+    },
+    {
+      "file": "z04-preview.png",
+      "zone": "Z04",
+      "role": "preview",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "prompt": "Create one square 2D hand-painted menu-preview artwork for a dark indie survival game, Z04 Ceramic Waterway. Style-reference image shows broad colored mist behind rough black silhouette architecture; follow that graphic flat-layered brush-and-ink language. A ruined white ceramic aqueduct, massive broken pale arches and chipped channels above a ribbon of muted bluish water. Foreground and side edges are near-black silhouette ruins; middle opens into cold blue-gray fog. Moody, still, austere, thumbnail-readable. No people, enemies, magic, UI, typography, frame, photorealism, 3D or high-fantasy glowing gems."
+    },
+    {
+      "file": "z05-ground.png",
+      "zone": "Z05",
+      "role": "ground",
+      "reference_file": "/Users/choi/.codex/generated_images/01a18fc0-073e-7563-bc8e-695679d707e5/exec-6141cb8c-c2fc-408e-abd7-1b5ef00f6dba.png",
+      "prompt": "Edit the supplied Z05 Glass Archive floor into a quieter 2D top-down survival-game ground tile. Preserve its muted gray-violet color and flush rectangular panel idea. Reduce the prominence of seams and cracks by about 70 percent, remove most pebble grain and blotches, keep a broad uniform calm middle for tiny black enemies and bright spells. Hand-drawn flat ink/stipple graphic style like indie game art rather than photographed stone. No objects, glass shards, perspective, shadows, border, text, UI, 3D. Seamlessly repeatable edges."
+    },
+    {
+      "file": "z05-preview.png",
+      "zone": "Z05",
+      "role": "preview",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "prompt": "Square 2D hand-painted menu-preview artwork for dark ink survival game Z05 Glass Archive. Use supplied zone-forest only as graphic style reference: rough black ink silhouettes against broad fog layers. A ruined archive of shattered glass panels and tall black floating cabinet-like stacks receding into muted gray-violet fog; cracked high windows catch diffuse dim light, while the foreground is near-black broken framework. Keep forms abstract but clearly architectural, center atmospheric and readable at thumbnail size. Melancholic, austere, mysterious. No people, monsters, floating books, magical glyphs, neon purple, text, UI, border, photorealism or 3D."
+    },
+    {
+      "file": "z06-ground.png",
+      "zone": "Z06",
+      "role": "ground",
+      "reference_file": "/Users/choi/.codex/generated_images/01a18fc0-073e-7563-bc8e-695679d707e5/exec-6e2a600f-1a5b-4068-9ecb-bc4a8b840561.png",
+      "prompt": "Edit the supplied Z06 End Station floor into a quieter flat 2D top-down gameplay tile. Preserve muted olive-brown ash color and the few broken faint parallel track-like scuffs. Reduce all-over gritty dirt grain and blotches by about 80 percent: wide calm open areas, only a few sparse localized scuffs, no continuous rails and no collidable-looking details. Hand-drawn matte ink style matching a dark indie survival game, not photographic concrete. Even color to all edges for repeat tiling, no perspective, shadows, objects, text, UI or 3D."
+    },
+    {
+      "file": "z06-preview.png",
+      "zone": "Z06",
+      "role": "preview",
+      "reference_file": "godot/assets/generated/zone-forest.png",
+      "prompt": "One square 2D hand-painted MENUPREVIEW for dark ink survival game Z06 End Station. Use supplied zone-forest image as style reference for layered fog and rough black silhouette edges, but use restrained warm orange-red ash haze instead of blue. An abandoned terminal station: imposing black platform pillars and fractured roof beams framing empty track disappearing to the horizon, sparse dim signal-like warm accent in the distant fog. Near-black foreground with strongly readable silhouette, austere finality, atmosphere and negative space, no fire wall or flaming HUD. No people, enemies, train, typography, UI, border, photorealism, 3D, glossy fantasy glow. Square full-bleed raster."
+    }
+  ]
+}

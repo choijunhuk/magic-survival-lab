@@ -118,7 +118,7 @@ func complete_run(state: Dictionary) -> Dictionary:
 	var next := data.duplicate(true)
 	var reward: int = mini(30, int(floor(float(state.time) / 30.0))) + state.completedEvents.size()
 	var boss_id: String = state.bossKind
-	if state.bossDefeated:
+	if state.phase == "won":
 		reward += 10
 		if not next.clearedZones.has(state.zoneId):
 			reward += 8
@@ -139,7 +139,7 @@ func complete_run(state: Dictionary) -> Dictionary:
 		if not next.discovered.events.has(event_id):
 			next.discovered.events.append(event_id)
 	var record := {"time": state.time, "kills": state.get("kills", 0),
-		"won": state.phase == "won", "bossDefeated": state.bossDefeated}
+		"won": state.phase == "won", "bossDefeated": state.phase == "won"}
 	var previous = next.best[state.zoneId]
 	if previous == null or _better(record, previous):
 		next.best[state.zoneId] = record
@@ -203,7 +203,7 @@ func _valid_run(state: Dictionary) -> bool:
 		return false
 	if state.get("phase") == "won":
 		return state.get("endReason") == "boss-defeated" and state.bossDefeated and state.time < 900
-	if state.get("phase") == "lost" and not state.bossDefeated:
+	if state.get("phase") == "lost":
 		if state.get("endReason") == "death": return true
 		return state.get("endReason") == "timeout" and state.time == 900
 	return false

@@ -1,0 +1,2575 @@
+{
+  "spellIds": [
+    "bolt",
+    "orbit",
+    "lightning",
+    "frost",
+    "fireball",
+    "vortex",
+    "meteor",
+    "pulse",
+    "m09",
+    "m10",
+    "m11",
+    "m12",
+    "m13",
+    "m14",
+    "m15",
+    "m16",
+    "m17",
+    "m18",
+    "m19",
+    "m20",
+    "m21",
+    "m22",
+    "m23",
+    "m24"
+  ],
+  "upgrades": [
+    {
+      "id": "bolt",
+      "name": "마나 창",
+      "description": "자동 투사체의 위력을 높입니다",
+      "color": "#80d4d1",
+      "icon": "assets/magicImages/manaSpear.png",
+      "canonicalId": "M01",
+      "school": "비전",
+      "action": "가장 가까운 적에게 자동 투사체 1발.",
+      "growth": "레벨당 피해·관통 여지 증가; 사거리 밖 적에게 발사하지 않음."
+    },
+    {
+      "id": "orbit",
+      "name": "염동력 검",
+      "description": "주위를 도는 검을 추가합니다",
+      "color": "#d9b66f",
+      "icon": "assets/magicImages/telekineticSword.png",
+      "canonicalId": "M02",
+      "school": "비전",
+      "action": "플레이어 주위를 도는 검이 닿은 적을 타격.",
+      "growth": "레벨당 검 수·피해 증가; 같은 적 타격 간격 0.45초."
+    },
+    {
+      "id": "lightning",
+      "name": "번개",
+      "description": "가까운 적에게 연쇄 번개를 내립니다",
+      "color": "#b5bdff",
+      "icon": "assets/magicImages/heartOfLightning.png",
+      "canonicalId": "M03",
+      "school": "폭풍",
+      "action": "가까운 적에서 시작해 다른 적으로 연쇄.",
+      "growth": "레벨당 대상 수 증가; 동일 시전에서 같은 적 중복 타격 금지."
+    },
+    {
+      "id": "frost",
+      "name": "냉기",
+      "description": "주변 적을 얼리고 피해를 줍니다",
+      "color": "#a2d9f4",
+      "icon": "assets/magicImages/snowflakeBlossom.png",
+      "canonicalId": "M04",
+      "school": "냉기",
+      "action": "플레이어 주변 원형 폭발로 둔화와 피해.",
+      "growth": "레벨당 반경 증가; 보스 둔화 저항 적용."
+    },
+    {
+      "id": "fireball",
+      "name": "화염구",
+      "description": "폭발하는 화염구를 발사합니다",
+      "color": "#f3a36b",
+      "icon": "assets/magicImages/pyrotechnics.png",
+      "canonicalId": "M05",
+      "school": "화염",
+      "action": "목표 적에게 날아가 충돌 시 폭발.",
+      "growth": "레벨당 폭발 반경 증가; 벽 또는 수명 종료 시 폭발."
+    },
+    {
+      "id": "vortex",
+      "name": "소용돌이",
+      "description": "적을 둔화시키는 지속 영역을 만듭니다",
+      "color": "#9bd0df",
+      "icon": "assets/magicImages/vortex.png",
+      "canonicalId": "M06",
+      "school": "중력",
+      "action": "목표 부근에 둔화·지속 피해 영역 생성.",
+      "growth": "레벨당 반경 증가; 영역 이탈 시 새 틱 없음."
+    },
+    {
+      "id": "meteor",
+      "name": "운석",
+      "description": "잠시 뒤 넓은 지역에 운석이 떨어집니다",
+      "color": "#ed8f70",
+      "icon": "assets/magicImages/greatImpact.png",
+      "canonicalId": "M07",
+      "school": "화염",
+      "action": "캠페인에서 보이는 범위 안 현재 체력이 가장 높은 적의 지점에 예고 후 광역 충돌. 퀵·기존 원정의 표적 규칙은 유지.",
+      "growth": "레벨당 피해·반경 증가; 예고 중 목표를 추적하지 않음."
+    },
+    {
+      "id": "pulse",
+      "name": "파동",
+      "description": "주위로 퍼지는 마력 파동을 방출합니다",
+      "color": "#c0a9eb",
+      "icon": "assets/magicImages/energyBombardment.png",
+      "canonicalId": "M08",
+      "school": "비전",
+      "action": "플레이어에서 바깥으로 확장하는 충격파.",
+      "growth": "레벨당 도달 거리 증가; 파동 하나당 적 1회 적중."
+    },
+    {
+      "id": "m09",
+      "name": "재의 비",
+      "canonicalId": "M09",
+      "school": "화염",
+      "action": "가장 밀집한 적군에 짧은 불씨 낙하.",
+      "growth": "레벨당 불씨 수 증가; 각 적 점화는 갱신만.",
+      "description": "가장 밀집한 적군에 짧은 불씨 낙하. 레벨당 불씨 수 증가; 각 적 점화는 갱신만."
+    },
+    {
+      "id": "m10",
+      "name": "서리 바늘",
+      "canonicalId": "M10",
+      "school": "냉기",
+      "action": "전방 부채꼴에 관통 바늘 3개.",
+      "growth": "레벨당 각도 좁아지고 피해 상승; 근접 사각 존재.",
+      "description": "전방 부채꼴에 관통 바늘 3개. 레벨당 각도 좁아지고 피해 상승; 근접 사각 존재."
+    },
+    {
+      "id": "m11",
+      "name": "폭풍 고리",
+      "canonicalId": "M11",
+      "school": "폭풍",
+      "action": "이동 방향 뒤에 회전 전기 고리 배치.",
+      "growth": "레벨당 유지 시간 증가; 한 고리의 재타격 간격 1초.",
+      "description": "이동 방향 뒤에 회전 전기 고리 배치. 레벨당 유지 시간 증가; 한 고리의 재타격 간격 1초."
+    },
+    {
+      "id": "m12",
+      "name": "중력 우물",
+      "canonicalId": "M12",
+      "school": "중력",
+      "action": "예고 후 작은 원으로 일반 적을 모음.",
+      "growth": "레벨당 당김 반경 증가; 보스는 이동하지 않음.",
+      "description": "예고 후 작은 원으로 일반 적을 모음. 레벨당 당김 반경 증가; 보스는 이동하지 않음."
+    },
+    {
+      "id": "m13",
+      "name": "그림자 단검",
+      "canonicalId": "M13",
+      "school": "그림자",
+      "action": "체력이 낮은 적을 우선 조준하는 단검.",
+      "growth": "레벨당 피해 증가; 처형은 체력 10% 이하 일반 적만.",
+      "description": "체력이 낮은 적을 우선 조준하는 단검. 레벨당 피해 증가; 처형은 체력 10% 이하 일반 적만."
+    },
+    {
+      "id": "m14",
+      "name": "생명 씨앗",
+      "canonicalId": "M14",
+      "school": "생명",
+      "action": "피격 없이 12초 지내면 회복 씨앗 생성.",
+      "growth": "레벨당 회복량 상승; 체력 최대 시 보호막으로 변환 안 함.",
+      "description": "피격 없이 12초 지내면 회복 씨앗 생성. 레벨당 회복량 상승; 체력 최대 시 보호막으로 변환 안 함."
+    },
+    {
+      "id": "m15",
+      "name": "봉인 문양",
+      "canonicalId": "M15",
+      "school": "봉인",
+      "action": "가까운 정예 또는 일반 적 앞에 감속 문양을 표시하고 안의 적에게 약한 주기 피해.",
+      "growth": "레벨당 반경 증가; 이미 발사한 탄은 지우지 않음. C06은 별도 기본 공격 없이 이 피해로 성장.",
+      "description": "가까운 정예 또는 일반 적 앞에 감속 문양을 표시하고 안의 적에게 약한 주기 피해. 레벨당 반경 증가; 이미 발사한 탄은 지우지 않음. C06은 별도 기본 공격 없이 이 피해로 성장."
+    },
+    {
+      "id": "m16",
+      "name": "수정 지뢰",
+      "canonicalId": "M16",
+      "school": "비전",
+      "action": "이동 경로 뒤에 접촉 폭발 지뢰 설치.",
+      "growth": "레벨당 보유 수 증가; 오래된 지뢰부터 제거.",
+      "description": "이동 경로 뒤에 접촉 폭발 지뢰 설치. 레벨당 보유 수 증가; 오래된 지뢰부터 제거."
+    },
+    {
+      "id": "m17",
+      "name": "열파",
+      "canonicalId": "M17",
+      "school": "화염",
+      "action": "가까운 적을 향해 짧은 선형 열파.",
+      "growth": "레벨당 폭 증가; 점화 중인 적에게 직접 피해 보너스.",
+      "description": "가까운 적을 향해 짧은 선형 열파. 레벨당 폭 증가; 점화 중인 적에게 직접 피해 보너스."
+    },
+    {
+      "id": "m18",
+      "name": "빙하 벽",
+      "canonicalId": "M18",
+      "school": "냉기",
+      "action": "플레이어 전방에 잠시 통과형 냉기 띠.",
+      "growth": "레벨당 길이 증가; 플레이어 이동을 막지 않음.",
+      "description": "플레이어 전방에 잠시 통과형 냉기 띠. 레벨당 길이 증가; 플레이어 이동을 막지 않음."
+    },
+    {
+      "id": "m19",
+      "name": "낙뢰 표식",
+      "canonicalId": "M19",
+      "school": "폭풍",
+      "action": "가장 빠른 적에게 표식을 붙이고 지연 낙뢰.",
+      "growth": "레벨당 재표적 횟수 증가; 빈 표적이면 소멸.",
+      "description": "가장 빠른 적에게 표식을 붙이고 지연 낙뢰. 레벨당 재표적 횟수 증가; 빈 표적이면 소멸."
+    },
+    {
+      "id": "m20",
+      "name": "궤도 편향",
+      "canonicalId": "M20",
+      "school": "중력",
+      "action": "근처 적 투사체를 측면으로 밀어냄.",
+      "growth": "레벨당 회전 각도 증가; 보스 광선에는 무효.",
+      "description": "근처 적 투사체를 측면으로 밀어냄. 레벨당 회전 각도 증가; 보스 광선에는 무효."
+    },
+    {
+      "id": "m21",
+      "name": "밤의 장막",
+      "canonicalId": "M21",
+      "school": "그림자",
+      "action": "주기적으로 반경 내 적에게 취약 부여.",
+      "growth": "레벨당 반경 증가; 시야를 가리지 않음.",
+      "description": "주기적으로 반경 내 적에게 취약 부여. 레벨당 반경 증가; 시야를 가리지 않음."
+    },
+    {
+      "id": "m22",
+      "name": "피의 메아리",
+      "canonicalId": "M22",
+      "school": "생명",
+      "action": "적 처치 누적 후 작은 회복 파동.",
+      "growth": "레벨당 필요 처치 수 감소; 소환체 처치는 제외.",
+      "description": "적 처치 누적 후 작은 회복 파동. 레벨당 필요 처치 수 감소; 소환체 처치는 제외."
+    },
+    {
+      "id": "m23",
+      "name": "침묵 종",
+      "canonicalId": "M23",
+      "school": "봉인",
+      "action": "예고된 일반 적의 특수 시전을 1회 지연.",
+      "growth": "레벨당 대상 수 증가; 보스 패턴은 끊지 않음.",
+      "description": "예고된 일반 적의 특수 시전을 1회 지연. 레벨당 대상 수 증가; 보스 패턴은 끊지 않음."
+    },
+    {
+      "id": "m24",
+      "name": "귀환 부적",
+      "canonicalId": "M24",
+      "school": "봉인",
+      "action": "체력이 0이 되는 피해 직전 1회 짧은 무적과 후퇴.",
+      "growth": "레벨당 재충전 간격 감소; 보스 즉사 판정은 별도.",
+      "description": "체력이 0이 되는 피해 직전 1회 짧은 무적과 후퇴. 레벨당 재충전 간격 감소; 보스 즉사 판정은 별도."
+    },
+    {
+      "id": "power",
+      "name": "지능",
+      "description": "모든 마법의 피해를 높입니다",
+      "color": "#edb878",
+      "icon": "assets/passiveImages/intelligence.png"
+    },
+    {
+      "id": "haste",
+      "name": "고속 시전",
+      "description": "마법을 더 자주 사용합니다",
+      "color": "#d6b4e8",
+      "icon": "assets/passiveImages/fastcasting.png"
+    },
+    {
+      "id": "vitality",
+      "name": "활력",
+      "description": "최대 체력과 현재 체력을 높입니다",
+      "color": "#d7979c",
+      "icon": "assets/passiveImages/vitality.png"
+    },
+    {
+      "id": "magnet",
+      "name": "레이더",
+      "description": "경험치 수집 범위를 넓힙니다",
+      "color": "#a8d59e",
+      "icon": "assets/artifactImages/radar.png"
+    }
+  ],
+  "fusions": [
+    {
+      "id": "plasma",
+      "name": "플라즈마",
+      "description": "마나 창이 적을 관통하는 광선이 됩니다",
+      "icon": "assets/magicImages/plasmaRay.png",
+      "color": "#92e7f4",
+      "requires": {
+        "bolt": 3,
+        "lightning": 3
+      },
+      "kind": "fusion",
+      "canonicalId": "F01",
+      "effect": "마나 창을 관통 광선으로 바꾸고 맞은 적에 감전.",
+      "limit": "광선당 적 1회; 보스 감전 반감."
+    },
+    {
+      "id": "blizzard",
+      "name": "눈보라",
+      "description": "냉기와 소용돌이의 범위와 둔화를 강화합니다",
+      "icon": "assets/magicImages/winterStorm.png",
+      "color": "#b9e9f5",
+      "requires": {
+        "frost": 3,
+        "vortex": 3
+      },
+      "kind": "fusion",
+      "canonicalId": "F02",
+      "effect": "냉기·소용돌이의 범위와 둔화 강화.",
+      "limit": "장판 중첩은 틱 수를 늘리지 않음."
+    },
+    {
+      "id": "supernova",
+      "name": "초신성",
+      "description": "화염구와 운석의 폭발이 거대해집니다",
+      "icon": "assets/magicImages/supernova.png",
+      "color": "#ffb27f",
+      "requires": {
+        "fireball": 3,
+        "meteor": 3
+      },
+      "kind": "fusion",
+      "canonicalId": "F03",
+      "effect": "화염구·운석의 폭발 범위와 피해 확대.",
+      "limit": "예고가 길어져 빠른 적이 회피 가능."
+    },
+    {
+      "id": "hyperion",
+      "name": "히페리온",
+      "description": "공전 검과 파동의 사거리와 위력을 높입니다",
+      "icon": "assets/magicImages/hyperion.png",
+      "color": "#eac782",
+      "requires": {
+        "orbit": 3,
+        "pulse": 3
+      },
+      "kind": "fusion",
+      "canonicalId": "F04",
+      "effect": "공전 검·파동의 사거리와 위력 상승.",
+      "limit": "검의 동일 대상 타격 간격 유지."
+    },
+    {
+      "id": "f05",
+      "name": "유리 폭풍",
+      "kind": "fusion",
+      "canonicalId": "F05",
+      "requires": {
+        "bolt": 3,
+        "m10": 3
+      },
+      "effect": "창 적중 시 좁은 서리 바늘 2개 분기.",
+      "limit": "분기탄은 다시 분기하지 않음.",
+      "description": "창 적중 시 좁은 서리 바늘 2개 분기. 분기탄은 다시 분기하지 않음."
+    },
+    {
+      "id": "f06",
+      "name": "방전 궤도",
+      "kind": "fusion",
+      "canonicalId": "F06",
+      "requires": {
+        "orbit": 3,
+        "m11": 3
+      },
+      "effect": "검이 고리를 지나면 다음 접촉에 감전.",
+      "limit": "검 하나당 2초에 1회 충전.",
+      "description": "검이 고리를 지나면 다음 접촉에 감전. 검 하나당 2초에 1회 충전."
+    },
+    {
+      "id": "f07",
+      "name": "푸른 도가니",
+      "kind": "fusion",
+      "canonicalId": "F07",
+      "requires": {
+        "fireball": 3,
+        "frost": 3
+      },
+      "effect": "화염구 폭발 안쪽은 점화, 바깥은 둔화.",
+      "limit": "한 적에 경계 효과 1개만 적용.",
+      "description": "화염구 폭발 안쪽은 점화, 바깥은 둔화. 한 적에 경계 효과 1개만 적용."
+    },
+    {
+      "id": "f08",
+      "name": "공허 낙하",
+      "kind": "fusion",
+      "canonicalId": "F08",
+      "requires": {
+        "meteor": 3,
+        "m12": 3
+      },
+      "effect": "운석 예고 원에 일반 적을 약하게 모음.",
+      "limit": "보스는 모이지 않고 예고로 회피 가능.",
+      "description": "운석 예고 원에 일반 적을 약하게 모음. 보스는 모이지 않고 예고로 회피 가능."
+    },
+    {
+      "id": "f09",
+      "name": "메아리 칼날",
+      "kind": "fusion",
+      "canonicalId": "F09",
+      "requires": {
+        "orbit": 3,
+        "m13": 3
+      },
+      "effect": "검 접촉 후 단검이 낮은 체력 적에게 튐.",
+      "limit": "단검당 1회; 처형 기준 변경 없음.",
+      "description": "검 접촉 후 단검이 낮은 체력 적에게 튐. 단검당 1회; 처형 기준 변경 없음."
+    },
+    {
+      "id": "f10",
+      "name": "서리 천둥",
+      "kind": "fusion",
+      "canonicalId": "F10",
+      "requires": {
+        "lightning": 3,
+        "m18": 3
+      },
+      "effect": "빙하 벽을 통과한 번개가 한 번 추가 분기.",
+      "limit": "대상 중복 적중 금지.",
+      "description": "빙하 벽을 통과한 번개가 한 번 추가 분기. 대상 중복 적중 금지."
+    },
+    {
+      "id": "f11",
+      "name": "별의 재",
+      "kind": "fusion",
+      "canonicalId": "F11",
+      "requires": {
+        "m09": 3,
+        "meteor": 3
+      },
+      "effect": "운석 충돌 뒤 주변에 재의 비 2초.",
+      "limit": "점화 중첩 없음; 넓은 예고 유지.",
+      "description": "운석 충돌 뒤 주변에 재의 비 2초. 점화 중첩 없음; 넓은 예고 유지."
+    },
+    {
+      "id": "f12",
+      "name": "봉인 파동",
+      "kind": "fusion",
+      "canonicalId": "F12",
+      "requires": {
+        "pulse": 3,
+        "m15": 3
+      },
+      "effect": "파동 적중 지점에 짧은 감속 문양 생성.",
+      "limit": "같은 파동 문양 최대 3개.",
+      "description": "파동 적중 지점에 짧은 감속 문양 생성. 같은 파동 문양 최대 3개."
+    },
+    {
+      "id": "f13",
+      "name": "열역 회로",
+      "kind": "fusion",
+      "canonicalId": "F13",
+      "requires": {
+        "m17": 3,
+        "lightning": 3
+      },
+      "effect": "번개가 점화 적을 우선 연결하고 열파를 줄임.",
+      "limit": "우선 대상 없어도 정상 연쇄.",
+      "description": "번개가 점화 적을 우선 연결하고 열파를 줄임. 우선 대상 없어도 정상 연쇄."
+    },
+    {
+      "id": "f14",
+      "name": "결빙 창",
+      "kind": "fusion",
+      "canonicalId": "F14",
+      "requires": {
+        "bolt": 3,
+        "m18": 3
+      },
+      "effect": "창이 빙하 벽을 통과하면 둔화 부여.",
+      "limit": "창당 첫 벽 1회만 강화.",
+      "description": "창이 빙하 벽을 통과하면 둔화 부여. 창당 첫 벽 1회만 강화."
+    },
+    {
+      "id": "f15",
+      "name": "지뢰 성운",
+      "kind": "fusion",
+      "canonicalId": "F15",
+      "requires": {
+        "m16": 3,
+        "pulse": 3
+      },
+      "effect": "파동이 지뢰를 원격 기폭해 작은 폭발.",
+      "limit": "기폭 지뢰는 파동 피해 재발동 금지.",
+      "description": "파동이 지뢰를 원격 기폭해 작은 폭발. 기폭 지뢰는 파동 피해 재발동 금지."
+    },
+    {
+      "id": "f16",
+      "name": "심연 회전",
+      "kind": "fusion",
+      "canonicalId": "F16",
+      "requires": {
+        "vortex": 3,
+        "m21": 3
+      },
+      "effect": "소용돌이 안의 적이 오래 머물면 취약.",
+      "limit": "대상당 3초에 1회; 보스 반감.",
+      "description": "소용돌이 안의 적이 오래 머물면 취약. 대상당 3초에 1회; 보스 반감."
+    },
+    {
+      "id": "f17",
+      "name": "그을린 그림자",
+      "kind": "fusion",
+      "canonicalId": "F17",
+      "requires": {
+        "m09": 3,
+        "m13": 3
+      },
+      "effect": "점화 적을 단검이 맞히면 잔불 확산.",
+      "limit": "확산은 1대상까지만.",
+      "description": "점화 적을 단검이 맞히면 잔불 확산. 확산은 1대상까지만."
+    },
+    {
+      "id": "f18",
+      "name": "시계 번개",
+      "kind": "fusion",
+      "canonicalId": "F18",
+      "requires": {
+        "m19": 3,
+        "m15": 3
+      },
+      "effect": "낙뢰 표식이 문양 안 적에게 재지정.",
+      "limit": "최대 1회 재지정; 보스 지연 없음.",
+      "description": "낙뢰 표식이 문양 안 적에게 재지정. 최대 1회 재지정; 보스 지연 없음."
+    },
+    {
+      "id": "f19",
+      "name": "극야 장막",
+      "kind": "fusion",
+      "canonicalId": "F19",
+      "requires": {
+        "m21": 3,
+        "frost": 3
+      },
+      "effect": "장막 안 냉기 적중에 취약 연장.",
+      "limit": "최대 4초, 둔화 강도 증가 없음.",
+      "description": "장막 안 냉기 적중에 취약 연장. 최대 4초, 둔화 강도 증가 없음."
+    },
+    {
+      "id": "f20",
+      "name": "생명의 울림",
+      "kind": "fusion",
+      "canonicalId": "F20",
+      "requires": {
+        "m14": 3,
+        "pulse": 3
+      },
+      "effect": "파동이 회복 씨앗을 지나면 씨앗 수집.",
+      "limit": "씨앗당 한 번, 초과 회복 폐기.",
+      "description": "파동이 회복 씨앗을 지나면 씨앗 수집. 씨앗당 한 번, 초과 회복 폐기."
+    },
+    {
+      "id": "f21",
+      "name": "흡성 우물",
+      "kind": "fusion",
+      "canonicalId": "F21",
+      "requires": {
+        "m12": 3,
+        "m22": 3
+      },
+      "effect": "우물 내 일반 적 처치 시 회복 진행도 획득.",
+      "limit": "소환체·보스 제외, 회복 상한 유지.",
+      "description": "우물 내 일반 적 처치 시 회복 진행도 획득. 소환체·보스 제외, 회복 상한 유지."
+    },
+    {
+      "id": "f22",
+      "name": "침묵 낙뢰",
+      "kind": "fusion",
+      "canonicalId": "F22",
+      "requires": {
+        "m19": 3,
+        "m23": 3
+      },
+      "effect": "종이 지연한 적에게 낙뢰 표식 우선.",
+      "limit": "지연 실패 보스에도 기본 낙뢰.",
+      "description": "종이 지연한 적에게 낙뢰 표식 우선. 지연 실패 보스에도 기본 낙뢰."
+    },
+    {
+      "id": "f23",
+      "name": "귀환 칼날",
+      "kind": "fusion",
+      "canonicalId": "F23",
+      "requires": {
+        "m24": 3,
+        "orbit": 3
+      },
+      "effect": "귀환 발동 때 검이 짧게 바깥으로 튐.",
+      "limit": "귀환 무적이나 충전 횟수 증가 없음.",
+      "description": "귀환 발동 때 검이 짧게 바깥으로 튐. 귀환 무적이나 충전 횟수 증가 없음."
+    },
+    {
+      "id": "f24",
+      "name": "파편 혜성",
+      "kind": "fusion",
+      "canonicalId": "F24",
+      "requires": {
+        "m16": 3,
+        "meteor": 3
+      },
+      "effect": "운석이 지뢰를 맞히면 파편 4개 방출.",
+      "limit": "파편은 지뢰 재기폭 불가.",
+      "description": "운석이 지뢰를 맞히면 파편 4개 방출. 파편은 지뢰 재기폭 불가."
+    },
+    {
+      "id": "f25",
+      "name": "열풍 띠",
+      "kind": "fusion",
+      "canonicalId": "F25",
+      "requires": {
+        "m17": 3,
+        "m11": 3
+      },
+      "effect": "전기 고리 접촉 후 열파가 원호로 퍼짐.",
+      "limit": "원호당 대상 1회; 사각 존재.",
+      "description": "전기 고리 접촉 후 열파가 원호로 퍼짐. 원호당 대상 1회; 사각 존재."
+    },
+    {
+      "id": "f26",
+      "name": "겨울 단검",
+      "kind": "fusion",
+      "canonicalId": "F26",
+      "requires": {
+        "m10": 3,
+        "m13": 3
+      },
+      "effect": "바늘 둔화 대상에 단검 첫 타격 보너스.",
+      "limit": "대상당 2초에 한 번.",
+      "description": "바늘 둔화 대상에 단검 첫 타격 보너스. 대상당 2초에 한 번."
+    },
+    {
+      "id": "f27",
+      "name": "역장 맥동",
+      "kind": "fusion",
+      "canonicalId": "F27",
+      "requires": {
+        "m20": 3,
+        "pulse": 3
+      },
+      "effect": "편향한 탄의 방향으로 파동 작은 호 발사.",
+      "limit": "보스 광선·비편향 탄 무효.",
+      "description": "편향한 탄의 방향으로 파동 작은 호 발사. 보스 광선·비편향 탄 무효."
+    },
+    {
+      "id": "f28",
+      "name": "재생 봉인",
+      "kind": "fusion",
+      "canonicalId": "F28",
+      "requires": {
+        "m14": 3,
+        "m15": 3
+      },
+      "effect": "문양 안에서 씨앗 생성 시간이 짧아짐.",
+      "limit": "보스전 최대 회복 빈도 8초.",
+      "description": "문양 안에서 씨앗 생성 시간이 짧아짐. 보스전 최대 회복 빈도 8초."
+    },
+    {
+      "id": "f29",
+      "name": "밤의 혜성",
+      "kind": "fusion",
+      "canonicalId": "F29",
+      "requires": {
+        "m21": 3,
+        "meteor": 3
+      },
+      "effect": "취약 적 근처에 운석 표적 우선.",
+      "limit": "표적 고정 후 추적하지 않음.",
+      "description": "취약 적 근처에 운석 표적 우선. 표적 고정 후 추적하지 않음."
+    },
+    {
+      "id": "f30",
+      "name": "폭풍 압축",
+      "kind": "fusion",
+      "canonicalId": "F30",
+      "requires": {
+        "m11": 3,
+        "m12": 3
+      },
+      "effect": "우물이 전기 고리를 중심으로 모아 다단 충격.",
+      "limit": "우물당 적 2회 상한.",
+      "description": "우물이 전기 고리를 중심으로 모아 다단 충격. 우물당 적 2회 상한."
+    },
+    {
+      "id": "f31",
+      "name": "흰 장벽",
+      "kind": "fusion",
+      "canonicalId": "F31",
+      "requires": {
+        "m18": 3,
+        "m20": 3
+      },
+      "effect": "빙하 벽이 작은 탄을 한 번 옆으로 굴절.",
+      "limit": "벽당 탄 8개 상한; 광선 무효.",
+      "description": "빙하 벽이 작은 탄을 한 번 옆으로 굴절. 벽당 탄 8개 상한; 광선 무효."
+    },
+    {
+      "id": "f32",
+      "name": "피의 별무리",
+      "kind": "fusion",
+      "canonicalId": "F32",
+      "requires": {
+        "m22": 3,
+        "m09": 3
+      },
+      "effect": "처치 누적 완료 때 회복 대신 재의 비 1회.",
+      "limit": "체력 절반 이하에서는 회복 유지.",
+      "description": "처치 누적 완료 때 회복 대신 재의 비 1회. 체력 절반 이하에서는 회복 유지."
+    },
+    {
+      "id": "f33",
+      "name": "종말 표식",
+      "kind": "fusion",
+      "canonicalId": "F33",
+      "requires": {
+        "m23": 3,
+        "m13": 3
+      },
+      "effect": "지연된 일반 적에게 단검이 표식 추가.",
+      "limit": "보스 시전 지연 불가; 피해만.",
+      "description": "지연된 일반 적에게 단검이 표식 추가. 보스 시전 지연 불가; 피해만."
+    },
+    {
+      "id": "f34",
+      "name": "정적의 원",
+      "kind": "fusion",
+      "canonicalId": "F34",
+      "requires": {
+        "m15": 3,
+        "vortex": 3
+      },
+      "effect": "문양과 장판이 겹치면 적 돌진 속도 감소.",
+      "limit": "돌진 취소 아님; 보스 절반.",
+      "description": "문양과 장판이 겹치면 적 돌진 속도 감소. 돌진 취소 아님; 보스 절반."
+    },
+    {
+      "id": "f35",
+      "name": "되감기 폭발",
+      "kind": "fusion",
+      "canonicalId": "F35",
+      "requires": {
+        "m24": 3,
+        "fireball": 3
+      },
+      "effect": "귀환 직전 위치에서 작은 화염 폭발.",
+      "limit": "귀환당 1회; 폭발은 재귀환 불가.",
+      "description": "귀환 직전 위치에서 작은 화염 폭발. 귀환당 1회; 폭발은 재귀환 불가."
+    },
+    {
+      "id": "f36",
+      "name": "회수 전류",
+      "kind": "fusion",
+      "canonicalId": "F36",
+      "requires": {
+        "m20": 3,
+        "m19": 3
+      },
+      "effect": "편향한 탄의 발사 적에게 낙뢰 표식.",
+      "limit": "한 탄당 1표식; 적 사망 시 소멸.",
+      "description": "편향한 탄의 발사 적에게 낙뢰 표식. 한 탄당 1표식; 적 사망 시 소멸."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "magicwand",
+      "name": "마법 지팡이",
+      "description": "모든 마법 피해 +20%",
+      "icon": "assets/artifactImages/magicwand.png",
+      "color": "#e4c483",
+      "canonicalId": "A001",
+      "rarity": "일반",
+      "effect": "모든 마법 피해 +20%.",
+      "limit": "공격력 합산 상한 적용."
+    },
+    {
+      "id": "blackcat",
+      "name": "검은 고양이",
+      "description": "시전 속도 +12%",
+      "icon": "assets/artifactImages/blackcat.png",
+      "color": "#aaa3ce",
+      "canonicalId": "A002",
+      "rarity": "일반",
+      "effect": "시전 속도 +12%.",
+      "limit": "최소 주기 0.4초."
+    },
+    {
+      "id": "broom",
+      "name": "빗자루",
+      "description": "이동 속도 +15%",
+      "icon": "assets/artifactImages/broom.png",
+      "color": "#d7b878",
+      "canonicalId": "A003",
+      "rarity": "일반",
+      "effect": "이동 속도 +15%.",
+      "limit": "기본 속도 1.6배 상한."
+    },
+    {
+      "id": "secondheart",
+      "name": "두 번째 심장",
+      "description": "최대 체력 +3, 체력 +3",
+      "icon": "assets/artifactImages/secondheart.png",
+      "color": "#e89b9e",
+      "canonicalId": "A004",
+      "rarity": "일반",
+      "effect": "최대 체력 +3, 현재 체력 +3.",
+      "limit": "최대 체력 증가 즉시 반영."
+    },
+    {
+      "id": "worldtreeleaf",
+      "name": "세계수 잎",
+      "description": "초당 체력 0.06 회복",
+      "icon": "assets/artifactImages/worldtreeleaf.png",
+      "color": "#a9d39a",
+      "canonicalId": "A005",
+      "rarity": "일반",
+      "effect": "초당 체력 0.06 회복.",
+      "limit": "전투 중에도 회복; 공통 상한."
+    },
+    {
+      "id": "radar",
+      "name": "레이더",
+      "description": "경험치 끌어당김 범위 +80",
+      "icon": "assets/artifactImages/radar.png",
+      "color": "#a8d59e",
+      "canonicalId": "A006",
+      "rarity": "일반",
+      "effect": "경험치 끌어당김 범위 +80.",
+      "limit": "시야 밖 보석은 이동하지 않음."
+    },
+    {
+      "id": "battery",
+      "name": "전지",
+      "description": "연쇄 번개 대상 +1",
+      "icon": "assets/artifactImages/battery.png",
+      "color": "#b6c6f4",
+      "canonicalId": "A007",
+      "rarity": "일반",
+      "effect": "연쇄 번개 대상 +1.",
+      "limit": "같은 적 중복 연결 금지."
+    },
+    {
+      "id": "ruby",
+      "name": "루비",
+      "description": "화염구와 운석 피해 +30%",
+      "icon": "assets/artifactImages/ruby.png",
+      "color": "#ed9393",
+      "canonicalId": "A008",
+      "rarity": "일반",
+      "effect": "화염구·운석 피해 +30%.",
+      "limit": "두 기술 없으면 풀 제외."
+    },
+    {
+      "id": "snowflakecrown",
+      "name": "눈꽃 왕관",
+      "description": "둔화 지속 시간 증가",
+      "icon": "assets/artifactImages/snowflakecrown.png",
+      "color": "#bce8f0",
+      "canonicalId": "A009",
+      "rarity": "일반",
+      "effect": "둔화 지속 시간 증가.",
+      "limit": "보스 둔화 저항 유지."
+    },
+    {
+      "id": "circularsawblade",
+      "name": "원형 톱날",
+      "description": "공전 검 피해 +25%",
+      "icon": "assets/artifactImages/circularsawblade.png",
+      "color": "#c7ccd0",
+      "canonicalId": "A010",
+      "rarity": "일반",
+      "effect": "공전 검 피해 +25%.",
+      "limit": "검 없으면 풀 제외."
+    },
+    {
+      "id": "sapphire",
+      "name": "사파이어",
+      "description": "획득 경험치 +25%",
+      "icon": "assets/artifactImages/sapphire.png",
+      "color": "#89bcf2",
+      "canonicalId": "A011",
+      "rarity": "일반",
+      "effect": "획득 경험치 +25%.",
+      "limit": "경험치 배율 상한 적용."
+    },
+    {
+      "id": "aegis",
+      "name": "이지스",
+      "description": "15초마다 피해 1회 방어",
+      "icon": "assets/artifactImages/aegis.png",
+      "color": "#e8d6a5",
+      "canonicalId": "A012",
+      "rarity": "일반",
+      "effect": "15초마다 피해 1회 방어.",
+      "limit": "방어 후 쿨다운 시작."
+    },
+    {
+      "id": "a013",
+      "name": "구리 나침반",
+      "canonicalId": "A013",
+      "rarity": "일반",
+      "effect": "보석 흡입 범위 +40.",
+      "limit": "레이더와 합산.",
+      "description": "보석 흡입 범위 +40. 레이더와 합산."
+    },
+    {
+      "id": "a014",
+      "name": "수선 실",
+      "canonicalId": "A014",
+      "rarity": "일반",
+      "effect": "보스가 아닌 적 30처치마다 체력 0.2 회복.",
+      "limit": "초당 회복 상한 적용.",
+      "description": "보스가 아닌 적 30처치마다 체력 0.2 회복. 초당 회복 상한 적용."
+    },
+    {
+      "id": "a015",
+      "name": "비상 물통",
+      "canonicalId": "A015",
+      "rarity": "일반",
+      "effect": "체력 2 이하에서 한 번 체력 1 회복.",
+      "limit": "판당 1회.",
+      "description": "체력 2 이하에서 한 번 체력 1 회복. 판당 1회."
+    },
+    {
+      "id": "a016",
+      "name": "흑요석 반지",
+      "canonicalId": "A016",
+      "rarity": "일반",
+      "effect": "그림자 직접 피해 +12%.",
+      "limit": "그림자 마법 보유 시만.",
+      "description": "그림자 직접 피해 +12%. 그림자 마법 보유 시만."
+    },
+    {
+      "id": "a017",
+      "name": "은박 장갑",
+      "canonicalId": "A017",
+      "rarity": "일반",
+      "effect": "비전 투사체 속도 +18%.",
+      "limit": "사거리 변경 없음.",
+      "description": "비전 투사체 속도 +18%. 사거리 변경 없음."
+    },
+    {
+      "id": "a018",
+      "name": "저울추",
+      "canonicalId": "A018",
+      "rarity": "일반",
+      "effect": "중력 영역 지속 +0.5초.",
+      "limit": "영역당 적중 간격 유지.",
+      "description": "중력 영역 지속 +0.5초. 영역당 적중 간격 유지."
+    },
+    {
+      "id": "a019",
+      "name": "화로 조각",
+      "canonicalId": "A019",
+      "rarity": "일반",
+      "effect": "점화 지속 +1초.",
+      "limit": "틱 수는 시간에만 비례.",
+      "description": "점화 지속 +1초. 틱 수는 시간에만 비례."
+    },
+    {
+      "id": "a020",
+      "name": "서리핀",
+      "canonicalId": "A020",
+      "rarity": "일반",
+      "effect": "냉기 반경 +10%.",
+      "limit": "보스 제어량 증가 없음.",
+      "description": "냉기 반경 +10%. 보스 제어량 증가 없음."
+    },
+    {
+      "id": "a021",
+      "name": "종소리 조각",
+      "canonicalId": "A021",
+      "rarity": "일반",
+      "effect": "봉인 문양 유지 +0.5초.",
+      "limit": "보스 시전 지연 불가.",
+      "description": "봉인 문양 유지 +0.5초. 보스 시전 지연 불가."
+    },
+    {
+      "id": "a022",
+      "name": "박동석",
+      "canonicalId": "A022",
+      "rarity": "일반",
+      "effect": "생명 회복 효과 +10%.",
+      "limit": "최대 체력 초과 회복 폐기.",
+      "description": "생명 회복 효과 +10%. 최대 체력 초과 회복 폐기."
+    },
+    {
+      "id": "a023",
+      "name": "작은 방패",
+      "canonicalId": "A023",
+      "rarity": "일반",
+      "effect": "받는 직접 피해 -8%.",
+      "limit": "최소 피해 1 보존.",
+      "description": "받는 직접 피해 -8%. 최소 피해 1 보존."
+    },
+    {
+      "id": "a024",
+      "name": "매듭 끈",
+      "canonicalId": "A024",
+      "rarity": "일반",
+      "effect": "장판 재타격 간격 -0.05초.",
+      "limit": "최소 0.4초.",
+      "description": "장판 재타격 간격 -0.05초. 최소 0.4초."
+    },
+    {
+      "id": "a025",
+      "name": "빗물병",
+      "canonicalId": "A025",
+      "rarity": "일반",
+      "effect": "이동 중 냉기 피해 +8%.",
+      "limit": "정지 시 효과 없음.",
+      "description": "이동 중 냉기 피해 +8%. 정지 시 효과 없음."
+    },
+    {
+      "id": "a026",
+      "name": "안경 렌즈",
+      "canonicalId": "A026",
+      "rarity": "일반",
+      "effect": "원거리 목표 탐색 +40유닛.",
+      "limit": "시야 밖 표적 불가.",
+      "description": "원거리 목표 탐색 +40유닛. 시야 밖 표적 불가."
+    },
+    {
+      "id": "a027",
+      "name": "맷돌 가루",
+      "canonicalId": "A027",
+      "rarity": "일반",
+      "effect": "폭발 반경 +8%.",
+      "limit": "화염 폭발에만.",
+      "description": "폭발 반경 +8%. 화염 폭발에만."
+    },
+    {
+      "id": "a028",
+      "name": "황동 바늘",
+      "canonicalId": "A028",
+      "rarity": "일반",
+      "effect": "첫 적중 피해 +12%.",
+      "limit": "같은 적의 후속 적중 제외.",
+      "description": "첫 적중 피해 +12%. 같은 적의 후속 적중 제외."
+    },
+    {
+      "id": "a029",
+      "name": "가벼운 장화",
+      "canonicalId": "A029",
+      "rarity": "일반",
+      "effect": "피격 후 이동속도 +15%, 2초.",
+      "limit": "공통 이동 상한.",
+      "description": "피격 후 이동속도 +15%, 2초. 공통 이동 상한."
+    },
+    {
+      "id": "a030",
+      "name": "회색 실타래",
+      "canonicalId": "A030",
+      "rarity": "일반",
+      "effect": "표식 유지 +1초.",
+      "limit": "표식 중첩 불가.",
+      "description": "표식 유지 +1초. 표식 중첩 불가."
+    },
+    {
+      "id": "a031",
+      "name": "수집 가방",
+      "canonicalId": "A031",
+      "rarity": "일반",
+      "effect": "상자 표시 범위 +80유닛.",
+      "limit": "상자 생성량 증가 없음.",
+      "description": "상자 표시 범위 +80유닛. 상자 생성량 증가 없음."
+    },
+    {
+      "id": "a032",
+      "name": "손목 시계",
+      "canonicalId": "A032",
+      "rarity": "일반",
+      "effect": "정예 등장 예고 +1초.",
+      "limit": "보스 타이머 불변.",
+      "description": "정예 등장 예고 +1초. 보스 타이머 불변."
+    },
+    {
+      "id": "a033",
+      "name": "푸른 분필",
+      "canonicalId": "A033",
+      "rarity": "일반",
+      "effect": "문양 반경 +8%.",
+      "limit": "보스 제어량 불변.",
+      "description": "문양 반경 +8%. 보스 제어량 불변."
+    },
+    {
+      "id": "a034",
+      "name": "빈 병",
+      "canonicalId": "A034",
+      "rarity": "일반",
+      "effect": "씨앗 생성 시 15% 확률로 하나 추가.",
+      "limit": "추가 씨앗 재발동 불가.",
+      "description": "씨앗 생성 시 15% 확률로 하나 추가. 추가 씨앗 재발동 불가."
+    },
+    {
+      "id": "a035",
+      "name": "돌조각",
+      "canonicalId": "A035",
+      "rarity": "일반",
+      "effect": "운석 예고 반경 +10%.",
+      "limit": "낙하 시점 그대로.",
+      "description": "운석 예고 반경 +10%. 낙하 시점 그대로."
+    },
+    {
+      "id": "a036",
+      "name": "길잡이 깃",
+      "canonicalId": "A036",
+      "rarity": "일반",
+      "effect": "미니맵 이벤트 경고를 2초 일찍 표시.",
+      "limit": "전투 피해 없음.",
+      "description": "미니맵 이벤트 경고를 2초 일찍 표시. 전투 피해 없음."
+    },
+    {
+      "id": "a037",
+      "name": "잿가루 주머니",
+      "canonicalId": "A037",
+      "rarity": "일반",
+      "effect": "점화 대상 첫 직접 적중 +10%.",
+      "limit": "대상당 3초에 1회.",
+      "description": "점화 대상 첫 직접 적중 +10%. 대상당 3초에 1회."
+    },
+    {
+      "id": "a038",
+      "name": "맑은 수정",
+      "canonicalId": "A038",
+      "rarity": "일반",
+      "effect": "감전 소비 추가 피해 +10%.",
+      "limit": "소비 1회 규칙.",
+      "description": "감전 소비 추가 피해 +10%. 소비 1회 규칙."
+    },
+    {
+      "id": "a039",
+      "name": "검은 천",
+      "canonicalId": "A039",
+      "rarity": "일반",
+      "effect": "취약 지속 +0.5초.",
+      "limit": "최대 4초.",
+      "description": "취약 지속 +0.5초. 최대 4초."
+    },
+    {
+      "id": "a040",
+      "name": "풍향계",
+      "canonicalId": "A040",
+      "rarity": "일반",
+      "effect": "적 탄환이 100유닛 이내면 이동 +8%.",
+      "limit": "광선은 감지 제외.",
+      "description": "적 탄환이 100유닛 이내면 이동 +8%. 광선은 감지 제외."
+    },
+    {
+      "id": "a041",
+      "name": "작은 등불",
+      "canonicalId": "A041",
+      "rarity": "일반",
+      "effect": "장막 안 적 윤곽 대비 증가.",
+      "limit": "피해 수치 없음.",
+      "description": "장막 안 적 윤곽 대비 증가. 피해 수치 없음."
+    },
+    {
+      "id": "a042",
+      "name": "나무 말뚝",
+      "canonicalId": "A042",
+      "rarity": "일반",
+      "effect": "지뢰 지속 +2초.",
+      "limit": "보유 수 상한 유지.",
+      "description": "지뢰 지속 +2초. 보유 수 상한 유지."
+    },
+    {
+      "id": "a043",
+      "name": "쇳가루",
+      "canonicalId": "A043",
+      "rarity": "일반",
+      "effect": "검 접촉 반경 +8%.",
+      "limit": "재타격 간격 유지.",
+      "description": "검 접촉 반경 +8%. 재타격 간격 유지."
+    },
+    {
+      "id": "a044",
+      "name": "정전기 매듭",
+      "canonicalId": "A044",
+      "rarity": "일반",
+      "effect": "연쇄 번개 첫 점프 거리 +10%.",
+      "limit": "뒤 점프 거리 불변.",
+      "description": "연쇄 번개 첫 점프 거리 +10%. 뒤 점프 거리 불변."
+    },
+    {
+      "id": "a045",
+      "name": "차가운 끈",
+      "canonicalId": "A045",
+      "rarity": "일반",
+      "effect": "빙하 벽 길이 +15%.",
+      "limit": "탄 굴절 수 그대로.",
+      "description": "빙하 벽 길이 +15%. 탄 굴절 수 그대로."
+    },
+    {
+      "id": "a046",
+      "name": "봉합침",
+      "canonicalId": "A046",
+      "rarity": "일반",
+      "effect": "체력 절반 이하 회복량 +12%.",
+      "limit": "회복 상한 적용.",
+      "description": "체력 절반 이하 회복량 +12%. 회복 상한 적용."
+    },
+    {
+      "id": "a047",
+      "name": "가면끈",
+      "canonicalId": "A047",
+      "rarity": "일반",
+      "effect": "단검 목표 탐색 반경 +20%.",
+      "limit": "처형 조건 그대로.",
+      "description": "단검 목표 탐색 반경 +20%. 처형 조건 그대로."
+    },
+    {
+      "id": "a048",
+      "name": "낡은 장갑",
+      "canonicalId": "A048",
+      "rarity": "일반",
+      "effect": "파동 최대 반경 +10%.",
+      "limit": "적중 1회 유지.",
+      "description": "파동 최대 반경 +10%. 적중 1회 유지."
+    },
+    {
+      "id": "a049",
+      "name": "파열 코일",
+      "canonicalId": "A049",
+      "rarity": "희귀",
+      "effect": "번개가 감전 소비 시 작은 추가 피해 30D.",
+      "limit": "추가 피해가 코일 재발동 금지.",
+      "description": "번개가 감전 소비 시 작은 추가 피해 30D. 추가 피해가 코일 재발동 금지."
+    },
+    {
+      "id": "a050",
+      "name": "화산 유리",
+      "canonicalId": "A050",
+      "rarity": "희귀",
+      "effect": "점화 적 사망 시 반경 55에 40D.",
+      "limit": "처치당 1회; 연쇄 폭발 없음.",
+      "description": "점화 적 사망 시 반경 55에 40D. 처치당 1회; 연쇄 폭발 없음."
+    },
+    {
+      "id": "a051",
+      "name": "서리 거울",
+      "canonicalId": "A051",
+      "rarity": "희귀",
+      "effect": "둔화 적에게 냉기 피해 +18%.",
+      "limit": "보스는 보정 절반.",
+      "description": "둔화 적에게 냉기 피해 +18%. 보스는 보정 절반."
+    },
+    {
+      "id": "a052",
+      "name": "붕괴 렌즈",
+      "canonicalId": "A052",
+      "rarity": "희귀",
+      "effect": "중력 우물 중심 타격 +60D.",
+      "limit": "우물당 적 1회.",
+      "description": "중력 우물 중심 타격 +60D. 우물당 적 1회."
+    },
+    {
+      "id": "a053",
+      "name": "그림자 잔",
+      "canonicalId": "A053",
+      "rarity": "희귀",
+      "effect": "취약 적 처치 시 다음 단검 피해 +20%.",
+      "limit": "최대 1회 저장.",
+      "description": "취약 적 처치 시 다음 단검 피해 +20%. 최대 1회 저장."
+    },
+    {
+      "id": "a054",
+      "name": "생명의 고리",
+      "canonicalId": "A054",
+      "rarity": "희귀",
+      "effect": "회복 때 주변에 30D 파동.",
+      "limit": "초당 1회; 파동은 회복 불가.",
+      "description": "회복 때 주변에 30D 파동. 초당 1회; 파동은 회복 불가."
+    },
+    {
+      "id": "a055",
+      "name": "닫힌 서판",
+      "canonicalId": "A055",
+      "rarity": "희귀",
+      "effect": "봉인 지연 성공 시 다음 문양 쿨다운 -20%.",
+      "limit": "최소 주기 0.4초.",
+      "description": "봉인 지연 성공 시 다음 문양 쿨다운 -20%. 최소 주기 0.4초."
+    },
+    {
+      "id": "a056",
+      "name": "잔광 송곳",
+      "canonicalId": "A056",
+      "rarity": "희귀",
+      "effect": "비전 관통 뒤 다음 대상 피해 +12%.",
+      "limit": "관통당 1회, 3회 상한.",
+      "description": "비전 관통 뒤 다음 대상 피해 +12%. 관통당 1회, 3회 상한."
+    },
+    {
+      "id": "a057",
+      "name": "회귀 자석",
+      "canonicalId": "A057",
+      "rarity": "희귀",
+      "effect": "놓친 경험치 보석을 20초마다 가까이 이동.",
+      "limit": "벽 너머 보석 제외.",
+      "description": "놓친 경험치 보석을 20초마다 가까이 이동. 벽 너머 보석 제외."
+    },
+    {
+      "id": "a058",
+      "name": "파수꾼 갑옷",
+      "canonicalId": "A058",
+      "rarity": "희귀",
+      "effect": "정예가 180유닛 안에 있으면 받는 피해 -15%.",
+      "limit": "정예 사망 후 즉시 해제.",
+      "description": "정예가 180유닛 안에 있으면 받는 피해 -15%. 정예 사망 후 즉시 해제."
+    },
+    {
+      "id": "a059",
+      "name": "도약 발판",
+      "canonicalId": "A059",
+      "rarity": "희귀",
+      "effect": "회피 직후 다음 직접 공격 +20%.",
+      "limit": "2초 안에 소모.",
+      "description": "회피 직후 다음 직접 공격 +20%. 2초 안에 소모."
+    },
+    {
+      "id": "a060",
+      "name": "진공 항아리",
+      "canonicalId": "A060",
+      "rarity": "희귀",
+      "effect": "장판 밖으로 나간 적에 둔화 1초 잔류.",
+      "limit": "같은 장판 재진입 갱신만.",
+      "description": "장판 밖으로 나간 적에 둔화 1초 잔류. 같은 장판 재진입 갱신만."
+    },
+    {
+      "id": "a061",
+      "name": "부서진 모래시계",
+      "canonicalId": "A061",
+      "rarity": "희귀",
+      "effect": "체력 2 이하에서 쿨다운 10% 단축.",
+      "limit": "치유되면 원복.",
+      "description": "체력 2 이하에서 쿨다운 10% 단축. 치유되면 원복."
+    },
+    {
+      "id": "a062",
+      "name": "은실 갑옷",
+      "canonicalId": "A062",
+      "rarity": "희귀",
+      "effect": "피격 후 1초 투사체 피해 -35%.",
+      "limit": "연속 피격 갱신, 중첩 없음.",
+      "description": "피격 후 1초 투사체 피해 -35%. 연속 피격 갱신, 중첩 없음."
+    },
+    {
+      "id": "a063",
+      "name": "귀환 표지",
+      "canonicalId": "A063",
+      "rarity": "희귀",
+      "effect": "귀환 부적 후 2초 이동 +25%.",
+      "limit": "기본 속도 상한.",
+      "description": "귀환 부적 후 2초 이동 +25%. 기본 속도 상한."
+    },
+    {
+      "id": "a064",
+      "name": "지혈 문장",
+      "canonicalId": "A064",
+      "rarity": "희귀",
+      "effect": "체력 회복 때 2초 받는 피해 -10%.",
+      "limit": "지속 갱신만.",
+      "description": "체력 회복 때 2초 받는 피해 -10%. 지속 갱신만."
+    },
+    {
+      "id": "a065",
+      "name": "과충전 구슬",
+      "canonicalId": "A065",
+      "rarity": "희귀",
+      "effect": "연쇄가 최대 대상에 닿으면 마지막 대상 +50D.",
+      "limit": "대상 없으면 무효.",
+      "description": "연쇄가 최대 대상에 닿으면 마지막 대상 +50D. 대상 없으면 무효."
+    },
+    {
+      "id": "a066",
+      "name": "녹지 않는 잎",
+      "canonicalId": "A066",
+      "rarity": "희귀",
+      "effect": "씨앗이 6초 남아 있으면 회복 +30%.",
+      "limit": "최대 체력 초과 폐기.",
+      "description": "씨앗이 6초 남아 있으면 회복 +30%. 최대 체력 초과 폐기."
+    },
+    {
+      "id": "a067",
+      "name": "여진 망치",
+      "canonicalId": "A067",
+      "rarity": "희귀",
+      "effect": "운석 적중 후 0.5초 뒤 약한 후속 충격.",
+      "limit": "원인당 1회; 예고 표시.",
+      "description": "운석 적중 후 0.5초 뒤 약한 후속 충격. 원인당 1회; 예고 표시."
+    },
+    {
+      "id": "a068",
+      "name": "쌍성 궤도",
+      "canonicalId": "A068",
+      "rarity": "희귀",
+      "effect": "공전 검 1개 추가.",
+      "limit": "검 수 8개 상한.",
+      "description": "공전 검 1개 추가. 검 수 8개 상한."
+    },
+    {
+      "id": "a069",
+      "name": "검은 매듭",
+      "canonicalId": "A069",
+      "rarity": "희귀",
+      "effect": "단검 처형 성공 시 다음 단검 조준 거리 +30%.",
+      "limit": "1회 소모.",
+      "description": "단검 처형 성공 시 다음 단검 조준 거리 +30%. 1회 소모."
+    },
+    {
+      "id": "a070",
+      "name": "잔설 목걸이",
+      "canonicalId": "A070",
+      "rarity": "희귀",
+      "effect": "둔화 만료 시 20D 냉기 피해.",
+      "limit": "대상당 3초 간격.",
+      "description": "둔화 만료 시 20D 냉기 피해. 대상당 3초 간격."
+    },
+    {
+      "id": "a071",
+      "name": "전도성 뼈",
+      "canonicalId": "A071",
+      "rarity": "희귀",
+      "effect": "점화 대상에 감전 부여 시 30D 추가.",
+      "limit": "대상당 2초 간격.",
+      "description": "점화 대상에 감전 부여 시 30D 추가. 대상당 2초 간격."
+    },
+    {
+      "id": "a072",
+      "name": "기억 조각",
+      "canonicalId": "A072",
+      "rarity": "희귀",
+      "effect": "레벨업 선택지 한 번만 다시 뽑기.",
+      "limit": "판당 1회; 동일 티어 풀.",
+      "description": "레벨업 선택지 한 번만 다시 뽑기. 판당 1회; 동일 티어 풀."
+    },
+    {
+      "id": "a073",
+      "name": "이정표",
+      "canonicalId": "A073",
+      "rarity": "희귀",
+      "effect": "다음 사건 위치의 표시 거리+200; 선택 정보는 기본 공개.",
+      "limit": "보상 추가 없음; 거절 뒤 다음 사건으로 이동.",
+      "description": "다음 사건 위치의 표시 거리+200; 선택 정보는 기본 공개. 보상 추가 없음; 거절 뒤 다음 사건으로 이동."
+    },
+    {
+      "id": "a074",
+      "name": "정제 렌즈",
+      "canonicalId": "A074",
+      "rarity": "희귀",
+      "effect": "체력 높은 적 우선 조준 시 첫 적중 +15%.",
+      "limit": "기술별 목표 규칙 유지.",
+      "description": "체력 높은 적 우선 조준 시 첫 적중 +15%. 기술별 목표 규칙 유지."
+    },
+    {
+      "id": "a075",
+      "name": "결속 고리",
+      "canonicalId": "A075",
+      "rarity": "희귀",
+      "effect": "융합 2개 보유 시 각 재료 피해 +8%.",
+      "limit": "융합 3개여도 추가 중첩 없음.",
+      "description": "융합 2개 보유 시 각 재료 피해 +8%. 융합 3개여도 추가 중첩 없음."
+    },
+    {
+      "id": "a076",
+      "name": "취약 채찍",
+      "canonicalId": "A076",
+      "rarity": "희귀",
+      "effect": "취약 적에 비전 적중 시 취약 0.3초 연장.",
+      "limit": "최대 4초.",
+      "description": "취약 적에 비전 적중 시 취약 0.3초 연장. 최대 4초."
+    },
+    {
+      "id": "a077",
+      "name": "증폭 잔",
+      "canonicalId": "A077",
+      "rarity": "희귀",
+      "effect": "체력 5 이상이면 화염 피해 +15%.",
+      "limit": "피격 시 즉시 중지.",
+      "description": "체력 5 이상이면 화염 피해 +15%. 피격 시 즉시 중지."
+    },
+    {
+      "id": "a078",
+      "name": "그림자 약병",
+      "canonicalId": "A078",
+      "rarity": "희귀",
+      "effect": "장막 안 처치로 체력 0.1 회복.",
+      "limit": "초당 1회, 소환체 제외.",
+      "description": "장막 안 처치로 체력 0.1 회복. 초당 1회, 소환체 제외."
+    },
+    {
+      "id": "a079",
+      "name": "접지 장갑",
+      "canonicalId": "A079",
+      "rarity": "희귀",
+      "effect": "편향 성공 후 다음 폭풍 피해 +18%.",
+      "limit": "한 번 소모; 광선 제외.",
+      "description": "편향 성공 후 다음 폭풍 피해 +18%. 한 번 소모; 광선 제외."
+    },
+    {
+      "id": "a080",
+      "name": "냉각 고리",
+      "canonicalId": "A080",
+      "rarity": "희귀",
+      "effect": "연속 3초 이동 시 시전 속도 +10%.",
+      "limit": "멈추면 초기화; 공통 상한.",
+      "description": "연속 3초 이동 시 시전 속도 +10%. 멈추면 초기화; 공통 상한."
+    },
+    {
+      "id": "a081",
+      "name": "갈라진 태양",
+      "canonicalId": "A081",
+      "rarity": "전설",
+      "effect": "화염 폭발이 둘로 나뉘어 주변 재폭발.",
+      "limit": "재폭발 피해 40%; 점화 없음.",
+      "description": "화염 폭발이 둘로 나뉘어 주변 재폭발. 재폭발 피해 40%; 점화 없음."
+    },
+    {
+      "id": "a082",
+      "name": "절대 영점",
+      "canonicalId": "A082",
+      "rarity": "전설",
+      "effect": "첫 냉기 타격이 일반 적을 0.6초 속박.",
+      "limit": "대상당 8초, 보스 둔화 치환.",
+      "description": "첫 냉기 타격이 일반 적을 0.6초 속박. 대상당 8초, 보스 둔화 치환."
+    },
+    {
+      "id": "a083",
+      "name": "번개의 왕관",
+      "canonicalId": "A083",
+      "rarity": "전설",
+      "effect": "연쇄 끝에서 시작점으로 약한 번개 귀환.",
+      "limit": "귀환은 추가 연쇄 없음.",
+      "description": "연쇄 끝에서 시작점으로 약한 번개 귀환. 귀환은 추가 연쇄 없음."
+    },
+    {
+      "id": "a084",
+      "name": "심연의 나침반",
+      "canonicalId": "A084",
+      "rarity": "전설",
+      "effect": "중력 우물 중심에 적 탄환을 흡수.",
+      "limit": "우물당 8개; 보스 광선 제외.",
+      "description": "중력 우물 중심에 적 탄환을 흡수. 우물당 8개; 보스 광선 제외."
+    },
+    {
+      "id": "a085",
+      "name": "그림자 계약",
+      "canonicalId": "A085",
+      "rarity": "전설",
+      "effect": "체력 3 이하에서 그림자 피해 +35%.",
+      "limit": "회복되면 종료; 체력 감소 없음.",
+      "description": "체력 3 이하에서 그림자 피해 +35%. 회복되면 종료; 체력 감소 없음."
+    },
+    {
+      "id": "a086",
+      "name": "생명 개화",
+      "canonicalId": "A086",
+      "rarity": "전설",
+      "effect": "씨앗 수집 시 가까운 아군 지점에 회복장.",
+      "limit": "1초 유지; 자기 회복 상한.",
+      "description": "씨앗 수집 시 가까운 아군 지점에 회복장. 1초 유지; 자기 회복 상한."
+    },
+    {
+      "id": "a087",
+      "name": "봉인의 문",
+      "canonicalId": "A087",
+      "rarity": "전설",
+      "effect": "문양 내 일반 적 돌진을 한 번 취소.",
+      "limit": "대상별 10초; 보스 무효.",
+      "description": "문양 내 일반 적 돌진을 한 번 취소. 대상별 10초; 보스 무효."
+    },
+    {
+      "id": "a088",
+      "name": "원점의 수정",
+      "canonicalId": "A088",
+      "rarity": "전설",
+      "effect": "비전 공격 첫 대상에게 표식 1개.",
+      "limit": "표식은 다음 비전 적중만 소비.",
+      "description": "비전 공격 첫 대상에게 표식 1개. 표식은 다음 비전 적중만 소비."
+    },
+    {
+      "id": "a089",
+      "name": "수평선 신발",
+      "canonicalId": "A089",
+      "rarity": "전설",
+      "effect": "적 예고 안에서 이동속도 +30%.",
+      "limit": "피격 시 3초 비활성.",
+      "description": "적 예고 안에서 이동속도 +30%. 피격 시 3초 비활성."
+    },
+    {
+      "id": "a090",
+      "name": "유성의 심장",
+      "canonicalId": "A090",
+      "rarity": "전설",
+      "effect": "운석 충돌 뒤 작은 파편 3개.",
+      "limit": "파편 재파편 금지; 예고 유지.",
+      "description": "운석 충돌 뒤 작은 파편 3개. 파편 재파편 금지; 예고 유지."
+    },
+    {
+      "id": "a091",
+      "name": "재기동 태엽",
+      "canonicalId": "A091",
+      "rarity": "전설",
+      "effect": "체력이 0이 되는 피해 직전 1회 체력 1로 생존.",
+      "limit": "판당 1회; 귀환 부적보다 후순위.",
+      "description": "체력이 0이 되는 피해 직전 1회 체력 1로 생존. 판당 1회; 귀환 부적보다 후순위."
+    },
+    {
+      "id": "a092",
+      "name": "극광 프리즘",
+      "canonicalId": "A092",
+      "rarity": "전설",
+      "effect": "서로 다른 3학파 적중 후 다음 공격 +40%.",
+      "limit": "6초 내 완료, 1회 소모.",
+      "description": "서로 다른 3학파 적중 후 다음 공격 +40%. 6초 내 완료, 1회 소모."
+    },
+    {
+      "id": "a093",
+      "name": "검의 별자리",
+      "canonicalId": "A093",
+      "rarity": "전설",
+      "effect": "검 4개 이상이면 짧은 중앙 결속선.",
+      "limit": "선당 대상 1회/초.",
+      "description": "검 4개 이상이면 짧은 중앙 결속선. 선당 대상 1회/초."
+    },
+    {
+      "id": "a094",
+      "name": "멈춘 종",
+      "canonicalId": "A094",
+      "rarity": "전설",
+      "effect": "정예 시전 1회 지연 때 예고 길이 +0.8초.",
+      "limit": "보스 패턴은 지연하지 않음.",
+      "description": "정예 시전 1회 지연 때 예고 길이 +0.8초. 보스 패턴은 지연하지 않음."
+    },
+    {
+      "id": "a095",
+      "name": "밤의 심장",
+      "canonicalId": "A095",
+      "rarity": "전설",
+      "effect": "취약 적 처치 뒤 장막 범위 3초 +25%.",
+      "limit": "지속 갱신만; 시야 차단 없음.",
+      "description": "취약 적 처치 뒤 장막 범위 3초 +25%. 지속 갱신만; 시야 차단 없음."
+    },
+    {
+      "id": "a096",
+      "name": "마지막 잎",
+      "canonicalId": "A096",
+      "rarity": "전설",
+      "effect": "체력 최대에서 받는 첫 피해 1 무효.",
+      "limit": "20초 재충전; 이지스 후순위.",
+      "description": "체력 최대에서 받는 첫 피해 1 무효. 20초 재충전; 이지스 후순위."
+    }
+  ],
+  "zones": [
+    {
+      "id": "Z01",
+      "name": "황혼의 폐허",
+      "bossId": "B01",
+      "description": "바닥의 직선 골목과 끊긴 광장. 이동을 막는 벽은 없고 장식 잔해만 배치해 자동 공격의 시야를 해치지 않는다.",
+      "phenomenon": "75초부터 플레이어의 현재 좌표가 아닌 0.6초 전 위치 부근에 원형 균열 두 곳을 찍는다. 최소 0.8초 경고 후 0.35초 활성, 2초 휴식. 같은 위치를 연속 선택하지 않고 화면 가장자리에 1.5인분 우회 폭을 둔다.",
+      "encounter": "가장자리를 돌아오는 추적자와 중앙을 가로지르는 고속 적을 교대로 내보내, 조준점에 서 있거나 급히 방향을 바꾸는 두 실패를 학습시킨다. 3분 정예는 경고 원 바깥에 출현한다."
+    },
+    {
+      "id": "Z02",
+      "name": "잿빛 관측소",
+      "bossId": "B02",
+      "description": "동심원 판과 끊어진 눈금이 보이는 넓은 바닥. 길은 막지 않고 띠의 위치를 얇은 점선으로 미리 그려 좁은 화면에서도 진입 방향을 읽게 한다.",
+      "phenomenon": "2분부터 한 개의 120도 위험 띠가 8초에 한 바퀴 회전한다. 1.2초 예고 후 활성 5초, 쉬는 시간 4초. 열린 90도 부채꼴은 최소 2초 유지한 뒤 이동하며, 보스 큰 공격 중에는 회전을 멈춘다.",
+      "encounter": "측면 접근 적은 안전 부채꼴의 입구를 잠깐 압박한다. 느린 원거리 표식 적은 열린 각도를 향해 유도하되 발사체는 회피 가능한 간격을 유지한다."
+    },
+    {
+      "id": "Z03",
+      "name": "가라앉은 정원",
+      "bossId": "B03",
+      "description": "침수된 정원은 넓은 수로와 세 곳의 정화석으로 읽힌다. 물 장식은 감속 판정이 없고 실제 독성 경계만 단색 윤곽과 점무늬로 구분한다.",
+      "phenomenon": "2분 30초부터 독성 패치가 0.5초 간격으로 두 단계 팽창하고 1초 뒤 피해를 준다. 정화석에 1.5초 가까이 머무르면 주위 패치 하나가 사라지지만 그동안 적이 모인다. 정화석은 20초 재사용 대기.",
+      "encounter": "밀집 적은 정화석 쪽으로 몰리고 긴 사거리 적은 우회로를 차지한다. 정화 자체가 강제 목표는 아니며 영역형 빌드는 패치를 돌아 정예를 유인할 수 있다."
+    },
+    {
+      "id": "Z04",
+      "name": "도자기 수로",
+      "bossId": "B04",
+      "description": "마른 운하와 두 갈래 곡선 수로가 시각적 방향선을 만든다. 수로는 벽이 아니라 이동 벡터에 약한 횡류를 더하는 영역이라 조이스틱 한 손 조작을 유지한다.",
+      "phenomenon": "3분부터 12초마다 두 수로 중 한 곳이 4초 동안 흐른다. 1초 전 물결 화살표를 표시하고 플레이어 속도에 더하는 횡류는 초기 가설 45단위/초 이하로 제한한다. 이동 불능·강제 벽 충돌은 없다.",
+      "encounter": "무거운 적은 흐름에 둔하고 가벼운 떼는 더 빨리 밀려, 같은 유인 동선에도 군집 형태가 바뀐다. 정예는 흐름 시작 직후가 아닌 회복 구간에 등장한다."
+    },
+    {
+      "id": "Z05",
+      "name": "유리 기록고",
+      "bossId": "B05",
+      "description": "부서진 서가 사이의 반사 패널은 일관된 격자 위치에만 나타난다. 플레이어와 적의 실제 충돌체는 반사상과 다른 외곽선으로 표시한다.",
+      "phenomenon": "2분부터 15초 주기로 패널 둘이 5초 켜진다. 패널에 닿은 맵 전용 광선은 한 번만 꺾이며 경고 1.1초, 활성 0.4초. 일반 마법을 무작정 반사하지 않아 빌드 효과를 예측 가능하게 둔다.",
+      "encounter": "광선 너머의 방패 적은 반사 패널을 엄폐처럼 이용하지만 패널이 꺼지면 취약하다. 작은 추적 적은 반사상을 통과하므로 위치 추론을 방해하지 않는다."
+    },
+    {
+      "id": "Z06",
+      "name": "종언의 역",
+      "bossId": "B06",
+      "description": "두 승강장과 중앙 연결부가 보이나 문은 물리적 폐쇄물이 아니다. 출입 신호는 바닥 번호와 방향 화살표로 표현한다.",
+      "phenomenon": "3분부터 18초 주기로 양쪽 승강장 중 하나의 가장자리에서 3초간 파형이 안쪽으로 온다. 1.3초 예고, 0.5초 간격 세 파. 중앙 연결부에는 항상 한 방향 통로를 남긴다.",
+      "encounter": "뒤에서 밀어붙이는 보행 적과 파형 타이밍에 뛰는 돌진 적이 교차하지만 돌진 예고는 파형 시작과 1.5초 이상 떨어뜨린다. 마지막 정예는 결전 20초 전에는 정리된다."
+    }
+  ],
+  "bosses": [
+    {
+      "id": "B01",
+      "name": "균열 파수자",
+      "zoneId": "Z01",
+      "description": "510초 첫 구현/810초 1.0에서 출현한다. 0~50% 체력은 추적 원 1초 경고→0.35초 폭발→1.5초 회복, 이어 8갈래 방사선 1.2초 경고→0.3초 활성→2초 회복. 반경은 초기 90단위 가설이다. 50% 이하에는 추적 원 두 곳을 0.5초 간격으로 순서 표시한다. 방사선에는 45도 이상 빈 부채꼴을 항상 남기고 겹친 원이 그곳을 덮으면 두 번째 원을 지연한다. 폐허 현상은 보스 경고 시작부터 회복 종료까지 멈춘다. 보스는 밀치기·흡인 30%만 받고 행동 중단은 0.2초 상한이다. 사망 후 이미 낸 위험은 지우고 종료 우선순위는 사망>마감>처치다. B01의 공격 순서는 원→방사선→원으로 고정해 첫 시도에서 학습 가능하게 한다. 원 두 곳은 플레이어 주변의 같은 편에 두지 않고 다른 거리로 놓아 한 방향 이동만 강요하지 않는다. 방사선 경고는 중심과 바깥 끝에 같은 시작 시각을 표시하며 실제 피해 폭은 경고 그림보다 넓지 않다. 보스 몸체에 닿는 일반 접촉 피해는 1, 공격별 피해도 1을 초기 가설로 두며 접촉 무적시간을 공유한다. 50% 전환은 현재 공격 회복 뒤에만 일어나 즉시 새 경고가 겹치지 않는다. 체력이 0이 되면 공격 예약을 폐기하고 정예 상자는 만들지 않는다. 첫 구현에서는 B01이 유일한 보스이며 Z01 현상 외 다른 맵 규칙을 호출하지 않는다. 시제품 8:30 입장과 10:00 마감 사이 90초를 실제 공격·회복 창으로 모두 사용할 수 있어야 한다. 초반 학습용 첫 원은 가장자리 쪽에 안전 폭을 크게 남긴다. 보스는 멀리 도망가도 플레이어 근처의 합리적인 거리로 접근하되 갑자기 몸체를 겹치지 않는다. 방향 HUD는 보스가 화면 밖에 있는 순간만 표시하고 보이는 순간에는 사라진다. 체력 수치는 빌드별 90초 처치 가능성을 시험한 뒤 조정한다."
+    },
+    {
+      "id": "B02",
+      "name": "맹목의 관측자",
+      "zoneId": "Z02",
+      "description": "입장 뒤 2초 무공격. 렌즈가 1.3초 선으로 각도를 가리킨 뒤 0.4초 쓸고 1.6초 쉰다. 다음에는 고정된 세 띠 중 두 곳을 1.4초 예고해 0.45초 작동시킨다. 55% 이하에서 렌즈 한 쌍이 반대 방향으로 돌지만 둘 사이 90도 통로를 2초 이상 고정한다. 회전 띠와 렌즈의 활성 시각이 겹치면 맵 띠가 1초 늦춰진다. 근접 빌드가 유리각을 따라 접근할 수 있도록 회복 중 보스 이동속도를 낮춘다. 둔화는 회전 속도만 최대 20% 줄이며 렌즈를 영구 정지시키지 않는다. 렌즈는 플레이어의 마지막 위치를 조준하지만 예고 후 따라오지 않는다. 안전 부채꼴에 너무 많은 적이 쌓이면 렌즈가 적을 미는 효과를 넣지 않고 해당 적의 신규 스폰만 늦춘다. 렌즈 두 개는 같은 프레임에 활성화되지 않고 최소 0.4초 간격을 둔다. 보스의 눈금은 Z02 바닥 눈금보다 굵은 무늬로 구별하며 화면 밖에서도 다음 안전 각도를 HUD에 작은 방향 화살표로 알려 준다. 보스가 정지 효과를 받을 때 경고 시간은 줄어들지 않아야 한다. 체력 전환 직후에는 한 번의 단일 렌즈를 다시 보여 준 뒤 쌍 렌즈로 간다. 관측자의 렌즈는 보스 몸체를 기준으로 돌고 맵 띠는 지도 중심을 기준으로 돈다. 두 기준점을 동시에 활성화하지 않아 시점 혼란을 줄인다. 첫 기술은 항상 단일 렌즈여서 사용자가 안전 각도 규칙을 재확인한다. 체력 전환은 현재 렌즈 공격이 끝난 뒤에만 일어나며, 두 렌즈가 켜지기 전 1초 동안 방향을 재표시한다. 광선과 렌즈의 피해는 같은 피격 무적시간을 써 연속 중첩을 제한한다. 관측자가 화면 밖이면 보스 방향뿐 아니라 열린 각도의 방향을 작은 HUD로 유지한다. 두 렌즈 사이 안전 각도가 실제 충돌체 크기보다 좁아지는 시드는 생성 단계에서 거절한다. 체력 전환은 한 번만 일어난다. 안전 각도는 HUD와 실제 바닥에 일치한다."
+    },
+    {
+      "id": "B03",
+      "name": "침식의 뿌리",
+      "zoneId": "Z03",
+      "description": "중앙 뿌리가 두 가지 동작을 교대한다. 가지 찌르기는 직선 1.1초 예고/0.3초 활성/1.5초 회복. 포자 확산은 1.4초 예고 후 외곽 3곳을 4초 오염시키고 2초 쉰다. 50% 이하에서는 정화석 하나를 6초 봉쇄하지만 남은 둘 중 하나는 독성 밖에 둔다. 뿌리가 회복할 때 핵이 열려 마법이 닿는 명확한 공격 창이 된다. 맵 독성 패치는 포자와 2곳 이상 중첩되지 않는다. 보스는 중독·둔화에는 감쇠를 받고 정화석은 보스에게 피해를 주지 않아 필수 도구가 되지 않는다. 가지 찌르기 직선은 플레이어를 향해 예약한 뒤 고정되며 활성 중 재조준하지 않는다. 포자는 화면을 연속적으로 덮는 대신 서로 분리된 셋 중 둘만 활성화해 정화석 접근을 포기해도 우회할 공간을 둔다. 핵 노출은 정확히 회복 1.5초이며 지속 영역 마법이 바닥에 남아 있으면 그 시간에 정상 피해를 준다. 포자 독성과 접촉 피해는 같은 피격 무적시간을 공유한다. 전환 때 보스가 기존 포자를 폐기하지 않으면 최소 한 곳의 정화석을 안전하게 남겨야 한다. 플레이어가 이미 정화석을 사용했어도 다음 회복 창을 공격할 수 있어야 한다. 뿌리는 정화석 사이를 추적 이동하지 않고 중앙에 머물러 플레이어가 위험한 경로를 감수하며 공격 거리를 선택한다. 핵이 닫힌 시간에도 피해가 완전히 0이면 근접 빌드가 기다리기만 하므로 일반 피해는 받되 회복 중 약점 배율만 크게 한다. 약점 배율은 초기 1.5배 가설이다. 정화석이 보스 공격으로 지워지는 대신 잠시 봉쇄되는 이유는 플레이어가 준비한 경로를 기억하고 다시 이용할 수 있게 하기 위해서다. 보스 처치 후 포자가 남아 뒤늦게 사망하지 않도록 모든 예약을 종료 시 폐기한다. 정화석 봉쇄 시간이 끝나도 이미 소모한 재사용 대기는 초기화하지 않는다. 보스가 화면 밖이면 핵 방향을 표시한다."
+    },
+    {
+      "id": "B04",
+      "name": "유속 장인",
+      "zoneId": "Z04",
+      "description": "팔을 올리는 1.2초 동안 수로의 다음 방향을 표시하고 2초간 유속을 뒤집는다. 이어 몸체 돌진선을 1초 표시해 0.45초 이동, 충돌 뒤 1.8초 멈춘다. 60% 이하에는 연속 두 번 뒤집지만 각 사이에 2초 휴지, 돌진은 한 번만 한다. 플레이어가 흐름을 이용하면 돌진선 바깥으로 빠져나갈 수 있다. 보스 돌진 때 맵 횡류는 정지한다. 밀치기 저항은 70%, 행동 중단은 회복 구간에만 허용한다. 가장자리에서 돌진을 시작해 화면 밖으로 사라지는 경우 즉시 중앙 복귀한다. 돌진 시작 좌표는 화면 안에 묶고 이동 끝도 화면 안쪽에 둔다. 뒤집힌 유속은 플레이어뿐 아니라 가벼운 일반 적에도 같은 방향으로 적용되어 규칙이 일관된다. 플레이어는 흐름을 타는 선택과 반대로 버티는 선택 모두로 돌진선을 피할 수 있어야 한다. 연속 뒤집기 사이의 휴지 2초는 공격 가능한 시간이면서 다음 흐름 화살표를 읽는 시간이다. 돌진 피해는 1을 초기 가설로 두고, 동일 이동 중 한 플레이어에게 두 번 판정하지 않는다. 보스가 제어로 멈춰도 다음 공격의 경고 단계를 건너뛰지 않는다. 흐름 반전 예고에는 이전 화살표와 새 화살표를 동시에 보이되 이전 것은 흐린 윤곽으로 둔다. 보스가 일단 돌진을 시작하면 플레이어 현재 위치로 각도를 바꾸지 않는다. 돌진 후 멈춘 동안 보스 뒤편이 노출되어 자동 공격이 닿도록 이동속도와 충돌반경을 검증한다. 두 번째 체력 단계의 방향 반전 두 번은 같은 수로를 왕복시키는 것이 아니라 서로 다른 수로를 순서대로 쓰게 한다. 화면 경계에 플레이어가 붙어 있으면 돌진선을 안쪽으로 회전시켜 최소 하나의 탈출 방향을 남긴다. 보스의 돌진과 맵 횡류가 같은 틱에 시작하려 하면 보스 공격을 우선하고 맵 주기를 폐기한다. 반전은 두 수로에 같은 틱 적용하지 않는다. 돌진 직후 적 생성이 보스를 가리는 경우 그 파동의 일반 적 출현을 늦춘다."
+    },
+    {
+      "id": "B05",
+      "name": "유리 서기",
+      "zoneId": "Z05",
+      "description": "서기가 패널 두 개를 세워 1.4초 실선 광선을 예고하고 0.4초 발사한다. 반사 경로는 그보다 0.3초 먼저 점선으로 보이며, 발사 뒤 2초 동안 몸체가 노출된다. 50% 이하에는 패널 하나를 움직여 단 한 번 경로를 다시 계산한다. 바뀐 선을 1초 재예고한 뒤 발사하므로 이미 피한 곳에 즉시 피해를 넣지 않는다. 맵 자체 패널은 보스 패널이 켜진 동안 비활성이다. 플레이어 마법은 반사하지 않는다. 봉쇄가 생기면 긴 반사 가지를 취소하고 단일 광선만 남긴다. 패널이 움직이는 전환 공격은 기존 경고선을 지우고 새 선을 전체 경고 시간 동안 다시 표시한다. 이전 선이 남아 보이는 0.2초 잔상에는 피해가 없다. 단일 광선의 직선과 반사 광선의 꺾인 부분은 서로 다른 점선 패턴으로 구분한다. 플레이어가 패널 안쪽에 서 있을 때도 패널 충돌은 없으므로 빠져나올 수 있다. 체력 전환 시 서기는 즉시 무적이 아니라 현재 공격을 마무리하고 회복 구간에 약점을 노출한다. 광선은 발사 순간의 선분으로만 판정하고 발사 뒤 플레이어를 따라 회전하지 않는다. 첫 발사의 반사 각도는 고정 패널이라 예측 가능하고 두 번째부터 이동 패널을 도입한다. 패널 움직임은 경고가 끝나기 전에 끝나야 하며 활성 중에는 움직이지 않는다. 움직인 패널이 플레이어와 겹쳐도 물리 충돌을 발생시키지 않는다. 전환 중 기존 경고선을 계속 피해선으로 그리지 않도록 색과 무늬를 제거한다. 보스의 발사 회복 2초는 가까운 공격 빌드가 이동해 한 번 공격할 시간이다. 발사 순환이 체력 전환 때문에 건너뛰어도 다음 공격은 항상 완전 예고부터 시작한다. 패널에서 생성된 반사 광선은 두 번째 패널에 닿아도 다시 반사하지 않는다. 연쇄 루프는 발생하지 않는다. 발사 끝점은 화면 경계에 고정한다. 보스가 죽은 뒤 남은 반사선을 모두 지워 결과 화면에서 피해가 나지 않게 한다."
+    },
+    {
+      "id": "B06",
+      "name": "종점 방송자",
+      "zoneId": "Z06",
+      "description": "방송 신호 1.5초 후 세 파가 0.65초 간격으로 승강장 한쪽을 지난다. 0.5초 회복 뒤 중앙 좁은 직선 1.2초 경고/0.3초 활성/2초 휴식의 고정 순서다. 45% 이하에는 첫 세 파 후 반대편에서 한 파가 추가되지만 중앙 연결부는 유지한다. 신호 번호가 다음 파의 출발점을 알려 주고 마지막 파 뒤 보스가 2초 정지한다. 맵 파형은 보스 신호 중 중단한다. 돌진 적 신규 스폰은 입장 10초 전부터 중단하고 기존 발사체는 화면 경계에서 정리한다. 이동 봉쇄 상태가 생기면 보스 공격을 취소한다. 파형 사이 0.65초는 초기 이동속도 220단위/초에서 143단위를 움직일 수 있는 시간이라는 설계 계산이며 실제 조작 시험으로 조정해야 한다. 세 파의 출발 승강장은 신호 번호 순서와 일치하고, 체력 전환 추가 파는 반대 번호를 먼저 보여 준다. 직선 공격은 중앙 통로 전체를 막지 않도록 너비를 제한한다. 파형이 끝나기 전에 보스가 사망하면 남은 예약을 폐기한다. 처치 애니메이션은 결과 확정 이후에만 재생해 사망·마감 우선순위를 흐리지 않는다. 보스가 화면 밖으로 나가도 가장 가까운 승강장 쪽 방향 표시가 남는다. 방송자의 파형은 일정한 속도로만 진행하고 활성 중 갑자기 빨라지지 않는다. 번호와 파형 개수는 상단 HUD에서 함께 읽을 수 있다. 45% 전환 후 추가 파가 등장해도 처음 세 파의 간격은 그대로다. 중앙 직선의 안전 폭은 플레이어 충돌 지름 두 배를 초기 하한으로 둔다. 보스 몸체가 중앙 통로를 막는다면 위치를 옆으로 옮겨 자동 공격 사거리 안에서 회복한다. 타임아웃 직전에 새 긴 패턴을 시작하지 않고 이미 예약된 공격만 끝내므로 결과 판정이 명확하다. 세 파 중 어느 파에 맞았는지 결과에 남기되 숫자만 표시하지 않고 다음 회피 방법을 한 문장으로 알려 준다. 번호는 위치뿐 아니라 음성 설명으로도 제공한다."
+    }
+  ],
+  "enemies": [
+    {
+      "id": "N01",
+      "name": "부스러기",
+      "family": "보행",
+      "behavior": "느린 직진",
+      "counterplay": "입문/거리 유지",
+      "description": "느린 직진; 입문/거리 유지"
+    },
+    {
+      "id": "N02",
+      "name": "흩날개",
+      "family": "보행",
+      "behavior": "피격 뒤 좌우 이탈",
+      "counterplay": "입문/거리 유지",
+      "description": "피격 뒤 좌우 이탈; 입문/거리 유지"
+    },
+    {
+      "id": "N03",
+      "name": "쇄도",
+      "family": "돌진",
+      "behavior": "직선 예고",
+      "counterplay": "측면 이탈/경고 확인",
+      "description": "직선 예고; 측면 이탈/경고 확인"
+    },
+    {
+      "id": "N04",
+      "name": "곡주",
+      "family": "돌진",
+      "behavior": "한번 꺾는 예고",
+      "counterplay": "측면 이탈/경고 확인",
+      "description": "한번 꺾는 예고; 측면 이탈/경고 확인"
+    },
+    {
+      "id": "N05",
+      "name": "판갑",
+      "family": "방패",
+      "behavior": "정면 감소",
+      "counterplay": "측후면 이동",
+      "description": "정면 감소; 측후면 이동"
+    },
+    {
+      "id": "N06",
+      "name": "역갑",
+      "family": "방패",
+      "behavior": "뒤쪽 감소",
+      "counterplay": "측후면 이동",
+      "description": "뒤쪽 감소; 측후면 이동"
+    },
+    {
+      "id": "N07",
+      "name": "침수",
+      "family": "사격",
+      "behavior": "정지 표적탄",
+      "counterplay": "탄 간격 통과",
+      "description": "정지 표적탄; 탄 간격 통과"
+    },
+    {
+      "id": "N08",
+      "name": "분산수",
+      "family": "사격",
+      "behavior": "부채탄",
+      "counterplay": "탄 간격 통과",
+      "description": "부채탄; 탄 간격 통과"
+    },
+    {
+      "id": "N09",
+      "name": "균핵",
+      "family": "분열",
+      "behavior": "사망 시 작은 1개",
+      "counterplay": "처치 위치 선택",
+      "description": "사망 시 작은 1개; 처치 위치 선택"
+    },
+    {
+      "id": "N10",
+      "name": "건핵",
+      "family": "분열",
+      "behavior": "파열 대신 지연 폭발",
+      "counterplay": "처치 위치 선택",
+      "description": "파열 대신 지연 폭발; 처치 위치 선택"
+    },
+    {
+      "id": "N11",
+      "name": "먼지떼",
+      "family": "군집",
+      "behavior": "작은 무리",
+      "counterplay": "영역 공격/분리",
+      "description": "작은 무리; 영역 공격/분리"
+    },
+    {
+      "id": "N12",
+      "name": "결속떼",
+      "family": "군집",
+      "behavior": "근접 시 속도 증가",
+      "counterplay": "영역 공격/분리",
+      "description": "근접 시 속도 증가; 영역 공격/분리"
+    },
+    {
+      "id": "N13",
+      "name": "모조등",
+      "family": "유인",
+      "behavior": "플레이어를 좇음",
+      "counterplay": "중앙 유도/거리 조절",
+      "description": "플레이어를 좇음; 중앙 유도/거리 조절"
+    },
+    {
+      "id": "N14",
+      "name": "역등",
+      "family": "유인",
+      "behavior": "가까우면 후퇴",
+      "counterplay": "중앙 유도/거리 조절",
+      "description": "가까우면 후퇴; 중앙 유도/거리 조절"
+    },
+    {
+      "id": "N15",
+      "name": "봉합수",
+      "family": "지원",
+      "behavior": "주변 1회 보호",
+      "counterplay": "지원체 우선",
+      "description": "주변 1회 보호; 지원체 우선"
+    },
+    {
+      "id": "N16",
+      "name": "새김수",
+      "family": "지원",
+      "behavior": "짧은 이동 강화",
+      "counterplay": "지원체 우선",
+      "description": "짧은 이동 강화; 지원체 우선"
+    },
+    {
+      "id": "N17",
+      "name": "시계벌",
+      "family": "지연",
+      "behavior": "1초 후 위치 타격",
+      "counterplay": "계속 이동/박자 회피",
+      "description": "1초 후 위치 타격; 계속 이동/박자 회피"
+    },
+    {
+      "id": "N18",
+      "name": "종벌",
+      "family": "지연",
+      "behavior": "두 박자 표적",
+      "counterplay": "계속 이동/박자 회피",
+      "description": "두 박자 표적; 계속 이동/박자 회피"
+    },
+    {
+      "id": "N19",
+      "name": "각목",
+      "family": "장벽",
+      "behavior": "짧은 지형 투영",
+      "counterplay": "투영 종료 기다림",
+      "description": "짧은 지형 투영; 투영 종료 기다림"
+    },
+    {
+      "id": "N20",
+      "name": "옆목",
+      "family": "장벽",
+      "behavior": "옆으로 투영",
+      "counterplay": "투영 종료 기다림",
+      "description": "옆으로 투영; 투영 종료 기다림"
+    },
+    {
+      "id": "N21",
+      "name": "유리먹이",
+      "family": "흡수",
+      "behavior": "약한 탄 1회 흡수",
+      "counterplay": "연타/영역 유지",
+      "description": "약한 탄 1회 흡수; 연타/영역 유지"
+    },
+    {
+      "id": "N22",
+      "name": "맥먹이",
+      "family": "흡수",
+      "behavior": "영역 노출 뒤 취약",
+      "counterplay": "연타/영역 유지",
+      "description": "영역 노출 뒤 취약; 연타/영역 유지"
+    },
+    {
+      "id": "N23",
+      "name": "낮그림",
+      "family": "잠행",
+      "behavior": "경고 후 재등장",
+      "counterplay": "표식 추적/퇴로 확인",
+      "description": "경고 후 재등장; 표식 추적/퇴로 확인"
+    },
+    {
+      "id": "N24",
+      "name": "뒤그림",
+      "family": "잠행",
+      "behavior": "측면 재등장",
+      "counterplay": "표식 추적/퇴로 확인",
+      "description": "측면 재등장; 표식 추적/퇴로 확인"
+    }
+  ],
+  "elites": [
+    {
+      "id": "X01",
+      "name": "석편 수호",
+      "family": "보행",
+      "behavior": "짧은 전방 방패",
+      "description": "짧은 전방 방패"
+    },
+    {
+      "id": "X02",
+      "name": "불꽃 낙인",
+      "family": "돌진",
+      "behavior": "돌진 뒤 잔열",
+      "description": "돌진 뒤 잔열"
+    },
+    {
+      "id": "X03",
+      "name": "먼지 군주",
+      "family": "군집",
+      "behavior": "주변 무리 분산",
+      "description": "주변 무리 분산"
+    },
+    {
+      "id": "X04",
+      "name": "사선 심판",
+      "family": "사격",
+      "behavior": "두 줄 예고탄",
+      "description": "두 줄 예고탄"
+    },
+    {
+      "id": "X05",
+      "name": "거울 갑주",
+      "family": "방패",
+      "behavior": "방향 전환 방패",
+      "description": "방향 전환 방패"
+    },
+    {
+      "id": "X06",
+      "name": "표본 운반",
+      "family": "유인",
+      "behavior": "도주 뒤 재접근",
+      "description": "도주 뒤 재접근"
+    },
+    {
+      "id": "X07",
+      "name": "시계 압류",
+      "family": "지연",
+      "behavior": "두 박자 원형 경고",
+      "description": "두 박자 원형 경고"
+    },
+    {
+      "id": "X08",
+      "name": "뿌리 압박",
+      "family": "장벽",
+      "behavior": "짧은 가시선",
+      "description": "짧은 가시선"
+    },
+    {
+      "id": "X09",
+      "name": "흡광 상자",
+      "family": "흡수",
+      "behavior": "한 번 탄 막기",
+      "description": "한 번 탄 막기"
+    },
+    {
+      "id": "X10",
+      "name": "낡은 항해",
+      "family": "돌진",
+      "behavior": "흐름 따라 곡선",
+      "description": "흐름 따라 곡선"
+    },
+    {
+      "id": "X11",
+      "name": "빈 렌즈",
+      "family": "사격",
+      "behavior": "열린 각도 부채탄",
+      "description": "열린 각도 부채탄"
+    },
+    {
+      "id": "X12",
+      "name": "정화 감시",
+      "family": "지원",
+      "behavior": "독성 내 보호막",
+      "description": "독성 내 보호막"
+    },
+    {
+      "id": "X13",
+      "name": "유리 편집",
+      "family": "잠행",
+      "behavior": "반사점 재출현",
+      "description": "반사점 재출현"
+    },
+    {
+      "id": "X14",
+      "name": "역류 망치",
+      "family": "방패",
+      "behavior": "앞뒤 약점 교대",
+      "description": "앞뒤 약점 교대"
+    },
+    {
+      "id": "X15",
+      "name": "막차 호각",
+      "family": "군집",
+      "behavior": "두 무리 호출",
+      "description": "두 무리 호출"
+    },
+    {
+      "id": "X16",
+      "name": "적막 벌레",
+      "family": "지연",
+      "behavior": "시전 직전 경고",
+      "description": "시전 직전 경고"
+    },
+    {
+      "id": "X17",
+      "name": "경계 매듭",
+      "family": "장벽",
+      "behavior": "짧은 길목 표시",
+      "description": "짧은 길목 표시"
+    },
+    {
+      "id": "X18",
+      "name": "빈 심장",
+      "family": "흡수",
+      "behavior": "받은 영역 피해 뒤 노출",
+      "description": "받은 영역 피해 뒤 노출"
+    }
+  ],
+  "classes": [
+    {
+      "id": "C01",
+      "name": "쇄도술사",
+      "spellId": "bolt",
+      "description": "마나 창 Lv1; 첫 투사체 관통 +1, 단일 피해 -10%",
+      "benefit": "첫 투사체 관통 +1",
+      "cost": "단일 피해 -10%"
+    },
+    {
+      "id": "C02",
+      "name": "재의 직공",
+      "spellId": "fireball",
+      "description": "화염구 Lv1; 첫 지속화상 +1초, 투사속도 -10%",
+      "benefit": "첫 지속화상 +1초",
+      "cost": "투사속도 -10%"
+    },
+    {
+      "id": "C03",
+      "name": "냉선 측량사",
+      "spellId": "frost",
+      "description": "냉기 Lv1; 첫 둔화 +0.4초, 기본 범위 -10%",
+      "benefit": "첫 둔화 +0.4초",
+      "cost": "기본 범위 -10%"
+    },
+    {
+      "id": "C04",
+      "name": "공전 수호자",
+      "spellId": "orbit",
+      "description": "염동력 검 Lv1; 회전 반경 +10%, 회전 피해 -10%",
+      "benefit": "회전 반경 +10%",
+      "cost": "회전 피해 -10%"
+    },
+    {
+      "id": "C05",
+      "name": "파문 수집가",
+      "spellId": "pulse",
+      "description": "파동 Lv1; 수집 반경 +15%, 보스 피해 -10%",
+      "benefit": "수집 반경 +15%",
+      "cost": "보스 피해 -10%"
+    },
+    {
+      "id": "C06",
+      "name": "봉인 관찰자",
+      "spellId": "m15",
+      "description": "M15 봉인 문양 Lv1; 시야 밖 사건 종류 안내, 경험치 획득-10%",
+      "benefit": "시야 밖 사건 종류 안내",
+      "cost": "경험치 획득-10%"
+    }
+  ],
+  "research": [
+    {
+      "id": "R01",
+      "name": "견본 목록",
+      "cost": 10,
+      "requires": [],
+      "points": 1,
+      "description": "처음 후보 1개 재추첨"
+    },
+    {
+      "id": "R02",
+      "name": "지도 눈금",
+      "cost": 10,
+      "requires": [
+        "R01"
+      ],
+      "points": 1,
+      "description": "첫 현상 5초 선공개"
+    },
+    {
+      "id": "R03",
+      "name": "교정 장갑",
+      "cost": 10,
+      "requires": [
+        "R01"
+      ],
+      "points": 1,
+      "description": "기본 효과 공개 유지; 현재 빌드의 예상 발동 빈도 추가 비교"
+    },
+    {
+      "id": "R04",
+      "name": "작은 자석",
+      "cost": 10,
+      "requires": [
+        "R01"
+      ],
+      "points": 1,
+      "description": "수집 반경 +8%"
+    },
+    {
+      "id": "R05",
+      "name": "숨 고르기",
+      "cost": 18,
+      "requires": [
+        "R02"
+      ],
+      "points": 1,
+      "description": "시작 보호 1초"
+    },
+    {
+      "id": "R06",
+      "name": "첫 각도",
+      "cost": 18,
+      "requires": [
+        "R02"
+      ],
+      "points": 1,
+      "description": "보스 첫 예고 방향 표시"
+    },
+    {
+      "id": "R07",
+      "name": "균열 기록",
+      "cost": 18,
+      "requires": [
+        "R03"
+      ],
+      "points": 1,
+      "description": "도감 단서 힌트"
+    },
+    {
+      "id": "R08",
+      "name": "정예 표식",
+      "cost": 18,
+      "requires": [
+        "R03"
+      ],
+      "points": 1,
+      "description": "정예 위치 2초 선공개"
+    },
+    {
+      "id": "R09",
+      "name": "넓은 손",
+      "cost": 18,
+      "requires": [
+        "R04"
+      ],
+      "points": 1,
+      "description": "사건 접근 반경 +10%"
+    },
+    {
+      "id": "R10",
+      "name": "잔향 보관",
+      "cost": 18,
+      "requires": [
+        "R04"
+      ],
+      "points": 1,
+      "description": "첫 XP 5% 보정"
+    },
+    {
+      "id": "R11",
+      "name": "냉정한 판단",
+      "cost": 18,
+      "requires": [
+        "R05"
+      ],
+      "points": 1,
+      "description": "피격 뒤 다음 현상1회의 경고+0.15초; 기본 대비 동일"
+    },
+    {
+      "id": "R12",
+      "name": "안전 각도",
+      "cost": 18,
+      "requires": [
+        "R06"
+      ],
+      "points": 1,
+      "description": "첫 보스 패턴1회의 시전 간격+0.3초; 기본 안전구역 표시 유지"
+    },
+    {
+      "id": "R13",
+      "name": "교차 목록",
+      "cost": 28,
+      "requires": [
+        "R07"
+      ],
+      "points": 1,
+      "description": "새 조합 힌트 1개"
+    },
+    {
+      "id": "R14",
+      "name": "상자 지도",
+      "cost": 28,
+      "requires": [
+        "R08"
+      ],
+      "points": 1,
+      "description": "정예 상자 방향 표시"
+    },
+    {
+      "id": "R15",
+      "name": "느린 확인",
+      "cost": 28,
+      "requires": [
+        "R09"
+      ],
+      "points": 1,
+      "description": "사건 카드 확인 단계"
+    },
+    {
+      "id": "R16",
+      "name": "모아 보기",
+      "cost": 28,
+      "requires": [
+        "R10"
+      ],
+      "points": 1,
+      "description": "XP 방향 표시"
+    },
+    {
+      "id": "R17",
+      "name": "흔적 분류",
+      "cost": 28,
+      "requires": [
+        "R11"
+      ],
+      "points": 1,
+      "description": "사망 원인 세분화"
+    },
+    {
+      "id": "R18",
+      "name": "파형 계기",
+      "cost": 28,
+      "requires": [
+        "R12"
+      ],
+      "points": 1,
+      "description": "현상 주기 계기"
+    },
+    {
+      "id": "R19",
+      "name": "배합 노트",
+      "cost": 28,
+      "requires": [
+        "R13"
+      ],
+      "points": 1,
+      "description": "도감 재료 필터"
+    },
+    {
+      "id": "R20",
+      "name": "예비 목록",
+      "cost": 28,
+      "requires": [
+        "R14"
+      ],
+      "points": 1,
+      "description": "상자 후보 1회 재추첨"
+    },
+    {
+      "id": "R21",
+      "name": "보상 사전",
+      "cost": 40,
+      "requires": [
+        "R15"
+      ],
+      "points": 1,
+      "description": "접근 전 사건 보상 종류 범주 안내; 대화 정보는 기본 공개"
+    },
+    {
+      "id": "R22",
+      "name": "길 찾기",
+      "cost": 40,
+      "requires": [
+        "R16"
+      ],
+      "points": 1,
+      "description": "화면 밖 사건 방향"
+    },
+    {
+      "id": "R23",
+      "name": "교차 증언",
+      "cost": 40,
+      "requires": [
+        "R17",
+        "R18"
+      ],
+      "points": 1,
+      "description": "결과 단서 연결"
+    },
+    {
+      "id": "R24",
+      "name": "마지막 기록",
+      "cost": 40,
+      "requires": [
+        "R19",
+        "R23"
+      ],
+      "points": 1,
+      "description": "결전 요약 확장"
+    }
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "깨진 마나 샘",
+      "description": "회복 1 또는 현재 레벨 XP 20%; 무료, 둘 중 하나; 초과 회복 없음",
+      "reward": "회복 1 또는 현재 레벨 XP 20%",
+      "condition": "무료, 둘 중 하나",
+      "declineOrFailure": "초과 회복 없음"
+    },
+    {
+      "id": "E02",
+      "name": "봉인 제단",
+      "description": "체력 1 → 미보유 유물 후보 2; 현재 체력 2 이상; 거절 무료",
+      "reward": "체력 1 → 미보유 유물 후보 2",
+      "condition": "현재 체력 2 이상",
+      "declineOrFailure": "거절 무료"
+    },
+    {
+      "id": "E03",
+      "name": "불안정한 표본",
+      "description": "45초 적 수 +20% → 유물 후보 1; 위험 완료 후; 실패 시 보상 없음",
+      "reward": "45초 적 수 +20% → 유물 후보 1",
+      "condition": "위험 완료 후",
+      "declineOrFailure": "실패 시 보상 없음"
+    },
+    {
+      "id": "E04",
+      "name": "접힌 지도",
+      "description": "다음 현상 위치 3회 선공개; 바로 수령; 전투 보너스 없음",
+      "reward": "다음 현상 위치 3회 선공개",
+      "condition": "바로 수령",
+      "declineOrFailure": "전투 보너스 없음"
+    },
+    {
+      "id": "E05",
+      "name": "금 간 종",
+      "description": "다음 정예 20초 조기 출현 → 상자 후보 +1; 창 전까지만; 지나간 창이면 숨김",
+      "reward": "다음 정예 20초 조기 출현 → 상자 후보 +1",
+      "condition": "창 전까지만",
+      "declineOrFailure": "지나간 창이면 숨김"
+    },
+    {
+      "id": "E06",
+      "name": "역광 렌즈",
+      "description": "60초 수집 반경 -20% → XP 25%; 완료 시; 자동 수집 차단 없음",
+      "reward": "60초 수집 반경 -20% → XP 25%",
+      "condition": "완료 시",
+      "declineOrFailure": "자동 수집 차단 없음"
+    },
+    {
+      "id": "E07",
+      "name": "정화 청원",
+      "description": "현상 1회 취소 → 다음 현상 경고 0.2초 단축; 즉시; 최소 경고 0.8초",
+      "reward": "현상 1회 취소 → 다음 현상 경고 0.2초 단축",
+      "condition": "즉시",
+      "declineOrFailure": "최소 경고 0.8초"
+    },
+    {
+      "id": "E08",
+      "name": "유실 우편",
+      "description": "현재 마법 하나의 다음 레벨 후보 보장; 선택 즉시; 슬롯·레벨 상한 준수",
+      "reward": "현재 마법 하나의 다음 레벨 후보 보장",
+      "condition": "선택 즉시",
+      "declineOrFailure": "슬롯·레벨 상한 준수"
+    },
+    {
+      "id": "E09",
+      "name": "침묵 계약",
+      "description": "30초 마법 재사용 +10% → 체력 1 회복; 완료 시; 현재 최대 체력 초과 회복 없음",
+      "reward": "30초 마법 재사용 +10% → 체력 1 회복",
+      "condition": "완료 시",
+      "declineOrFailure": "현재 최대 체력 초과 회복 없음"
+    },
+    {
+      "id": "E10",
+      "name": "관측 교환",
+      "description": "현재 XP 20% 지불 → 현상 순서 2회 공개; 현재 XP 충분; 레벨 하락 없음",
+      "reward": "현재 XP 20% 지불 → 현상 순서 2회 공개",
+      "condition": "현재 XP 충분",
+      "declineOrFailure": "레벨 하락 없음"
+    },
+    {
+      "id": "E11",
+      "name": "역류 제안",
+      "description": "20초 이동속도 -10% → 다음 정예 경고 확대; 완료 시; 보스 중 숨김",
+      "reward": "20초 이동속도 -10% → 다음 정예 경고 확대",
+      "condition": "완료 시",
+      "declineOrFailure": "보스 중 숨김"
+    },
+    {
+      "id": "E12",
+      "name": "봉합 연습",
+      "description": "경고 그림 연습 15초 → 도감 단서; 무료 선택; 전투 시계 정지",
+      "reward": "경고 그림 연습 15초 → 도감 단서",
+      "condition": "무료 선택",
+      "declineOrFailure": "전투 시계 정지"
+    }
+  ],
+  "resonances": [
+    {
+      "fusionId": "plasma",
+      "canonicalFusionId": "F01",
+      "choices": [
+        {
+          "id": "F01-R1",
+          "name": "집속",
+          "benefit": "광선 폭 -30%, 단일 적 피해 +45%",
+          "cost": "광역 명중 감소",
+          "description": "광선 폭 -30%, 단일 적 피해 +45%; 광역 명중 감소"
+        },
+        {
+          "id": "F01-R2",
+          "name": "분광",
+          "benefit": "광선 끝에서 약한 2갈래 발사",
+          "cost": "본 광선 피해 -25%",
+          "description": "광선 끝에서 약한 2갈래 발사; 본 광선 피해 -25%"
+        },
+        {
+          "id": "F01-R3",
+          "name": "축전",
+          "benefit": "감전 적중 때 다음 광선 재사용 대기 -8%",
+          "cost": "광선 기본 피해 -15%",
+          "description": "감전 적중 때 다음 광선 재사용 대기 -8%; 광선 기본 피해 -15%"
+        }
+      ]
+    },
+    {
+      "fusionId": "blizzard",
+      "canonicalFusionId": "F02",
+      "choices": [
+        {
+          "id": "F02-R1",
+          "name": "빙결 고리",
+          "benefit": "둔화 지속+40%",
+          "cost": "효과 반경-20%",
+          "description": "둔화 지속+40%; 효과 반경-20%"
+        },
+        {
+          "id": "F02-R2",
+          "name": "쇄빙",
+          "benefit": "둔화 만료 때30D, 대상당3초 대기",
+          "cost": "둔화 지속-30%",
+          "description": "둔화 만료 때30D, 대상당3초 대기; 둔화 지속-30%"
+        },
+        {
+          "id": "F02-R3",
+          "name": "유빙",
+          "benefit": "영역이 플레이어를 절반 속도로 추종",
+          "cost": "영역 피해-20%",
+          "description": "영역이 플레이어를 절반 속도로 추종; 영역 피해-20%"
+        }
+      ]
+    },
+    {
+      "fusionId": "supernova",
+      "canonicalFusionId": "F03",
+      "choices": [
+        {
+          "id": "F03-R1",
+          "name": "집속 낙하",
+          "benefit": "운석 폭발 피해+40%",
+          "cost": "폭발 반경-25%",
+          "description": "운석 폭발 피해+40%; 폭발 반경-25%"
+        },
+        {
+          "id": "F03-R2",
+          "name": "잔불",
+          "benefit": "폭발 뒤3초 점화 영역",
+          "cost": "직접 폭발 피해-25%",
+          "description": "폭발 뒤3초 점화 영역; 직접 폭발 피해-25%"
+        },
+        {
+          "id": "F03-R3",
+          "name": "연성",
+          "benefit": "화염구·운석 주기-20%",
+          "cost": "각 폭발 피해-20%, 주기 하한 유지",
+          "description": "화염구·운석 주기-20%; 각 폭발 피해-20%, 주기 하한 유지"
+        }
+      ]
+    },
+    {
+      "fusionId": "hyperion",
+      "canonicalFusionId": "F04",
+      "choices": [
+        {
+          "id": "F04-R1",
+          "name": "장거리 궤도",
+          "benefit": "공전 반경+40%",
+          "cost": "공전 피해-15%",
+          "description": "공전 반경+40%; 공전 피해-15%"
+        },
+        {
+          "id": "F04-R2",
+          "name": "중심 수렴",
+          "benefit": "공전 적중에30D 파동, 초당1회",
+          "cost": "공전 반경-25%·피해-20%",
+          "description": "공전 적중에30D 파동, 초당1회; 공전 반경-25%·피해-20%"
+        },
+        {
+          "id": "F04-R3",
+          "name": "항성 박동",
+          "benefit": "파동 범위+30%·피해+20%",
+          "cost": "파동 주기+25%",
+          "description": "파동 범위+30%·피해+20%; 파동 주기+25%"
+        }
+      ]
+    }
+  ],
+  "modes": {
+    "campaign": {
+      "id": "campaign",
+      "duration": 900,
+      "bossAt": 810
+    }
+  }
+}
